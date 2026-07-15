@@ -562,7 +562,7 @@ body {
     margin-top: 14px;
     padding: 8px 18px;
     color: var(--couleur-principale);
-    font-size: 1.15rem;
+    font-size: clamp(1.35rem, 4vw, 1.8rem);
     font-weight: 700;
     background: var(--couleur-secondaire);
     border-radius: 999px;
@@ -667,9 +667,6 @@ body {
         transform: none;
     }
 
-    .heure-du-jour {
-        font-size: 1rem;
-    }
 }
 /* ==================================================
    COMPTEUR DE CURIEUX
