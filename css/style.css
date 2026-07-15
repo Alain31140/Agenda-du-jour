@@ -473,3 +473,201 @@ body {
     }
 
 }
+/* ==================================================
+   ACCUEIL — VERSION RÉELLE
+================================================== */
+
+.accueil-principal {
+    display: grid;
+    gap: 22px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* ==================================================
+   BIENVENUE
+================================================== */
+
+.accueil-bienvenue {
+    padding: 28px 22px;
+    text-align: center;
+    color: white;
+    background:
+        linear-gradient(
+            135deg,
+            #356b8c,
+            #5598b8
+        );
+    border-radius: var(--rayon-carte);
+    box-shadow: var(--ombre-legere);
+}
+
+.accueil-titre {
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
+    font-weight: 750;
+    line-height: 1.25;
+}
+
+.accueil-titre span {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+
+/* ==================================================
+   CARTES
+================================================== */
+
+.accueil-carte {
+    padding: 28px 24px;
+    text-align: center;
+    background: var(--couleur-carte);
+    border: 1px solid rgba(53, 107, 140, 0.10);
+    border-radius: var(--rayon-carte);
+    box-shadow: var(--ombre-legere);
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+.accueil-carte:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--ombre-survol);
+}
+
+.accueil-carte-titre {
+    margin-bottom: 10px;
+    color: var(--couleur-principale);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+
+/* ==================================================
+   DATE ET HEURE
+================================================== */
+
+.date-du-jour {
+    color: var(--couleur-texte);
+    font-size: clamp(1.45rem, 5vw, 2.3rem);
+    font-weight: 750;
+    line-height: 1.25;
+    text-transform: capitalize;
+}
+
+.heure-du-jour {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 8px 18px;
+    color: var(--couleur-principale);
+    font-size: 1.15rem;
+    font-weight: 700;
+    background: var(--couleur-secondaire);
+    border-radius: 999px;
+    font-variant-numeric: tabular-nums;
+}
+
+
+/* ==================================================
+   SAINT DU JOUR
+================================================== */
+
+.saint-du-jour {
+    color: var(--couleur-texte);
+    font-size: clamp(1.35rem, 4vw, 1.9rem);
+    font-weight: 750;
+}
+
+
+/* ==================================================
+   JOURNÉE MONDIALE
+================================================== */
+
+.journee-du-jour {
+    color: var(--couleur-texte);
+    font-size: clamp(1.15rem, 4vw, 1.55rem);
+    font-weight: 650;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   DICTON
+================================================== */
+
+.accueil-carte blockquote {
+    margin: 10px auto 0;
+    max-width: 680px;
+    color: var(--couleur-texte-clair);
+    font-size: clamp(1.1rem, 3.5vw, 1.35rem);
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.accueil-carte blockquote::before {
+    content: "“";
+    margin-right: 4px;
+    color: var(--couleur-accent);
+    font-size: 2rem;
+    font-weight: 800;
+    vertical-align: -0.2em;
+}
+
+.accueil-carte blockquote::after {
+    content: "”";
+    margin-left: 4px;
+    color: var(--couleur-accent);
+    font-size: 2rem;
+    font-weight: 800;
+    vertical-align: -0.2em;
+}
+
+
+/* ==================================================
+   TABLETTE ET GRAND ÉCRAN
+================================================== */
+
+@media (min-width: 760px) {
+
+    .accueil-principal {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .accueil-bienvenue,
+    .accueil-carte:first-of-type,
+    .accueil-carte:last-of-type {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* ==================================================
+   TÉLÉPHONE
+================================================== */
+
+@media (max-width: 600px) {
+
+    .accueil-principal {
+        gap: 15px;
+    }
+
+    .accueil-bienvenue {
+        padding: 24px 16px;
+        border-radius: 16px;
+    }
+
+    .accueil-carte {
+        padding: 23px 18px;
+        border-radius: 16px;
+    }
+
+    .accueil-carte:hover {
+        transform: none;
+    }
+
+    .heure-du-jour {
+        font-size: 1rem;
+    }
+}

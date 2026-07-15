@@ -48,6 +48,7 @@ async function demarrerApplication() {
 
 
     await chargerDonneesAccueil();
+    afficherAccueil();
 
 
     if (message) {
