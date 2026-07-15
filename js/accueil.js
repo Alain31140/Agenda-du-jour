@@ -168,6 +168,16 @@ function obtenirCleDuJour() {
 
 }
 
+function obtenirCleDuMois() {
+
+    return String(
+        new Date().getMonth() + 1
+    ).padStart(
+        2,
+        "0"
+    );
+
+}
 
 /* ==================================================
    LANGUE DU VISITEUR
@@ -251,6 +261,9 @@ async function afficherAccueil() {
     const cle =
         obtenirCleDuJour();
 
+    const cleMois =
+        obtenirCleDuMois();
+
 
     const langue =
         obtenirLangueAccueil();
@@ -286,6 +299,8 @@ async function afficherAccueil() {
     const journee =
         donneesAccueil.journees[cle];
 
+    const celebration =
+        donneesAccueil.celebrations[cleMois];
 
     const journeeAffichee =
 
@@ -422,6 +437,21 @@ async function afficherAccueil() {
 
             </article>
 
+            ${celebration ? `
+
+            <article class="accueil-carte celebration-mois">
+
+                <div class="accueil-carte-titre">
+
+                    📅 Célébration du mois
+
+                </div>
+
+                ◊
+                
+            </article>
+
+        ` : ""}
 
             <article class="accueil-carte">
 

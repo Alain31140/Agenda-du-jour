@@ -750,3 +750,90 @@ body {
     }
 
 }
+
+/* ==================================================
+   CÉLÉBRATION DU MOIS
+================================================== */
+
+.celebration-mois {
+    overflow: hidden;
+}
+
+.celebration-contenu {
+    display: grid;
+    grid-template-columns: minmax(160px, 240px) minmax(0, 1fr);
+    gap: 28px;
+    align-items: center;
+
+    width: 100%;
+    max-width: 760px;
+
+    margin: 18px auto 0;
+
+    padding: 22px;
+
+    text-align: left;
+
+    background: var(--couleur-secondaire);
+
+    border-radius: 16px;
+}
+
+.celebration-image img {
+    display: block;
+    width: 100%;
+    max-height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow:
+        0 6px 18px
+        rgba(38, 50, 56, 0.14);
+}
+
+.celebration-texte h3 {
+    margin: 0 0 12px;
+    color: var(--couleur-principale);
+    font-size: clamp(1.35rem, 4vw, 1.8rem);
+}
+
+.celebration-texte p {
+    margin: 0;
+    color: var(--couleur-texte-clair);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* La célébration occupe toute la largeur sur tablette et Mac */
+
+@media (min-width: 760px) {
+
+    .celebration-mois {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* Présentation verticale sur téléphone */
+
+@media (max-width: 650px) {
+
+    .celebration-contenu {
+    grid-template-columns: 1fr;
+
+    width: 100%;
+
+    gap: 18px;
+
+    padding: 18px;
+
+    text-align: center;
+}
+
+    .celebration-image {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+}
