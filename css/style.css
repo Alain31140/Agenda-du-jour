@@ -671,3 +671,85 @@ body {
         font-size: 1rem;
     }
 }
+/* ==================================================
+   COMPTEUR DE CURIEUX
+================================================== */
+
+.accueil-compteur {
+
+    margin-top: 14px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.92
+        );
+
+    font-size:
+        clamp(
+            0.95rem,
+            3vw,
+            1.1rem
+        );
+
+    line-height: 1.5;
+
+}
+
+
+.accueil-compteur strong {
+
+    display: inline-block;
+
+    min-width: 1.5em;
+
+    color: white;
+
+    font-size: 1.15em;
+
+    font-variant-numeric:
+        tabular-nums;
+
+}
+
+
+.compteur-yeux {
+
+    display: inline-block;
+
+    margin-right: 4px;
+
+    animation:
+
+        clignement-curieux
+
+        5s
+
+        infinite;
+
+}
+
+
+@keyframes clignement-curieux {
+
+    0%,
+    45%,
+    49%,
+    100% {
+
+        transform:
+            scaleY(1);
+
+    }
+
+
+    47% {
+
+        transform:
+            scaleY(0.12);
+
+    }
+
+}

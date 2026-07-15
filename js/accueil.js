@@ -231,7 +231,7 @@ function obtenirDateComplete(
    AFFICHAGE DE L'ACCUEIL
 ================================================== */
 
-function afficherAccueil() {
+async function afficherAccueil() {
 
     const application =
         document.getElementById(
@@ -245,6 +245,8 @@ function afficherAccueil() {
 
     }
 
+    const compteurVisites =
+    await lireCompteurVisites();
 
     const cle =
         obtenirCleDuJour();
@@ -326,7 +328,27 @@ function afficherAccueil() {
                     ${traduction.welcome}
 
                 </div>
+                <div class="accueil-compteur">
 
+                    <span class="compteur-yeux">
+
+                        👀
+
+                    </span>
+
+                        Déjà
+
+                    <strong>
+
+                    ${compteurVisites.toLocaleString(
+                    langue
+                    )}
+
+                     </strong>
+
+                     curieux ont découvert mon calendrier
+
+                </div>
             </div>
 
 
