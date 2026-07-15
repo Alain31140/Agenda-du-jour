@@ -149,7 +149,6 @@ function obtenirCleDuMois() {
     );
 }
 
-
 /* ==================================================
    LANGUE DU VISITEUR
 ================================================== */
@@ -191,6 +190,57 @@ function obtenirDateComplete(langue) {
     );
 }
 
+/* ==================================================
+   MESSAGE SELON L'HEURE
+================================================== */
+
+function obtenirMessageHeure() {
+
+    const heure =
+        new Date().getHours();
+
+    if (heure < 6) {
+        return "🦉 Les chouettes sont encore réveillées...";
+    }
+
+    if (heure < 8) {
+        return "🥐 Réveil ! Petit déjeuner en cours.";
+    }
+
+    if (heure < 11) {
+        return "☀️ Bonne matinée !";
+    }
+
+    if (heure < 12) {
+        return "🍹 L’apéro se rapproche...";
+    }
+
+    if (heure < 14) {
+        return "🍽️ Bon appétit !";
+    }
+
+    if (heure < 15) {
+        return "😴 C’est l’heure de la sieste !";
+    }
+
+    if (heure < 18) {
+        return "🍵 It's tea time";
+    }
+
+    if (heure < 19) {
+        return "🍹 L’apéro se rapproche...";
+    }
+
+    if (heure < 21) {
+        return "🍽️ Bon appétit !";
+    }
+
+    if (heure < 23) {
+        return "📺 Soirée TV tranquille";
+    }
+
+    return "🌙 Bonne nuit...";
+}
 
 /* ==================================================
    AFFICHAGE DE L'ACCUEIL
@@ -218,6 +268,10 @@ async function afficherAccueil() {
 
     const langue =
         obtenirLangueAccueil();
+
+    const messageHeure =
+        obtenirMessageHeure();
+
 
     const traduction =
         donneesAccueil.langues[langue]
@@ -275,13 +329,15 @@ async function afficherAccueil() {
 
             <div class="accueil-bienvenue">
 
-                <div class="accueil-titre">
+               <div class="accueil-titre">
 
-                    <span>
+                    <span class="drapeau-accueil">
                         ${traduction.flag}
                     </span>
 
-                    ${traduction.welcome}
+                    <span class="texte-accueil">
+                        ${traduction.welcome}
+                    </span>
 
                 </div>
 
@@ -324,6 +380,10 @@ async function afficherAccueil() {
                     id="heure-du-jour"
                     class="heure-du-jour"
                 ></div>
+
+                <div class="message-heure">
+                    ${messageHeure}
+                </div>
 
             </article>
 
@@ -439,18 +499,26 @@ async function afficherAccueil() {
 
 function demarrerHorloge() {
 
-    const element =
+    const elementHeure =
         document.getElementById(
             "heure-du-jour"
         );
 
-    if (!element) {
+    const elementMessage =
+        document.getElementById(
+            "message-heure"
+        );
+
+    if (!elementHeure) {
         return;
     }
 
     function actualiserHeure() {
 
-        element.textContent =
+        const maintenant =
+            new Date();
+
+        elementHeure.textContent =
             new Intl.DateTimeFormat(
                 navigator.language,
                 {
@@ -459,8 +527,15 @@ function demarrerHorloge() {
                     second: "2-digit"
                 }
             ).format(
-                new Date()
+                maintenant
             );
+
+        if (elementMessage) {
+            elementMessage.innerHTML =
+                messageHeure(
+                    maintenant.getHours()
+                );
+        }
     }
 
     actualiserHeure();

@@ -848,3 +848,42 @@ body {
     max-width: 680px;
     text-align: center;
 }
+
+
+
+
+.accueil-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.drapeau-accueil,
+.clin-oeil {
+    display: inline-block;
+}
+
+
+/* ==================================================
+   MESSAGE SELON L'HEURE
+================================================== */
+
+.message-heure {
+    margin-top: 18px;
+
+    color:
+        var(--couleur-texte);
+
+    font-size:
+        clamp(
+            1.1rem,
+            4vw,
+            1.45rem
+        );
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
