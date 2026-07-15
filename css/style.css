@@ -837,3 +837,14 @@ body {
     }
 
 }
+
+.celebration-contenu:has(.celebration-texte:only-child) {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.celebration-contenu.sans-image {
+    grid-template-columns: 1fr;
+    max-width: 680px;
+    text-align: center;
+}

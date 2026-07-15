@@ -9,17 +9,11 @@
 ================================================== */
 
 let donneesAccueil = {
-
     saints: {},
-
     dictons: {},
-
     journees: {},
-
     celebrations: {},
-
     langues: {}
-
 };
 
 
@@ -27,9 +21,7 @@ let donneesAccueil = {
    CHARGEMENT D'UN FICHIER JSON
 ================================================== */
 
-async function chargerJSON(
-    nomFichier
-) {
+async function chargerJSON(nomFichier) {
 
     try {
 
@@ -40,19 +32,14 @@ async function chargerJSON(
             Date.now()
         );
 
-
         if (!reponse.ok) {
-
             throw new Error(
                 "Erreur HTTP " +
                 reponse.status
             );
-
         }
 
-
         return await reponse.json();
-
 
     } catch (erreur) {
 
@@ -62,11 +49,8 @@ async function chargerJSON(
             erreur
         );
 
-
         return {};
-
     }
-
 }
 
 
@@ -77,22 +61,14 @@ async function chargerJSON(
 async function chargerDonneesAccueil() {
 
     const [
-
         saints,
-
         dictons,
-
         journees,
-
         celebrations,
-
         langues
-
     ] = await Promise.all([
 
-        chargerJSON(
-            "saints.json"
-        ),
+        chargerJSON("saints.json"),
 
         chargerJSON(
             "dictons-du-jour.json"
@@ -112,33 +88,28 @@ async function chargerDonneesAccueil() {
 
     ]);
 
-
     donneesAccueil.saints =
         saints;
-
 
     donneesAccueil.dictons =
         dictons;
 
-
     donneesAccueil.journees =
         journees;
-
 
     donneesAccueil.celebrations =
         celebrations;
 
-
     donneesAccueil.langues =
         langues;
-
 
     console.log(
         "🏠 Données accueil chargées",
         donneesAccueil
     );
-
 }
+
+
 /* ==================================================
    OUTILS DATE
 ================================================== */
@@ -165,8 +136,8 @@ function obtenirCleDuJour() {
         );
 
     return `${jour}-${mois}`;
-
 }
+
 
 function obtenirCleDuMois() {
 
@@ -176,8 +147,8 @@ function obtenirCleDuMois() {
         2,
         "0"
     );
-
 }
+
 
 /* ==================================================
    LANGUE DU VISITEUR
@@ -191,18 +162,13 @@ function obtenirLangueAccueil() {
             .toLowerCase()
         || "fr";
 
-
     if (
         !donneesAccueil.langues[langue]
     ) {
-
         langue = "fr";
-
     }
 
-
     return langue;
-
 }
 
 
@@ -210,30 +176,19 @@ function obtenirLangueAccueil() {
    DATE COMPLÈTE
 ================================================== */
 
-function obtenirDateComplete(
-    langue
-) {
+function obtenirDateComplete(langue) {
 
     return new Intl.DateTimeFormat(
-
         langue,
-
         {
-
             weekday: "long",
-
             day: "numeric",
-
             month: "long",
-
             year: "numeric"
-
         }
-
     ).format(
         new Date()
     );
-
 }
 
 
@@ -248,15 +203,12 @@ async function afficherAccueil() {
             "app"
         );
 
-
     if (!application) {
-
         return;
-
     }
 
     const compteurVisites =
-    await lireCompteurVisites();
+        await lireCompteurVisites();
 
     const cle =
         obtenirCleDuJour();
@@ -264,29 +216,22 @@ async function afficherAccueil() {
     const cleMois =
         obtenirCleDuMois();
 
-
     const langue =
         obtenirLangueAccueil();
 
-
     const traduction =
-        donneesAccueil.langues[langue];
-
+        donneesAccueil.langues[langue]
+        || donneesAccueil.langues.fr;
 
     const saint =
         donneesAccueil.saints[cle];
 
-
     const dictonBrut =
         donneesAccueil.dictons[cle];
 
-
     const dicton =
-
         typeof dictonBrut === "string"
-
             ? dictonBrut
-
             : (
                 dictonBrut?.text
                 ||
@@ -295,87 +240,77 @@ async function afficherAccueil() {
                 "Dicton indisponible"
             );
 
-
     const journee =
         donneesAccueil.journees[cle];
 
     const celebration =
-        donneesAccueil.celebrations[cleMois];
+        donneesAccueil.celebrations[
+            cleMois
+        ];
+
+    const imageCelebration =
+        celebration?.image
+            ? (
+                DATA_URL +
+                "images/celebrations-mensuelles/" +
+                celebration.image
+            )
+            : "";
 
     const journeeAffichee =
-
         journee?.label
-
             ? journee.label
-
                 .split("|")
-
                 .map(
-
                     element =>
-
                         "🌍 " +
-
                         element.trim()
-
                 )
-
                 .join("<br>")
-
             : "🌍 Aucune journée mondiale renseignée";
-
 
     application.innerHTML = `
 
         <section class="accueil-principal">
-
 
             <div class="accueil-bienvenue">
 
                 <div class="accueil-titre">
 
                     <span>
-
                         ${traduction.flag}
-
                     </span>
 
                     ${traduction.welcome}
 
                 </div>
+
                 <div class="accueil-compteur">
 
                     <span class="compteur-yeux">
-
                         👀
-
                     </span>
 
-                        Déjà
+                    Déjà
 
                     <strong>
+                        ${compteurVisites.toLocaleString(
+                            langue
+                        )}
+                    </strong>
 
-                    ${compteurVisites.toLocaleString(
-                    langue
-                    )}
-
-                     </strong>
-
-                     curieux ont découvert mon calendrier
+                    curieux ont découvert mon calendrier
 
                 </div>
+
             </div>
 
 
             <article class="accueil-carte">
 
-
                 <div class="accueil-carte-titre">
-
                     📅 Nous sommes le
-
                 </div>
-
 
                 <div class="date-du-jour">
 
@@ -385,101 +320,116 @@ async function afficherAccueil() {
 
                 </div>
 
-
                 <div
                     id="heure-du-jour"
                     class="heure-du-jour"
-                >
-
-                </div>
-
+                ></div>
 
             </article>
 
 
             <article class="accueil-carte">
 
-
                 <div class="accueil-carte-titre">
-
                     🙏 Aujourd’hui, nous fêtons
-
                 </div>
-
 
                 <div class="saint-du-jour">
 
-                    ${
-
-                        saint?.label
-
-                        ||
-
-                        "Saint non renseigné"
-
-                    }
+                    ${saint?.label
+                        || "Saint non renseigné"}
 
                 </div>
-
 
             </article>
 
 
             <article class="accueil-carte">
 
-
                 <div class="journee-du-jour">
-
                     ${journeeAffichee}
-
                 </div>
 
-
             </article>
+
 
             ${celebration ? `
 
-            <article class="accueil-carte celebration-mois">
+                <article class="accueil-carte celebration-mois">
 
-                <div class="accueil-carte-titre">
+                    <div class="accueil-carte-titre">
+                        📅 Célébration du mois
+                    </div>
 
-                    📅 Célébration du mois
+                    <div
+                        class="celebration-contenu
+                        ${imageCelebration
+                            ? ""
+                            : "sans-image"}"
+                    >
 
-                </div>
+                        ${imageCelebration ? `
 
-                ◊
-                
-            </article>
+                            <div class="celebration-image">
 
-        ` : ""}
+                                <img
+                                    src="${imageCelebration}"
+                                    alt="${celebration.titre || ""}"
+                                    onerror="
+                                        const contenu =
+                                            this.closest(
+                                                '.celebration-contenu'
+                                            );
+
+                                        this.parentElement.remove();
+
+                                        if (contenu) {
+                                            contenu.classList.add(
+                                                'sans-image'
+                                            );
+                                        }
+                                    "
+                                >
+
+                            </div>
+
+                        ` : ""}
+
+                        <div class="celebration-texte">
+
+                            <h3>
+                                ${celebration.titre || ""}
+                            </h3>
+
+                            <p>
+                                ${celebration.description || ""}
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            ` : ""}
+
 
             <article class="accueil-carte">
 
-
                 <div class="accueil-carte-titre">
-
                     💬 Le dicton du jour
-
                 </div>
 
-
                 <blockquote>
-
                     ${dicton}
-
                 </blockquote>
-
 
             </article>
 
-
         </section>
-
     `;
 
-
     demarrerHorloge();
-
 }
 
 
@@ -494,48 +444,29 @@ function demarrerHorloge() {
             "heure-du-jour"
         );
 
-
     if (!element) {
-
         return;
-
     }
-
 
     function actualiserHeure() {
 
         element.textContent =
-
             new Intl.DateTimeFormat(
-
                 navigator.language,
-
                 {
-
                     hour: "2-digit",
-
                     minute: "2-digit",
-
                     second: "2-digit"
-
                 }
-
             ).format(
                 new Date()
             );
-
     }
-
 
     actualiserHeure();
 
-
     setInterval(
-
         actualiserHeure,
-
         1000
-
     );
-
 }
