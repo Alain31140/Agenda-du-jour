@@ -1635,3 +1635,929 @@ body.carte-ouverte {
     }
 
 }
+
+/* ==================================================
+   PAGE CULTURE
+================================================== */
+
+.page-culture {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f2ead8,
+            #e7dcc5
+        );
+}
+
+
+/* ==================================================
+   EN-TÊTE DE LA PAGE
+================================================== */
+
+.page-rubrique-header {
+    position: relative;
+
+    padding:
+        34px
+        20px
+        30px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9c5b31,
+            #d09055
+        );
+
+    box-shadow:
+        0 5px 18px
+        rgba(
+            60,
+            38,
+            20,
+            0.20
+        );
+}
+
+.page-rubrique-header h1 {
+    margin:
+        8px
+        0
+        10px;
+
+    font-size:
+        clamp(
+            2rem,
+            6vw,
+            3.2rem
+        );
+
+    line-height: 1.1;
+}
+
+.page-rubrique-header p {
+    margin: 0;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.90
+        );
+
+    font-size:
+        clamp(
+            1rem,
+            3vw,
+            1.2rem
+        );
+}
+
+
+/* ==================================================
+   BOUTON RETOUR
+================================================== */
+
+.bouton-retour-accueil {
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding:
+        9px
+        14px;
+
+    color: white;
+
+    font-weight: 750;
+
+    text-decoration: none;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.16
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.25
+        );
+
+    border-radius: 999px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.bouton-retour-accueil:hover {
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.25
+        );
+
+    transform:
+        translateX(-2px);
+}
+
+
+/* ==================================================
+   CONTENU DE LA PAGE
+================================================== */
+
+.culture-page-contenu {
+    width:
+        min(
+            calc(100% - 28px),
+            1050px
+        );
+
+    margin:
+        34px
+        auto
+        50px;
+}
+
+
+/* ==================================================
+   CAHIER À CARREAUX
+================================================== */
+
+.culture-cahier {
+    position: relative;
+
+    padding:
+        34px
+        34px
+        38px
+        72px;
+
+    background-color:
+        #fffdf6;
+
+    background-image:
+        linear-gradient(
+            rgba(
+                80,
+                130,
+                180,
+                0.12
+            )
+            1px,
+            transparent
+            1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(
+                80,
+                130,
+                180,
+                0.12
+            )
+            1px,
+            transparent
+            1px
+        );
+
+    background-size:
+        28px
+        28px;
+
+    border:
+        1px solid
+        rgba(
+            90,
+            110,
+            130,
+            0.18
+        );
+
+    border-radius:
+        22px;
+
+    box-shadow:
+        0 12px 34px
+        rgba(
+            70,
+            54,
+            35,
+            0.16
+        );
+}
+
+.culture-cahier::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 48px;
+
+    width: 2px;
+
+    background:
+        rgba(
+            200,
+            70,
+            70,
+            0.30
+        );
+}
+
+
+/* ==================================================
+   CATÉGORIES
+================================================== */
+
+.culture-categorie + .culture-categorie {
+    margin-top: 34px;
+}
+
+.culture-categorie-titre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin:
+        0
+        0
+        14px;
+
+    padding-bottom:
+        10px;
+
+    color:
+        #5d3b25;
+
+    font-size:
+        clamp(
+            1.35rem,
+            4vw,
+            1.8rem
+        );
+
+    border-bottom:
+        2px solid
+        rgba(
+            156,
+            91,
+            49,
+            0.20
+        );
+}
+
+.culture-categorie-compteur {
+    display: inline-grid;
+    place-items: center;
+
+    min-width: 30px;
+    height: 30px;
+
+    margin-left: auto;
+
+    padding:
+        0
+        9px;
+
+    color: white;
+
+    font-size: 0.9rem;
+
+    background:
+        #a86438;
+
+    border-radius:
+        999px;
+}
+
+
+/* ==================================================
+   LISTE DES ÉLÉMENTS
+================================================== */
+
+.culture-liste {
+    display: grid;
+    gap: 12px;
+}
+
+.culture-element {
+    position: relative;
+
+    overflow: visible;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.78
+        );
+
+    border:
+        1px solid
+        rgba(
+            120,
+            98,
+            72,
+            0.16
+        );
+
+    border-radius:
+        15px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(
+            72,
+            58,
+            40,
+            0.08
+        );
+}
+
+
+/* ==================================================
+   BOUTON D'OUVERTURE
+================================================== */
+
+.culture-element-bouton {
+    display: grid;
+
+    grid-template-columns:
+        auto
+        minmax(0, 1fr)
+        auto;
+
+    gap: 12px;
+
+    align-items: center;
+
+    width: 100%;
+
+    padding:
+        17px
+        18px;
+
+    color:
+        #3f3328;
+
+    font: inherit;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    background: transparent;
+
+    border: 0;
+
+    border-radius:
+        15px;
+}
+
+.culture-element-bouton:hover {
+    background:
+        rgba(
+            231,
+            209,
+            180,
+            0.35
+        );
+}
+
+.culture-element-fleche {
+    color:
+        #a86438;
+
+    font-size:
+        0.95rem;
+}
+
+.culture-element-titre {
+    min-width: 0;
+
+    overflow: hidden;
+
+    font-size:
+        1.06rem;
+
+    font-weight: 750;
+
+    text-overflow:
+        ellipsis;
+
+    white-space:
+        nowrap;
+}
+
+.culture-element-annee {
+    color:
+        #7b6859;
+
+    font-size:
+        0.94rem;
+}
+
+
+/* ==================================================
+   DÉTAIL DÉPLIÉ
+================================================== */
+
+.culture-detail {
+    position: relative;
+
+    padding:
+        0
+        18px
+        22px;
+
+    animation:
+        culture-ouverture
+        0.28s
+        ease;
+}
+
+@keyframes culture-ouverture {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* ==================================================
+   BOUTON FERMER STICKY
+================================================== */
+
+.culture-barre-fermeture {
+    position: sticky;
+
+    top: 10px;
+
+    z-index: 20;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin:
+        0
+        0
+        12px;
+
+    pointer-events: none;
+}
+
+.bouton-fermer-culture {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding:
+        9px
+        14px;
+
+    color: white;
+
+    font: inherit;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    background:
+        rgba(
+            62,
+            49,
+            39,
+            0.92
+        );
+
+    border: 0;
+
+    border-radius:
+        999px;
+
+    box-shadow:
+        0 6px 16px
+        rgba(
+            40,
+            30,
+            24,
+            0.24
+        );
+
+    pointer-events: auto;
+}
+
+
+/* ==================================================
+   CONTENU DE LA FICHE
+================================================== */
+
+.culture-detail-contenu {
+    display: grid;
+
+    grid-template-columns:
+        minmax(
+            180px,
+            280px
+        )
+        minmax(
+            0,
+            1fr
+        );
+
+    gap: 28px;
+
+    align-items: start;
+
+    padding:
+        24px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.88
+        );
+
+    border:
+        1px solid
+        rgba(
+            120,
+            98,
+            72,
+            0.16
+        );
+
+    border-radius:
+        16px;
+}
+
+
+/* ==================================================
+   IMAGE
+================================================== */
+
+.culture-visuel {
+    min-height: 220px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #eadbc6,
+            #f8f0e4
+        );
+
+    border-radius:
+        14px;
+}
+
+.culture-visuel img {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 220px;
+
+    max-height: 340px;
+
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   PLACEHOLDER
+================================================== */
+
+.culture-placeholder {
+    display: grid;
+
+    place-items: center;
+
+    align-content: center;
+
+    min-height: 220px;
+
+    padding: 20px;
+
+    color:
+        #6e5038;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #eadbc6,
+            #f8f0e4
+        );
+}
+
+.culture-placeholder-icone {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 4rem;
+
+    line-height: 1;
+}
+
+
+/* ==================================================
+   TEXTE DE LA FICHE
+================================================== */
+
+.culture-detail-texte h3 {
+    margin:
+        0
+        0
+        10px;
+
+    color:
+        #4b3322;
+
+    font-size:
+        clamp(
+            1.45rem,
+            4vw,
+            2rem
+        );
+}
+
+.culture-createur {
+    margin:
+        0
+        0
+        6px;
+
+    color:
+        #6e5038;
+
+    font-size:
+        1.05rem;
+
+    font-weight: 700;
+}
+
+.culture-annee {
+    margin:
+        0
+        0
+        18px;
+
+    color:
+        #8a7461;
+
+    font-style: italic;
+}
+
+.culture-resume {
+    margin:
+        0
+        0
+        22px;
+
+    color:
+        #4f443b;
+
+    font-size:
+        1.04rem;
+
+    line-height:
+        1.7;
+}
+
+.culture-lien-externe {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        10px
+        17px;
+
+    color: white;
+
+    font-weight: 750;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9c5b31,
+            #c97b43
+        );
+
+    border-radius:
+        999px;
+
+    box-shadow:
+        0 5px 14px
+        rgba(
+            91,
+            53,
+            31,
+            0.20
+        );
+}
+
+.culture-lien-externe:hover {
+    transform:
+        translateY(-1px);
+}
+
+
+/* ==================================================
+   ÉTATS VIDE / CHARGEMENT
+================================================== */
+
+.culture-chargement,
+.culture-vide {
+    padding:
+        50px
+        25px;
+
+    text-align: center;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.88
+        );
+
+    border-radius:
+        20px;
+
+    box-shadow:
+        var(--ombre-legere);
+}
+
+.culture-vide > div {
+    margin-bottom:
+        12px;
+
+    font-size:
+        3rem;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 760px) {
+
+    .page-rubrique-header {
+        padding:
+            76px
+            16px
+            26px;
+    }
+
+    .bouton-retour-accueil {
+        top: 18px;
+        left: 14px;
+    }
+
+    .culture-page-contenu {
+        width:
+            calc(
+                100% - 18px
+            );
+
+        margin-top:
+            18px;
+    }
+
+    .culture-cahier {
+        padding:
+            24px
+            14px
+            28px
+            38px;
+
+        background-size:
+            24px
+            24px;
+
+        border-radius:
+            16px;
+    }
+
+    .culture-cahier::before {
+        left: 25px;
+    }
+
+    .culture-detail-contenu {
+        grid-template-columns:
+            1fr;
+
+        gap: 18px;
+
+        padding:
+            18px;
+    }
+
+    .culture-visuel {
+        min-height: 200px;
+    }
+
+    .culture-visuel img {
+        min-height: 200px;
+        max-height: 360px;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .culture-element-bouton {
+        grid-template-columns:
+            auto
+            minmax(
+                0,
+                1fr
+            );
+
+        padding:
+            15px
+            14px;
+    }
+
+    .culture-element-annee {
+        grid-column:
+            2;
+
+        justify-self:
+            start;
+    }
+
+    .culture-element-titre {
+        white-space: normal;
+    }
+
+    .bouton-fermer-culture {
+        width: 44px;
+        height: 44px;
+
+        justify-content: center;
+
+        padding: 0;
+
+        border-radius: 50%;
+    }
+
+    .bouton-fermer-culture span {
+        display: none;
+    }
+
+}
