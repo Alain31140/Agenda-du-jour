@@ -593,6 +593,32 @@ async function afficherAccueil() {
 
     demarrerHorloge();
 
+    if (
+    window.location.hash ===
+    "#menu-principal"
+) {
+
+    setTimeout(
+        () => {
+
+            document
+                .getElementById(
+                    "menu-principal"
+                )
+                ?.scrollIntoView({
+
+                    behavior: "smooth",
+
+                    block: "start"
+
+                });
+
+        },
+        100
+    );
+
+}
+
     demarrerCompteReboursSoleil();
 
     initialiserLocalisation();
