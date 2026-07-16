@@ -3765,33 +3765,18 @@ body.carte-ouverte {
 
 .entete-navigation {
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 12px;
 
-    padding:
-        8px
-        14px;
+    width: min(
+        calc(100% - 28px),
+        1050px
+    );
 
-    background:
-        rgba(
-            0,
-            0,
-            0,
-            0.16
-        );
+    margin: 0 auto;
 
-    border-bottom:
-        1px solid
-        rgba(
-            255,
-            255,
-            255,
-            0.14
-        );
+    padding: 8px 0;
 }
 
 
@@ -3896,10 +3881,15 @@ body.carte-ouverte {
 @media (max-width: 520px) {
 
     .entete-navigation {
+        width:
+            calc(
+                100% - 16px
+            );
+
         padding:
             6px
-            8px;
-    }
+            0;
+}
 
 
     .entete-lien {
