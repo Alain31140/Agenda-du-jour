@@ -2561,3 +2561,1160 @@ body.carte-ouverte {
     }
 
 }
+
+/* ==================================================
+   PAGE PERSONNALITÉS
+================================================== */
+
+.personnalites-entete {
+    position: relative;
+
+    padding:
+        78px
+        20px
+        34px;
+
+    color: #fff;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #47372d,
+            #886d56
+        );
+
+    box-shadow:
+        0 5px 18px
+        rgba(
+            45,
+            32,
+            24,
+            0.25
+        );
+}
+
+
+.personnalites-entete h1 {
+    margin:
+        0
+        0
+        10px;
+
+    font-size:
+        clamp(
+            2rem,
+            6vw,
+            3.2rem
+        );
+
+    line-height: 1.1;
+}
+
+
+.personnalites-entete .page-date {
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.88
+        );
+
+    font-size:
+        clamp(
+            1rem,
+            3vw,
+            1.2rem
+        );
+}
+
+
+/* ==================================================
+   BOUTON RETOUR
+================================================== */
+
+.personnalites-entete .btn-retour {
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        9px
+        15px;
+
+    color: #fff;
+
+    font-weight: 750;
+
+    text-decoration: none;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.15
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.26
+        );
+
+    border-radius: 999px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.personnalites-entete .btn-retour:hover {
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.25
+        );
+
+    transform:
+        translateX(-2px);
+}
+
+
+/* ==================================================
+   CONTENU PRINCIPAL
+================================================== */
+
+#personnalites-contenu {
+    width:
+        min(
+            calc(100% - 28px),
+            1050px
+        );
+
+    margin:
+        34px
+        auto
+        55px;
+}
+
+
+/* ==================================================
+   DOSSIER BIOGRAPHIQUE
+================================================== */
+
+.personnalites-dossier {
+    position: relative;
+
+    padding:
+        36px;
+
+    color: #332b25;
+
+    background-color: #fbf5e9;
+
+    background-image:
+        radial-gradient(
+            rgba(
+                89,
+                67,
+                48,
+                0.07
+            )
+            1px,
+            transparent
+            1px
+        );
+
+    background-size:
+        9px
+        9px;
+
+    border:
+        1px solid
+        rgba(
+            95,
+            72,
+            54,
+            0.18
+        );
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 34px
+        rgba(
+            57,
+            42,
+            30,
+            0.17
+        );
+}
+
+
+/*
+   Petite languette de dossier
+*/
+
+.personnalites-dossier::before {
+    content: "DOSSIER BIOGRAPHIQUE";
+
+    position: absolute;
+
+    top: -18px;
+    left: 30px;
+
+    padding:
+        9px
+        18px;
+
+    color: #fff;
+
+    font-size: 0.78rem;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+
+    background: #715742;
+
+    border-radius:
+        10px
+        10px
+        0
+        0;
+}
+
+
+/* ==================================================
+   INTRODUCTION
+================================================== */
+
+.personnalites-introduction {
+    margin-bottom: 24px;
+
+    color: #665343;
+
+    text-align: center;
+
+    font-size: 1.05rem;
+}
+
+
+.personnalites-introduction strong {
+    color: #433328;
+
+    font-size: 1.35rem;
+}
+
+
+/* ==================================================
+   LISTE DES PERSONNALITÉS
+================================================== */
+
+.personnalites-liste {
+    display: grid;
+
+    gap: 15px;
+}
+
+
+.personnalite-element {
+    position: relative;
+
+    overflow: visible;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.76
+        );
+
+    border:
+        1px solid
+        rgba(
+            101,
+            76,
+            56,
+            0.16
+        );
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(
+            65,
+            47,
+            34,
+            0.08
+        );
+}
+
+
+/* ==================================================
+   LIGNE CLIQUABLE
+================================================== */
+
+.personnalite-element-bouton {
+    display: grid;
+
+    grid-template-columns:
+        auto
+        minmax(0, 1fr)
+        auto
+        auto;
+
+    gap: 14px;
+
+    align-items: center;
+
+    width: 100%;
+
+    padding:
+        17px
+        19px;
+
+    color: #392f28;
+
+    font: inherit;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    background: transparent;
+
+    border: 0;
+    border-radius: 16px;
+
+    transition:
+        background 0.2s ease;
+}
+
+
+.personnalite-element-bouton:hover {
+    background:
+        rgba(
+            218,
+            196,
+            164,
+            0.28
+        );
+}
+
+
+.personnalite-element-fleche {
+    color: #846145;
+
+    font-size: 0.95rem;
+}
+
+
+.personnalite-element-identite {
+    display: grid;
+
+    gap: 4px;
+
+    min-width: 0;
+}
+
+
+.personnalite-element-identite strong {
+    overflow: hidden;
+
+    font-size: 1.08rem;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.personnalite-element-identite small {
+    overflow: hidden;
+
+    color: #766558;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.personnalite-element-evenement {
+    padding:
+        6px
+        11px;
+
+    color: #624b39;
+
+    font-size: 0.88rem;
+    font-weight: 750;
+
+    white-space: nowrap;
+
+    background:
+        rgba(
+            217,
+            195,
+            163,
+            0.42
+        );
+
+    border-radius: 999px;
+}
+
+
+.personnalite-element-annees {
+    color: #75665a;
+
+    font-size: 0.92rem;
+
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+   DÉTAIL DÉPLIÉ
+================================================== */
+
+.personnalite-detail {
+    position: relative;
+
+    padding:
+        0
+        18px
+        22px;
+
+    animation:
+        personnalite-ouverture
+        0.28s
+        ease;
+}
+
+
+@keyframes personnalite-ouverture {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* ==================================================
+   BOUTON FERMER STICKY
+================================================== */
+
+.personnalite-barre-fermeture {
+    position: sticky;
+
+    top: 10px;
+
+    z-index: 30;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-bottom: 12px;
+
+    pointer-events: none;
+}
+
+
+.bouton-fermer-personnalite {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding:
+        9px
+        14px;
+
+    color: #fff;
+
+    font: inherit;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    background:
+        rgba(
+            57,
+            45,
+            37,
+            0.93
+        );
+
+    border: 0;
+    border-radius: 999px;
+
+    box-shadow:
+        0 6px 16px
+        rgba(
+            35,
+            26,
+            21,
+            0.25
+        );
+
+    pointer-events: auto;
+}
+
+
+/* ==================================================
+   GRANDE FICHE
+================================================== */
+
+.personnalite-fiche {
+    display: grid;
+
+    grid-template-columns:
+        minmax(
+            190px,
+            290px
+        )
+        minmax(
+            0,
+            1fr
+        );
+
+    gap: 30px;
+
+    align-items: start;
+
+    padding: 26px;
+
+    background:
+        rgba(
+            255,
+            253,
+            247,
+            0.94
+        );
+
+    border:
+        1px solid
+        rgba(
+            112,
+            84,
+            61,
+            0.17
+        );
+
+    border-radius: 17px;
+
+    box-shadow:
+        inset
+        0
+        0
+        30px
+        rgba(
+            122,
+            90,
+            63,
+            0.04
+        );
+}
+
+
+/* ==================================================
+   PORTRAIT
+================================================== */
+
+.personnalite-portrait {
+    position: relative;
+
+    min-height: 260px;
+
+    padding: 10px;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border:
+        1px solid
+        rgba(
+            88,
+            67,
+            51,
+            0.17
+        );
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            53,
+            39,
+            29,
+            0.18
+        );
+
+    transform:
+        rotate(-1deg);
+}
+
+
+.personnalite-portrait::before {
+    content: "";
+
+    position: absolute;
+
+    top: -7px;
+    left: 50%;
+
+    z-index: 2;
+
+    width: 68px;
+    height: 20px;
+
+    background:
+        rgba(
+            214,
+            194,
+            151,
+            0.72
+        );
+
+    box-shadow:
+        0 2px 4px
+        rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
+
+    transform:
+        translateX(-50%)
+        rotate(1deg);
+}
+
+
+.personnalite-portrait img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 240px;
+    max-height: 390px;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+}
+
+
+/* ==================================================
+   PLACEHOLDER PORTRAIT
+================================================== */
+
+.personnalite-placeholder {
+    display: grid;
+
+    place-items: center;
+
+    align-content: center;
+
+    min-height: 240px;
+
+    padding: 24px;
+
+    color: #725f50;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #e7d9c5,
+            #f8f1e7
+        );
+
+    border-radius: 9px;
+}
+
+
+.personnalite-placeholder-icone {
+    margin-bottom: 12px;
+
+    font-size: 5rem;
+
+    line-height: 1;
+}
+
+
+/* ==================================================
+   CONTENU BIOGRAPHIQUE
+================================================== */
+
+.personnalite-contenu {
+    min-width: 0;
+}
+
+
+.personnalite-badge-evenement {
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+
+    padding:
+        7px
+        13px;
+
+    color: #624b39;
+
+    font-size: 0.9rem;
+    font-weight: 800;
+
+    background: #eadbc5;
+
+    border-radius: 999px;
+}
+
+
+.personnalite-contenu h2 {
+    margin:
+        0
+        0
+        8px;
+
+    color: #3f3026;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            1.8rem,
+            5vw,
+            2.7rem
+        );
+
+    line-height: 1.1;
+}
+
+
+.personnalite-activite {
+    margin-bottom: 9px;
+
+    color: #725846;
+
+    font-size: 1.08rem;
+    font-weight: 700;
+}
+
+
+.personnalite-dates {
+    margin-bottom: 20px;
+
+    color: #897363;
+
+    font-size: 1rem;
+    font-style: italic;
+}
+
+
+.personnalite-dates span {
+    margin-left: 5px;
+}
+
+
+/* ==================================================
+   INFORMATIONS COMPLÉMENTAIRES
+================================================== */
+
+.personnalite-informations {
+    display: grid;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    padding:
+        15px
+        17px;
+
+    color: #58483d;
+
+    background:
+        rgba(
+            231,
+            216,
+            194,
+            0.42
+        );
+
+    border-left:
+        4px solid
+        #937054;
+
+    border-radius:
+        0
+        12px
+        12px
+        0;
+}
+
+
+/* ==================================================
+   RÉSUMÉ
+================================================== */
+
+.personnalite-resume {
+    margin:
+        0
+        0
+        22px;
+
+    color: #493e36;
+
+    font-size: 1.04rem;
+
+    line-height: 1.75;
+}
+
+
+/* ==================================================
+   LISTES : FAITS, ŒUVRES, DISTINCTIONS
+================================================== */
+
+.personnalite-section-detail {
+    margin-top: 22px;
+}
+
+
+.personnalite-section-detail h4 {
+    margin:
+        0
+        0
+        10px;
+
+    color: #604936;
+
+    font-size: 1.1rem;
+}
+
+
+.personnalite-section-detail ul {
+    margin:
+        0
+        0
+        0
+        20px;
+
+    padding: 0;
+}
+
+
+.personnalite-section-detail li {
+    margin-bottom: 7px;
+
+    color: #55483e;
+
+    line-height: 1.55;
+}
+
+
+/* ==================================================
+   LIEN EXTERNE
+================================================== */
+
+.personnalite-lien-externe {
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-top: 24px;
+
+    padding:
+        11px
+        18px;
+
+    color: #fff;
+
+    font-weight: 750;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #66503f,
+            #927257
+        );
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 5px 14px
+        rgba(
+            61,
+            44,
+            32,
+            0.21
+        );
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.personnalite-lien-externe:hover {
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(
+            61,
+            44,
+            32,
+            0.25
+        );
+}
+
+
+/* ==================================================
+   AUCUNE DONNÉE / ERREUR
+================================================== */
+
+.personnalites-vide {
+    padding:
+        50px
+        25px;
+
+    color: #44372e;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fbf5e9,
+            #efe2ce
+        );
+
+    border:
+        1px solid
+        rgba(
+            101,
+            76,
+            56,
+            0.16
+        );
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 28px
+        rgba(
+            57,
+            42,
+            30,
+            0.14
+        );
+}
+
+
+.personnalites-vide-icone {
+    margin-bottom: 12px;
+
+    font-size: 4rem;
+}
+
+
+/* ==================================================
+   RESPONSIVE TABLETTE
+================================================== */
+
+@media (max-width: 760px) {
+
+    .personnalites-entete {
+        padding:
+            76px
+            16px
+            28px;
+    }
+
+
+    .personnalites-entete .btn-retour {
+        top: 18px;
+        left: 14px;
+    }
+
+
+    #personnalites-contenu {
+        width:
+            calc(
+                100% - 18px
+            );
+
+        margin-top: 25px;
+    }
+
+
+    .personnalites-dossier {
+        padding:
+            30px
+            16px
+            22px;
+    }
+
+
+    .personnalites-dossier::before {
+        left: 18px;
+    }
+
+
+    .personnalite-fiche {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+
+        padding: 19px;
+    }
+
+
+    .personnalite-portrait {
+        width:
+            min(
+                100%,
+                330px
+            );
+
+        margin:
+            0
+            auto;
+    }
+
+}
+
+
+/* ==================================================
+   RESPONSIVE IPHONE
+================================================== */
+
+@media (max-width: 540px) {
+
+    .personnalite-element-bouton {
+        grid-template-columns:
+            auto
+            minmax(
+                0,
+                1fr
+            );
+
+        gap:
+            9px
+            12px;
+
+        padding:
+            15px
+            14px;
+    }
+
+
+    .personnalite-element-identite strong,
+    .personnalite-element-identite small {
+        white-space: normal;
+    }
+
+
+    .personnalite-element-evenement {
+        grid-column: 2;
+
+        justify-self: start;
+    }
+
+
+    .personnalite-element-annees {
+        grid-column: 2;
+
+        justify-self: start;
+    }
+
+
+    .personnalite-detail {
+        padding:
+            0
+            10px
+            16px;
+    }
+
+
+    .bouton-fermer-personnalite {
+        width: 44px;
+        height: 44px;
+
+        justify-content: center;
+
+        padding: 0;
+
+        border-radius: 50%;
+    }
+
+
+    .bouton-fermer-personnalite span {
+        display: none;
+    }
+
+
+    .personnalite-fiche {
+        padding: 15px;
+    }
+
+
+    .personnalite-portrait {
+        min-height: 220px;
+    }
+
+
+    .personnalite-portrait img,
+    .personnalite-placeholder {
+        min-height: 220px;
+    }
+
+
+    .personnalite-contenu h2 {
+        font-size: 1.8rem;
+    }
+
+}
