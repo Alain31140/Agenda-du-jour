@@ -10,8 +10,7 @@
 
 // Dépôt contenant les fichiers JSON et les images
 
-const DATA_URL =
-    "https://raw.githubusercontent.com/Alain31140/repo/main/";
+const DATA_URL = "data/";
 
 
 /* ==================================================

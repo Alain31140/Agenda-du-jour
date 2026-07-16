@@ -303,13 +303,13 @@ async function afficherAccueil() {
         ];
 
     const imageCelebration =
-        celebration?.image
-            ? (
-                DATA_URL +
-                "images/celebrations-mensuelles/" +
-                celebration.image
-            )
-            : "";
+    celebration?.image
+        ? (
+            "images/celebrations-mensuelles/"
+            +
+            celebration.image
+        )
+        : "";
 
     const journeeAffichee =
         journee?.label
