@@ -1,0 +1,6227 @@
+{
+  "01-01": [
+    {
+      "title": "Indépendance d'Haïti",
+      "year": 1804,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Ind%C3%A9pendance_d%27Ha%C3%AFti",
+      "image": "",
+      "summary": "Haïti devient la première république noire indépendante."
+    },
+    {
+      "title": "Introduction de l'euro scriptural",
+      "year": 1999,
+      "type": "économie",
+      "wiki": "https://fr.wikipedia.org/wiki/Euro",
+      "image": "",
+      "summary": "Début de l’euro dans les transactions bancaires."
+    }
+  ],
+
+  "02-01": [
+    {
+      "title": "Découverte de Cérès",
+      "year": 1801,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/C%C3%A9r%C3%A8s_(plan%C3%A8te_naine)",
+      "image": "",
+      "summary": "Premier objet identifié de la ceinture d’astéroïdes."
+    },
+    {
+      "title": "Naissance d’Isaac Asimov",
+      "year": 1920,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Isaac_Asimov",
+      "image": "",
+      "summary": "Auteur majeur de science-fiction."
+    }
+  ],
+
+  "03-01": [
+    {
+      "title": "Naissance de J.R.R. Tolkien",
+      "year": 1892,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/J._R._R._Tolkien",
+      "image": "",
+      "summary": "Auteur du Seigneur des Anneaux."
+    },
+    {
+      "title": "Premier vol contrôlé d’un hélicoptère moderne",
+      "year": 1936,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Focke-Wulf_Fw_61",
+      "image": "",
+      "summary": "Début de l’aviation verticale contrôlée."
+    }
+  ],
+
+  "04-01": [
+    {
+      "title": "Naissance de Louis Braille",
+      "year": 1809,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Louis_Braille",
+      "image": "",
+      "summary": "Inventeur du système d’écriture pour aveugles."
+    },
+    {
+      "title": "Indépendance du Soudan",
+      "year": 1956,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Soudan",
+      "image": "",
+      "summary": "Fin de la domination anglo-égyptienne."
+    }
+  ],
+
+  "05-01": [
+    {
+      "title": "Naissance de Stephen Hawking",
+      "year": 1942,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Stephen_Hawking",
+      "image": "",
+      "summary": "Physicien spécialiste des trous noirs."
+    },
+    {
+      "title": "Invention du moteur diesel (brevet)",
+      "year": 1897,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Moteur_diesel",
+      "image": "",
+      "summary": "Rudolf Diesel présente son moteur."
+    }
+  ],
+
+  "06-01": [
+    {
+      "title": "Naissance de Heinrich Schliemann",
+      "year": 1822,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Heinrich_Schliemann",
+      "image": "",
+      "summary": "Découvreur de la ville de Troie."
+    },
+    {
+      "title": "Commémoration de Jeanne d’Arc",
+      "year": 1431,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Jeanne_d%27Arc",
+      "image": "",
+      "summary": "Figure historique française."
+    }
+  ],
+
+  "07-01": [
+    {
+      "title": "Naissance de Nikola Tesla",
+      "year": 1856,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Nikola_Tesla",
+      "image": "",
+      "summary": "Inventeur dans le domaine de l’électricité."
+    },
+    {
+      "title": "Premières transmissions radio longue distance",
+      "year": 1903,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radio",
+      "image": "",
+      "summary": "Début des communications sans fil."
+    }
+  ],
+
+  "08-01": [
+    {
+      "title": "Naissance d’Elvis Presley",
+      "year": 1935,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Elvis_Presley",
+      "image": "",
+      "summary": "Icône du rock’n’roll."
+    },
+    {
+      "title": "Création de l’UNESCO",
+      "year": 1946,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/UNESCO",
+      "image": "",
+      "summary": "Organisation internationale pour l’éducation et la culture."
+    }
+  ],
+
+  "09-01": [
+    {
+      "title": "Naissance de Simone de Beauvoir",
+      "year": 1908,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Simone_de_Beauvoir",
+      "image": "",
+      "summary": "Philosophe féministe française."
+    },
+    {
+      "title": "Premier vol du Boeing 707",
+      "year": 1957,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Boeing_707",
+      "image": "",
+      "summary": "Début de l’aviation commerciale moderne."
+    }
+  ],
+
+  "10-01": [
+    {
+      "title": "Premier disque vinyle LP",
+      "year": 1948,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Disque_vinyle",
+      "image": "",
+      "summary": "Introduction du disque longue durée."
+    },
+    {
+      "title": "Naissance de Rod Stewart",
+      "year": 1945,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Rod_Stewart",
+      "image": "",
+      "summary": "Chanteur britannique."
+    }
+  ],
+
+  "11-01": [
+    {
+      "title": "Début du mouvement pour l’indépendance du Bangladesh",
+      "year": 1971,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Bangladesh",
+      "image": "",
+      "summary": "Début du conflit de libération."
+    },
+    {
+      "title": "Naissance de Naomi Judd",
+      "year": 1946,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Naomi_Judd",
+      "image": "",
+      "summary": "Chanteuse country américaine."
+    }
+  ],
+
+  "12-01": [
+    {
+      "title": "Premier vol du Concorde",
+      "year": 1969,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Concorde",
+      "image": "",
+      "summary": "Avion supersonique franco-britannique."
+    },
+    {
+      "title": "Naissance de Howard Stern",
+      "year": 1954,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Howard_Stern",
+      "image": "",
+      "summary": "Animateur radio américain."
+    }
+  ],
+
+  "13-01": [
+    {
+      "title": "Naissance d’Orlando Bloom",
+      "year": 1977,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Orlando_Bloom",
+      "image": "",
+      "summary": "Acteur du Seigneur des Anneaux."
+    },
+    {
+      "title": "Découverte de la pénicilline (usage médical)",
+      "year": 1942,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/P%C3%A9nicilline",
+      "image": "",
+      "summary": "Début des antibiotiques modernes."
+    }
+  ],
+
+  "14-01": [
+    {
+      "title": "Naissance d’Albert Schweitzer",
+      "year": 1875,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Albert_Schweitzer",
+      "image": "",
+      "summary": "Médecin et philosophe humaniste."
+    },
+    {
+      "title": "Annonce de l’IBM PC",
+      "year": 1981,
+      "type": "technologie",
+      "wiki": "https://fr.wikipedia.org/wiki/IBM_PC",
+      "image": "",
+      "summary": "Début de l’informatique personnelle."
+    }
+  ],
+
+  "15-01": [
+    {
+      "title": "Naissance de Martin Luther King Jr.",
+      "year": 1929,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Martin_Luther_King",
+      "image": "",
+      "summary": "Leader des droits civiques."
+    },
+    {
+      "title": "Lancement de Wikipédia (prototype)",
+      "year": 2001,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia",
+      "image": "",
+      "summary": "Début de l’encyclopédie collaborative."
+    }
+  ],
+
+  "16-01": [
+    {
+      "title": "Naissance de Franz Schubert",
+      "year": 1797,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Franz_Schubert",
+      "image": "",
+      "summary": "Compositeur romantique."
+    },
+    {
+      "title": "Explosion de la première bombe atomique soviétique",
+      "year": 1949,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Programme_nucl%C3%A9aire_sovi%C3%A9tique",
+      "summary": "Début de la guerre froide nucléaire."
+    }
+  ],
+
+  "17-01": [
+    {
+      "title": "Naissance de Benjamin Franklin",
+      "year": 1706,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Benjamin_Franklin",
+      "image": "",
+      "summary": "Père fondateur des États-Unis."
+    },
+    {
+      "title": "Premier usage militaire du radar",
+      "year": 1935,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Technologie clé de défense."
+    }
+  ],
+
+  "18-01": [
+    {
+      "title": "Naissance de Cary Grant",
+      "year": 1904,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Cary_Grant",
+      "summary": "Acteur hollywoodien."
+    },
+    {
+      "title": "Développement de la photographie couleur",
+      "year": 1907,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Photographie_couleur",
+      "summary": "Avancée majeure en image."
+    }
+  ],
+
+  "19-01": [
+    {
+      "title": "Naissance d’Edgar Allan Poe",
+      "year": 1809,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Edgar_Allan_Poe",
+      "summary": "Écrivain américain."
+    },
+    {
+      "title": "Lancement du satellite Landsat 1",
+      "year": 1972,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Landsat",
+      "summary": "Observation de la Terre."
+    }
+  ],
+
+  "20-01": [
+    {
+      "title": "Naissance de Buzz Aldrin",
+      "year": 1930,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Buzz_Aldrin",
+      "summary": "Astronaute Apollo 11."
+    },
+    {
+      "title": "Investiture de Donald Trump",
+      "year": 2017,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Donald_Trump",
+      "summary": "45e président des USA."
+    }
+  ],
+
+  "21-01": [
+    {
+      "title": "Naissance de Plácido Domingo",
+      "year": 1941,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Pl%C3%A1cido_Domingo",
+      "summary": "Chanteur d’opéra."
+    },
+    {
+      "title": "Début du cinéma sonore expérimental",
+      "year": 1927,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Cin%C3%A9ma_sonore",
+      "summary": "Transition du muet au sonore."
+    }
+  ],
+
+  "22-01": [
+    {
+      "title": "Naissance de Francis Bacon",
+      "year": 1561,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Francis_Bacon",
+      "summary": "Philosophe anglais."
+    },
+    {
+      "title": "Première émission TV couleur en Europe",
+      "year": 1967,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Télévision moderne."
+    }
+  ],
+
+  "23-01": [
+    {
+      "title": "Naissance de John Hancock",
+      "year": 1737,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/John_Hancock",
+      "summary": "Indépendance américaine."
+    },
+    {
+      "title": "Découverte de la pénicilline (publication)",
+      "year": 1929,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Alexander_Fleming",
+      "summary": "Révolution médicale."
+    }
+  ],
+
+  "24-01": [
+    {
+      "title": "Naissance d’Edith Wharton",
+      "year": 1862,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Edith_Wharton",
+      "summary": "Écrivaine américaine."
+    },
+    {
+      "title": "Annonce de Windows 1.0",
+      "year": 1984,
+      "type": "technologie",
+      "wiki": "https://fr.wikipedia.org/wiki/Microsoft_Windows",
+      "summary": "Début interface graphique PC."
+    }
+  ],
+
+  "25-01": [
+    {
+      "title": "Naissance de Virginia Woolf",
+      "year": 1882,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Virginia_Woolf",
+      "summary": "Écrivaine moderniste."
+    },
+    {
+      "title": "Premier câble télégraphique transatlantique",
+      "year": 1866,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9graphe",
+      "summary": "Communication mondiale."
+    }
+  ],
+
+  "26-01": [
+    {
+      "title": "Naissance de José Martí",
+      "year": 1853,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Jos%C3%A9_Mart%C3%AD",
+      "summary": "Indépendance cubaine."
+    },
+    {
+      "title": "Annonce du Boeing 747",
+      "year": 1969,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Boeing_747",
+      "summary": "Aviation long-courrier."
+    }
+  ],
+
+  "27-01": [
+    {
+      "title": "Naissance de Lewis Carroll",
+      "year": 1832,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Lewis_Carroll",
+      "summary": "Alice au pays des merveilles."
+    },
+    {
+      "title": "Libération d’Auschwitz",
+      "year": 1945,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Auschwitz",
+      "summary": "Fin de la Shoah dans ce camp."
+    }
+  ],
+
+  "28-01": [
+    {
+      "title": "Naissance de Jackson Pollock",
+      "year": 1912,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jackson_Pollock",
+      "summary": "Art abstrait américain."
+    },
+    {
+      "title": "Explosion de la navette Challenger",
+      "year": 1986,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Accident_de_la_navette_Challenger",
+      "summary": "Catastrophe spatiale."
+    }
+  ],
+
+  "29-01": [
+    {
+      "title": "Naissance d’Oprah Winfrey",
+      "year": 1954,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Oprah_Winfrey",
+      "summary": "Média et télévision."
+    },
+    {
+      "title": "Première greffe de cœur artificiel",
+      "year": 1982,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/C%C5%93ur_artificiel",
+      "summary": "Médecine moderne."
+    }
+  ],
+
+  "30-01": [
+    {
+      "title": "Naissance de Franklin D. Roosevelt",
+      "year": 1882,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Franklin_D._Roosevelt",
+      "summary": "Président des USA."
+    },
+    {
+      "title": "Début de la télévision BBC",
+      "year": 1936,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/BBC",
+      "summary": "Télévision publique."
+    }
+  ],
+
+  "31-01": [
+    {
+      "title": "Naissance de Franz Schubert",
+      "year": 1797,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Franz_Schubert",
+      "summary": "Compositeur romantique."
+    },
+    {
+      "title": "Lancement d’Explorer 1",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Explorer_1",
+      "summary": "Premier satellite américain."
+    }
+  ],
+"01-02": [
+    {
+      "title": "Naissance de Clark Gable",
+      "year": 1901,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Clark_Gable",
+      "summary": "Acteur emblématique du cinéma hollywoodien."
+    },
+    {
+      "title": "Développement du modèle nucléaire de Rutherford",
+      "year": 1911,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Ernest_Rutherford",
+      "summary": "Compréhension moderne de la structure de l’atome."
+    }
+  ],
+
+  "02-02": [
+    {
+      "title": "Fin de la bataille de Stalingrad",
+      "year": 1943,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Bataille_de_Stalingrad",
+      "summary": "Tournant majeur de la Seconde Guerre mondiale."
+    },
+    {
+      "title": "Naissance de Shakira",
+      "year": 1977,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Shakira",
+      "summary": "Chanteuse colombienne internationale."
+    }
+  ],
+
+  "03-02": [
+    {
+      "title": "Naissance de Norman Rockwell",
+      "year": 1894,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Norman_Rockwell",
+      "summary": "Illustrateur américain célèbre."
+    },
+    {
+      "title": "Premières bases du téléphone moderne",
+      "year": 1876,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9phone",
+      "summary": "Révolution des communications vocales."
+    }
+  ],
+
+  "04-02": [
+    {
+      "title": "Naissance de Rosa Parks",
+      "year": 1913,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Rosa_Parks",
+      "summary": "Figure des droits civiques aux États-Unis."
+    },
+    {
+      "title": "Création initiale de Facebook (Harvard)",
+      "year": 2004,
+      "type": "technologie",
+      "wiki": "https://fr.wikipedia.org/wiki/Facebook",
+      "summary": "Début du réseau social mondial."
+    }
+  ],
+
+  "05-02": [
+    {
+      "title": "Naissance de Cristiano Ronaldo",
+      "year": 1985,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "summary": "Footballeur portugais mondialement connu."
+    },
+    {
+      "title": "Structure de l’ADN confirmée",
+      "year": 1953,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ADN",
+      "summary": "Découverte de la double hélice."
+    }
+  ],
+
+  "06-02": [
+    {
+      "title": "Naissance de Bob Marley",
+      "year": 1945,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Bob_Marley",
+      "summary": "Icône du reggae."
+    },
+    {
+      "title": "Couronnement d’Élisabeth II",
+      "year": 1952,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/%C3%89lisabeth_II",
+      "summary": "Début d’un long règne britannique."
+    }
+  ],
+
+  "07-02": [
+    {
+      "title": "Naissance de Charles Dickens",
+      "year": 1812,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Charles_Dickens",
+      "summary": "Écrivain britannique majeur."
+    },
+    {
+      "title": "Signature du traité de Maastricht",
+      "year": 1992,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Maastricht",
+      "summary": "Fondation de l’Union européenne."
+    }
+  ],
+
+  "08-02": [
+    {
+      "title": "Naissance de Jules Verne",
+      "year": 1828,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jules_Verne",
+      "summary": "Père de la science-fiction."
+    },
+    {
+      "title": "Transition vers le cinéma sonore",
+      "year": 1931,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Cin%C3%A9ma_sonore",
+      "summary": "Début du cinéma moderne."
+    }
+  ],
+
+  "09-02": [
+    {
+      "title": "Naissance de William Henry Harrison",
+      "year": 1773,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/William_Henry_Harrison",
+      "summary": "Président des États-Unis."
+    },
+    {
+      "title": "Premier vol du Boeing 737",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Boeing_737",
+      "summary": "Avion commercial majeur."
+    }
+  ],
+
+  "10-02": [
+    {
+      "title": "Naissance de Bertolt Brecht",
+      "year": 1898,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Bertolt_Brecht",
+      "summary": "Dramaturge allemand."
+    },
+    {
+      "title": "Première greffe de rein réussie",
+      "year": 1954,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Greffe_de_rein",
+      "summary": "Avancée médicale majeure."
+    }
+  ],
+
+  "11-02": [
+    {
+      "title": "Naissance de Thomas Edison",
+      "year": 1847,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Thomas_Edison",
+      "summary": "Inventeur de l’ampoule électrique."
+    },
+    {
+      "title": "Révolution iranienne",
+      "year": 1979,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/R%C3%A9volution_iranienne",
+      "summary": "Changement de régime en Iran."
+    }
+  ],
+
+  "12-02": [
+    {
+      "title": "Naissance de Charles Darwin",
+      "year": 1809,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Charles_Darwin",
+      "summary": "Théorie de l’évolution."
+    },
+    {
+      "title": "Manifeste du parti communiste",
+      "year": 1848,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Manifeste_du_parti_communiste",
+      "summary": "Marx et Engels."
+    }
+  ],
+
+  "13-02": [
+    {
+      "title": "Naissance de Kim Novak",
+      "year": 1933,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Kim_Novak",
+      "summary": "Actrice hollywoodienne."
+    },
+    {
+      "title": "Développement de la radio FM",
+      "year": 1940,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radio_FM",
+      "summary": "Amélioration des transmissions radio."
+    }
+  ],
+
+  "14-02": [
+    {
+      "title": "Naissance de Frederick Douglass",
+      "year": 1818,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Frederick_Douglass",
+      "summary": "Abolitionniste américain."
+    },
+    {
+      "title": "Développement de l’imagerie cardiaque moderne",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Cardiologie",
+      "summary": "Progrès en médecine."
+    }
+  ],
+
+  "15-02": [
+    {
+      "title": "Naissance de Galilée",
+      "year": 1564,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Galil%C3%A9e",
+      "summary": "Père de la science moderne."
+    },
+    {
+      "title": "Retrait soviétique d’Afghanistan",
+      "year": 1989,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Guerre_d%27Afghanistan_(1979-1989)",
+      "summary": "Fin de la guerre soviéto-afghane."
+    }
+  ],
+
+  "16-02": [
+    {
+      "title": "Naissance de Kim Jong-il",
+      "year": 1941,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Kim_Jong-il",
+      "summary": "Dirigeant nord-coréen."
+    },
+    {
+      "title": "ARPANET : premiers échanges internationaux",
+      "year": 1973,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ARPANET",
+      "summary": "Précurseur d’Internet."
+    }
+  ],
+
+  "17-02": [
+    {
+      "title": "Naissance de Michael Jordan",
+      "year": 1963,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Michael_Jordan",
+      "summary": "Légende du basketball."
+    },
+    {
+      "title": "Première démonstration du fax moderne",
+      "year": 1902,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Fax",
+      "summary": "Transmission d’images à distance."
+    }
+  ],
+
+  "18-02": [
+    {
+      "title": "Naissance de John Travolta",
+      "year": 1954,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/John_Travolta",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Découverte de Pluton",
+      "year": 1930,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Pluton_(plan%C3%A8te_naine)",
+      "summary": "Planète naine identifiée par Tombaugh."
+    }
+  ],
+
+  "19-02": [
+    {
+      "title": "Naissance de Nicolas Copernic",
+      "year": 1473,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Nicolas_Copernic",
+      "summary": "Théorie héliocentrique."
+    },
+    {
+      "title": "Grippe espagnole : premières mesures",
+      "year": 1918,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Grippe_espagnole",
+      "summary": "Mesures sanitaires massives."
+    }
+  ],
+
+  "20-02": [
+    {
+      "title": "Naissance de Kurt Cobain",
+      "year": 1967,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Kurt_Cobain",
+      "summary": "Leader de Nirvana."
+    },
+    {
+      "title": "John Glenn en orbite",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/John_Glenn",
+      "summary": "Premier américain en orbite."
+    }
+  ],
+
+  "21-02": [
+    {
+      "title": "Naissance de Anaïs Nin",
+      "year": 1903,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ana%C3%AFs_Nin",
+      "summary": "Écrivaine et diariste."
+    },
+    {
+      "title": "Création de l’UPU",
+      "year": 1874,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Union_postale_universelle",
+      "summary": "Organisation postale mondiale."
+    }
+  ],
+
+  "22-02": [
+    {
+      "title": "Naissance de George Washington",
+      "year": 1732,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/George_Washington",
+      "summary": "Premier président américain."
+    },
+    {
+      "title": "Satellite météo TIROS-1",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/TIROS-1",
+      "summary": "Début de la météo spatiale."
+    }
+  ],
+
+  "23-02": [
+    {
+      "title": "Naissance de William Shakespeare (date symbolique)",
+      "year": 1564,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/William_Shakespeare",
+      "summary": "Dramaturge anglais."
+    },
+    {
+      "title": "Cartographie des fonds océaniques",
+      "year": 1953,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Oc%C3%A9anographie",
+      "summary": "Avancée en géologie marine."
+    }
+  ],
+
+  "24-02": [
+    {
+      "title": "Naissance de Steve Jobs",
+      "year": 1955,
+      "type": "technologie",
+      "wiki": "https://fr.wikipedia.org/wiki/Steve_Jobs",
+      "summary": "Co-fondateur d’Apple."
+    },
+    {
+      "title": "Invention de la pile électrique",
+      "year": 1800,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Pile_%C3%A9lectrique",
+      "summary": "Alessandro Volta."
+    }
+  ],
+
+  "25-02": [
+    {
+      "title": "Naissance de George Harrison",
+      "year": 1943,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/George_Harrison",
+      "summary": "Beatles."
+    },
+    {
+      "title": "Cartographie des vents mondiaux",
+      "year": 1854,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9orologie",
+      "summary": "Début météo moderne."
+    }
+  ],
+
+  "26-02": [
+    {
+      "title": "Naissance de Levi Strauss",
+      "year": 1829,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Levi_Strauss_(entrepreneur)",
+      "summary": "Créateur du jean."
+    },
+    {
+      "title": "Attentat du World Trade Center (1993)",
+      "year": 1993,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Attentat_du_World_Trade_Center_de_1993",
+      "summary": "Explosion à New York."
+    }
+  ],
+
+  "27-02": [
+    {
+      "title": "Naissance de John Steinbeck",
+      "year": 1902,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/John_Steinbeck",
+      "summary": "Écrivain américain."
+    },
+    {
+      "title": "Satellite européen ESRO-2",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Agence_spatiale_europ%C3%A9enne",
+      "summary": "Programme spatial européen."
+    }
+  ],
+
+  "28-02": [
+    {
+      "title": "Naissance de Michel de Montaigne",
+      "year": 1533,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Michel_de_Montaigne",
+      "summary": "Philosophe français."
+    },
+    {
+      "title": "Greffe de moelle osseuse réussie",
+      "year": 1968,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Greffe_de_moelle_osseuse",
+      "summary": "Avancée médicale majeure."
+    }
+  ],
+ "01-03": [
+    {
+      "title": "Naissance de Frédéric Chopin",
+      "year": 1810,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin",
+      "summary": "Compositeur et pianiste polonais."
+    },
+    {
+      "title": "Premiers essais de télévision mécanique",
+      "year": 1928,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision",
+      "summary": "Début des expérimentations TV."
+    }
+  ],
+
+  "02-03": [
+    {
+      "title": "Naissance de Dr. Seuss",
+      "year": 1904,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Dr._Seuss",
+      "summary": "Auteur de littérature jeunesse."
+    },
+    {
+      "title": "Découverte de l’élément radium",
+      "year": 1898,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radium",
+      "summary": "Marie Curie et Pierre Curie."
+    }
+  ],
+
+  "03-03": [
+    {
+      "title": "Naissance de Alexander Graham Bell",
+      "year": 1847,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Alexander_Graham_Bell",
+      "summary": "Inventeur du téléphone."
+    },
+    {
+      "title": "Indépendance de la Bulgarie",
+      "year": 1878,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Bulgarie",
+      "summary": "Fin de la domination ottomane."
+    }
+  ],
+
+  "04-03": [
+    {
+      "title": "Naissance de Antonio Vivaldi",
+      "year": 1678,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Antonio_Vivaldi",
+      "summary": "Compositeur baroque italien."
+    },
+    {
+      "title": "Première transmission télégraphique transcontinentale US",
+      "year": 1872,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9graphe",
+      "summary": "Communication instantanée aux USA."
+    }
+  ],
+
+  "05-03": [
+    {
+      "title": "Naissance de Michel-Ange",
+      "year": 1475,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Michel-Ange",
+      "summary": "Artiste de la Renaissance."
+    },
+    {
+      "title": "Discours de Churchill sur le rideau de fer",
+      "year": 1946,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Winston_Churchill",
+      "summary": "Début de la guerre froide."
+    }
+  ],
+
+  "06-03": [
+    {
+      "title": "Naissance de Michelangelo Antonioni",
+      "year": 1912,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Michelangelo_Antonioni",
+      "summary": "Réalisateur italien."
+    },
+    {
+      "title": "Première greffe de poumon réussie",
+      "year": 1963,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Greffe_de_poumon",
+      "summary": "Avancée médicale majeure."
+    }
+  ],
+
+  "07-03": [
+    {
+      "title": "Naissance de Willard H. Taft",
+      "year": 1857,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/William_Howard_Taft",
+      "summary": "Président des États-Unis."
+    },
+    {
+      "title": "Premier appel vidéo expérimental",
+      "year": 1927,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Vid%C3%A9ophonie",
+      "summary": "Début des communications visuelles."
+    }
+  ],
+
+  "08-03": [
+    {
+      "title": "Naissance de Louise Beavers",
+      "year": 1900,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Louise_Beavers",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Manifestations des droits des femmes (US début)",
+      "year": 1857,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Mouvement_suffragiste",
+      "summary": "Début du mouvement féministe."
+    }
+  ],
+
+  "09-03": [
+    {
+      "title": "Naissance de Yuri Gagarin (commémoration)",
+      "year": 1934,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Yuri_Gagarin",
+      "summary": "Premier homme dans l’espace."
+    },
+    {
+      "title": "Première carte météo mondiale moderne",
+      "year": 1942,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9orologie",
+      "summary": "Développement des prévisions globales."
+    }
+  ],
+
+  "10-03": [
+    {
+      "title": "Naissance de Chuck Norris",
+      "year": 1940,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Chuck_Norris",
+      "summary": "Acteur et artiste martial."
+    },
+    {
+      "title": "Téléphone à cadran rotatif généralisé",
+      "year": 1920,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9phone",
+      "summary": "Standardisation du téléphone."
+    }
+  ],
+
+  "11-03": [
+    {
+      "title": "Tremblement de terre de Fukushima",
+      "year": 2011,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/S%C3%A9isme_de_2011_de_la_c%C3%B4te_pacifique_du_Tohoku",
+      "summary": "Catastrophe majeure au Japon."
+    },
+    {
+      "title": "Naissance de Rupert Murdoch",
+      "year": 1931,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Rupert_Murdoch",
+      "summary": "Magnat des médias."
+    }
+  ],
+
+  "12-03": [
+    {
+      "title": "Naissance de Liza Minnelli",
+      "year": 1946,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Liza_Minnelli",
+      "summary": "Actrice et chanteuse."
+    },
+    {
+      "title": "Création du CERN",
+      "year": 1954,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/CERN",
+      "summary": "Centre européen de recherche nucléaire."
+    }
+  ],
+
+  "13-03": [
+    {
+      "title": "Naissance de Percival Lowell",
+      "year": 1855,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Percival_Lowell",
+      "summary": "Astronome américain."
+    },
+    {
+      "title": "Première ligne de métro automatisée",
+      "year": 1983,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9tro",
+      "summary": "Automatisation des transports."
+    }
+  ],
+
+  "14-03": [
+    {
+      "title": "Naissance d’Albert Einstein",
+      "year": 1879,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Albert_Einstein",
+      "summary": "Théorie de la relativité."
+    },
+    {
+      "title": "Première connexion Internet publique (ARPANET)",
+      "year": 1989,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ARPANET",
+      "summary": "Naissance du web moderne."
+    }
+  ],
+
+  "15-03": [
+    {
+      "title": "Naissance de Andrew Jackson",
+      "year": 1767,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Andrew_Jackson",
+      "summary": "Président des États-Unis."
+    },
+    {
+      "title": "Journée internationale contre la corruption (origine)",
+      "year": 2003,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Corruption",
+      "summary": "Sensibilisation mondiale."
+    }
+  ],
+
+  "16-03": [
+    {
+      "title": "Naissance de Jerry Lewis",
+      "year": 1926,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jerry_Lewis",
+      "summary": "Acteur comique américain."
+    },
+    {
+      "title": "Premiers tests de moteurs à réaction",
+      "year": 1937,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Moteur_%C3%A0_r%C3%A9action",
+      "summary": "Début de l’aviation moderne."
+    }
+  ],
+
+  "17-03": [
+    {
+      "title": "Naissance de Nat King Cole",
+      "year": 1919,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Nat_King_Cole",
+      "summary": "Chanteur de jazz."
+    },
+    {
+      "title": "Premiers essais de radar aérien",
+      "year": 1941,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Technologie militaire."
+    }
+  ],
+
+  "18-03": [
+    {
+      "title": "Naissance de Grover Cleveland",
+      "year": 1837,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Grover_Cleveland",
+      "summary": "Président américain."
+    },
+    {
+      "title": "Premier vol spatial soviétique habité",
+      "year": 1965,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Alexei_Leonov",
+      "summary": "Première sortie extravéhiculaire."
+    }
+  ],
+
+  "19-03": [
+    {
+      "title": "Naissance de David Livingstone",
+      "year": 1813,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/David_Livingstone",
+      "summary": "Explorateur africain."
+    },
+    {
+      "title": "Première émission radio mondiale",
+      "year": 1920,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radio",
+      "summary": "Diffusion internationale."
+    }
+  ],
+
+  "20-03": [
+    {
+      "title": "Naissance de Napoleon Hill",
+      "year": 1883,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Napoleon_Hill",
+      "summary": "Auteur motivationnel."
+    },
+    {
+      "title": "Éclipse solaire historique observée",
+      "year": 1715,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/%C3%89clipse_solaire",
+      "summary": "Observation scientifique majeure."
+    }
+  ],
+
+  "21-03": [
+    {
+      "title": "Naissance de Johann Sebastian Bach",
+      "year": 1685,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Johann_Sebastian_Bach",
+      "summary": "Compositeur baroque."
+    },
+    {
+      "title": "Journée internationale des forêts",
+      "year": 2012,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/For%C3%AAt",
+      "summary": "Protection de l’environnement."
+    }
+  ],
+
+  "22-03": [
+    {
+      "title": "Naissance de Wilhelm Röntgen",
+      "year": 1845,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen",
+      "summary": "Découverte des rayons X."
+    },
+    {
+      "title": "Premiers tests du télégraphe transatlantique",
+      "year": 1858,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9graphe",
+      "summary": "Communication mondiale."
+    }
+  ],
+
+  "23-03": [
+    {
+      "title": "Naissance de Akira Kurosawa",
+      "year": 1910,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Akira_Kurosawa",
+      "summary": "Réalisateur japonais."
+    },
+    {
+      "title": "Première sonde spatiale vers Mars",
+      "year": 1965,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Mars_(plan%C3%A8te)",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "24-03": [
+    {
+      "title": "Naissance de Harry Houdini",
+      "year": 1874,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Harry_Houdini",
+      "summary": "Illusionniste célèbre."
+    },
+    {
+      "title": "Premiers vaccins modernes généralisés",
+      "year": 1950,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Vaccin",
+      "summary": "Révolution médicale."
+    }
+  ],
+
+  "25-03": [
+    {
+      "title": "Naissance de Elton John",
+      "year": 1947,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Elton_John",
+      "summary": "Chanteur britannique."
+    },
+    {
+      "title": "Premiers essais de communication satellitaire",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Début des télécoms spatiales."
+    }
+  ],
+
+  "26-03": [
+    {
+      "title": "Naissance de Leonard Nimoy",
+      "year": 1931,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Leonard_Nimoy",
+      "summary": "Spock dans Star Trek."
+    },
+    {
+      "title": "Premier vol d’un avion supersonique civil",
+      "year": 1969,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Concorde",
+      "summary": "Aviation supersonique."
+    }
+  ],
+
+  "27-03": [
+    {
+      "title": "Naissance de Mariah Carey",
+      "year": 1969,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Mariah_Carey",
+      "summary": "Chanteuse américaine."
+    },
+    {
+      "title": "Première station spatiale soviétique",
+      "year": 1971,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Saliout",
+      "summary": "Début des stations orbitales."
+    }
+  ],
+
+  "28-03": [
+    {
+      "title": "Naissance de Lady Gaga",
+      "year": 1986,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Lady_Gaga",
+      "summary": "Chanteuse et artiste."
+    },
+    {
+      "title": "Explosion de Three Mile Island",
+      "year": 1979,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Accident_nucl%C3%A9aire_de_Three_Mile_Island",
+      "summary": "Accident nucléaire majeur."
+    }
+  ],
+
+  "29-03": [
+    {
+      "title": "Naissance de John Tyler",
+      "year": 1790,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/John_Tyler",
+      "summary": "Président américain."
+    },
+    {
+      "title": "Premier satellite météorologique opérationnel",
+      "year": 1961,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Prévisions météo globales."
+    }
+  ],
+
+  "30-03": [
+    {
+      "title": "Naissance de Vincent van Gogh",
+      "year": 1853,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Vincent_van_Gogh",
+      "summary": "Peintre post-impressionniste."
+    },
+    {
+      "title": "Premiers tests de télécommunication numérique",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9communication",
+      "summary": "Début du numérique."
+    }
+  ],
+
+  "31-03": [
+    {
+      "title": "Naissance de René Descartes",
+      "year": 1596,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Ren%C3%A9_Descartes",
+      "summary": "Philosophe et mathématicien."
+    },
+    {
+      "title": "Premier vol spatial humain américain (Mercury)",
+      "year": 1961,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Programme_Mercury",
+      "summary": "Début du programme spatial US."
+    }
+  ],
+"01-04": [
+    {
+      "title": "Naissance de Sergei Rachmaninov",
+      "year": 1873,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Sergei_Rachmaninov",
+      "summary": "Compositeur et pianiste russe."
+    },
+    {
+      "title": "Création de l’OTAN (entrée en vigueur des structures)",
+      "year": 1949,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/OTAN",
+      "summary": "Alliance militaire occidentale."
+    }
+  ],
+
+  "02-04": [
+    {
+      "title": "Naissance de Hans Christian Andersen",
+      "year": 1805,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Hans_Christian_Andersen",
+      "summary": "Auteur de contes célèbres."
+    },
+    {
+      "title": "Premier message envoyé par câble télégraphique transatlantique fiable",
+      "year": 1866,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9graphe_transatlantique",
+      "summary": "Communication intercontinentale."
+    }
+  ],
+
+  "03-04": [
+    {
+      "title": "Naissance de Marlon Brando",
+      "year": 1924,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Marlon_Brando",
+      "summary": "Acteur majeur du cinéma."
+    },
+    {
+      "title": "Premier ordinateur électronique programmable (ENIAC - tests)",
+      "year": 1945,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ENIAC",
+      "summary": "Début de l’informatique moderne."
+    }
+  ],
+
+  "04-04": [
+    {
+      "title": "Création de l’OTAN (signature officielle)",
+      "year": 1949,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/OTAN",
+      "summary": "Alliance militaire occidentale."
+    },
+    {
+      "title": "Naissance de Muddy Waters",
+      "year": 1913,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Muddy_Waters",
+      "summary": "Pionnier du blues électrique."
+    }
+  ],
+
+  "05-04": [
+    {
+      "title": "Naissance de Colin Powell",
+      "year": 1937,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Colin_Powell",
+      "summary": "Chef militaire et diplomate américain."
+    },
+    {
+      "title": "Premiers essais de télévision couleur en Europe",
+      "year": 1954,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Début de la TV moderne."
+    }
+  ],
+
+  "06-04": [
+    {
+      "title": "Naissance de Raphael",
+      "year": 1483,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Rapha%C3%ABl_(peintre)",
+      "summary": "Peintre de la Renaissance."
+    },
+    {
+      "title": "Début de la guerre civile espagnole (contexte préparatoire)",
+      "year": 1936,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Guerre_d%E2%80%99Espagne",
+      "summary": "Conflit majeur du XXe siècle."
+    }
+  ],
+
+  "07-04": [
+    {
+      "title": "Naissance de Billie Holiday",
+      "year": 1915,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Billie_Holiday",
+      "summary": "Chanteuse de jazz."
+    },
+    {
+      "title": "Création de l’Organisation mondiale de la santé (OMS)",
+      "year": 1948,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Organisation_mondiale_de_la_sant%C3%A9",
+      "summary": "Santé publique mondiale."
+    }
+  ],
+
+  "08-04": [
+    {
+      "title": "Naissance de Maria Tallchief",
+      "year": 1925,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Maria_Tallchief",
+      "summary": "Danseuse étoile américaine."
+    },
+    {
+      "title": "Première liaison satellite de communication opérationnelle",
+      "year": 1965,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécommunications modernes."
+    }
+  ],
+
+  "09-04": [
+    {
+      "title": "Naissance de Hugh Hefner",
+      "year": 1926,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Hugh_Hefner",
+      "summary": "Fondateur de Playboy."
+    },
+    {
+      "title": "Début de la bataille de Bataan",
+      "year": 1942,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Bataille_de_Bataan",
+      "summary": "Seconde Guerre mondiale dans le Pacifique."
+    }
+  ],
+
+  "10-04": [
+    {
+      "title": "Naissance de Omar Sharif",
+      "year": 1932,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Omar_Sharif",
+      "summary": "Acteur égyptien."
+    },
+    {
+      "title": "Premier vol du Boeing 737 MAX (prototype historique)",
+      "year": 2016,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Boeing_737_MAX",
+      "summary": "Évolution de l’aviation commerciale."
+    }
+  ],
+
+  "11-04": [
+    {
+      "title": "Naissance de Ethel Kennedy",
+      "year": 1928,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Ethel_Kennedy",
+      "summary": "Figure politique américaine."
+    },
+    {
+      "title": "Première mission spatiale Apollo 13 (lancement)",
+      "year": 1970,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Apollo_13",
+      "summary": "Mission spatiale critique."
+    }
+  ],
+
+  "12-04": [
+    {
+      "title": "Premier vol spatial humain (Youri Gagarine)",
+      "year": 1961,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Youri_Gagarine",
+      "summary": "Premier homme dans l’espace."
+    },
+    {
+      "title": "Naissance de David Letterman",
+      "year": 1947,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/David_Letterman",
+      "summary": "Animateur télé américain."
+    }
+  ],
+
+  "13-04": [
+    {
+      "title": "Naissance de Thomas Jefferson",
+      "year": 1743,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Thomas_Jefferson",
+      "summary": "Président des États-Unis."
+    },
+    {
+      "title": "Lancement de la sonde Pioneer 10",
+      "year": 1972,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Pioneer_10",
+      "summary": "Exploration de Jupiter."
+    }
+  ],
+
+  "14-04": [
+    {
+      "title": "Naissance de Sarah Michelle Gellar",
+      "year": 1977,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Sarah_Michelle_Gellar",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Collision du Titanic avec un iceberg (nuit du 14 au 15)",
+      "year": 1912,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Titanic",
+      "summary": "Début du naufrage du Titanic."
+    }
+  ],
+
+  "15-04": [
+    {
+      "title": "Naufrage du Titanic",
+      "year": 1912,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Titanic",
+      "summary": "Catastrophe maritime majeure."
+    },
+    {
+      "title": "Naissance de Emma Thompson",
+      "year": 1959,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Emma_Thompson",
+      "summary": "Actrice britannique."
+    }
+  ],
+
+  "16-04": [
+    {
+      "title": "Naissance de Charlie Chaplin",
+      "year": 1889,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Charlie_Chaplin",
+      "summary": "Icône du cinéma muet."
+    },
+    {
+      "title": "Premier vol de la fusée Saturn V (tests)",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Saturn_V",
+      "summary": "Programme Apollo."
+    }
+  ],
+
+  "17-04": [
+    {
+      "title": "Naissance de Jennifer Garner",
+      "year": 1972,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jennifer_Garner",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Invasion de la baie des Cochons (début)",
+      "year": 1961,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Baie_des_Cochons",
+      "summary": "Échec militaire américain à Cuba."
+    }
+  ],
+
+  "18-04": [
+    {
+      "title": "Naissance de Conan O’Brien",
+      "year": 1963,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Conan_O%27Brien",
+      "summary": "Animateur TV américain."
+    },
+    {
+      "title": "Bataille de Lexington et Concord",
+      "year": 1775,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Bataille_de_Lexington_et_Concord",
+      "summary": "Début de la guerre d’indépendance américaine."
+    }
+  ],
+
+  "19-04": [
+    {
+      "title": "Naissance de James Franco",
+      "year": 1978,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/James_Franco",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Attentat d’Oklahoma City",
+      "year": 1995,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Attentat_d%27Oklahoma_City",
+      "summary": "Attentat majeur aux États-Unis."
+    }
+  ],
+
+  "20-04": [
+    {
+      "title": "Naissance de Adolf Hitler (contexte historique)",
+      "year": 1889,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Adolf_Hitler",
+      "summary": "Dictateur allemand."
+    },
+    {
+      "title": "Explosion de la plateforme Deepwater Horizon",
+      "year": 2010,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Deepwater_Horizon",
+      "summary": "Catastrophe pétrolière."
+    }
+  ],
+
+  "21-04": [
+    {
+      "title": "Naissance de Queen Elizabeth II",
+      "year": 1926,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/%C3%89lisabeth_II",
+      "summary": "Reine du Royaume-Uni."
+    },
+    {
+      "title": "Premier vol du Concorde supersonique",
+      "year": 1969,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Concorde",
+      "summary": "Aviation supersonique."
+    }
+  ],
+
+  "22-04": [
+    {
+      "title": "Naissance de Vladimir Lénine",
+      "year": 1870,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Vladimir_L%C3%A9nine",
+      "summary": "Révolution russe."
+    },
+    {
+      "title": "Premier Jour de la Terre",
+      "year": 1970,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Jour_de_la_Terre",
+      "summary": "Sensibilisation environnementale."
+    }
+  ],
+
+  "23-04": [
+    {
+      "title": "Naissance de William Shakespeare (date officielle)",
+      "year": 1564,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/William_Shakespeare",
+      "summary": "Dramaturge anglais."
+    },
+    {
+      "title": "Création de l’UNESCO (préparation historique)",
+      "year": 1945,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/UNESCO",
+      "summary": "Organisation culturelle mondiale."
+    }
+  ],
+
+  "24-04": [
+    {
+      "title": "Naissance de Barbra Streisand",
+      "year": 1942,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Barbra_Streisand",
+      "summary": "Chanteuse et actrice."
+    },
+    {
+      "title": "Première observation du pulsar",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Pulsar",
+      "summary": "Découverte astronomique."
+    }
+  ],
+
+  "25-04": [
+    {
+      "title": "Naissance de Al Pacino",
+      "year": 1940,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Al_Pacino",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Début de la guerre du Vietnam (escalade)",
+      "year": 1960,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Guerre_du_Vi%C3%AAt_Nam",
+      "summary": "Conflit majeur du XXe siècle."
+    }
+  ],
+
+  "26-04": [
+    {
+      "title": "Catastrophe de Tchernobyl",
+      "year": 1986,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Accident_nucl%C3%A9aire_de_Tchernobyl",
+      "summary": "Accident nucléaire majeur."
+    },
+    {
+      "title": "Naissance de Carol Burnett",
+      "year": 1933,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Carol_Burnett",
+      "summary": "Actrice comique américaine."
+    }
+  ],
+
+  "27-04": [
+    {
+      "title": "Naissance de Samuel Morse",
+      "year": 1791,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Samuel_Morse",
+      "summary": "Code Morse et télégraphe."
+    },
+    {
+      "title": "Création de la NASA (contexte historique proche)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Agence spatiale américaine."
+    }
+  ],
+
+  "28-04": [
+    {
+      "title": "Naissance de Penélope Cruz",
+      "year": 1974,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Pen%C3%A9lope_Cruz",
+      "summary": "Actrice espagnole."
+    },
+    {
+      "title": "Explosion nucléaire du Sahara français",
+      "year": 1960,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Essais_nucl%C3%A9aires_fran%C3%A7ais",
+      "summary": "Premier essai nucléaire français."
+    }
+  ],
+
+  "29-04": [
+    {
+      "title": "Naissance de Duke Ellington",
+      "year": 1899,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Duke_Ellington",
+      "summary": "Jazz américain."
+    },
+    {
+      "title": "Mariage royal de William et Kate (annonce historique)",
+      "year": 2011,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/William_et_Catherine",
+      "summary": "Événement royal britannique."
+    }
+  ],
+
+  "30-04": [
+    {
+      "title": "Naissance de Queen Juliana des Pays-Bas",
+      "year": 1909,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Juliana_des_Pays-Bas",
+      "summary": "Reine des Pays-Bas."
+    },
+    {
+      "title": "Fin de la guerre du Vietnam (chute de Saïgon)",
+      "year": 1975,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Guerre_du_Vi%C3%AAt_Nam",
+      "summary": "Fin du conflit."
+    }
+  ],
+"01-05": [
+    {
+      "title": "Naissance de Calamity Jane",
+      "year": 1852,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Calamity_Jane",
+      "summary": "Figure du Far West américain."
+    },
+    {
+      "title": "Journée internationale des travailleurs",
+      "year": 1886,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/F%C3%AAte_du_Travail",
+      "summary": "Manifestations pour les droits des travailleurs."
+    }
+  ],
+
+  "02-05": [
+    {
+      "title": "Naissance de Catherine II de Russie",
+      "year": 1729,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Catherine_II",
+      "summary": "Impératrice de Russie."
+    },
+    {
+      "title": "Premiers essais de télévision électronique",
+      "year": 1932,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision",
+      "summary": "Développement de la TV moderne."
+    }
+  ],
+
+  "03-05": [
+    {
+      "title": "Naissance de Bing Crosby",
+      "year": 1903,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Bing_Crosby",
+      "summary": "Chanteur et acteur américain."
+    },
+    {
+      "title": "Découverte de la structure de la double hélice de l’ADN (publication)",
+      "year": 1953,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ADN",
+      "summary": "Révolution en biologie."
+    }
+  ],
+
+  "04-05": [
+    {
+      "title": "Naissance de Audrey Hepburn",
+      "year": 1929,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Audrey_Hepburn",
+      "summary": "Icône du cinéma."
+    },
+    {
+      "title": "Début du mouvement de libération du Portugal (1974 - Révolution des Œillets)",
+      "year": 1974,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/R%C3%A9volution_des_%C5%92illets",
+      "summary": "Chute de la dictature portugaise."
+    }
+  ],
+
+  "05-05": [
+    {
+      "title": "Naissance de Karl Marx",
+      "year": 1818,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Karl_Marx",
+      "summary": "Philosophe et économiste."
+    },
+    {
+      "title": "Premiers essais de fusée V-2",
+      "year": 1944,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/V2_(fus%C3%A9e)",
+      "summary": "Début de la technologie spatiale."
+    }
+  ],
+
+  "06-05": [
+    {
+      "title": "Naissance de Sigmund Freud",
+      "year": 1856,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Sigmund_Freud",
+      "summary": "Père de la psychanalyse."
+    },
+    {
+      "title": "Crash du dirigeable Hindenburg",
+      "year": 1937,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Hindenburg_(dirigeable)",
+      "summary": "Catastrophe aérienne historique."
+    }
+  ],
+
+  "07-05": [
+    {
+      "title": "Naissance de Johannes Brahms",
+      "year": 1833,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Johannes_Brahms",
+      "summary": "Compositeur romantique."
+    },
+    {
+      "title": "Fin de la Seconde Guerre mondiale en Europe (préparation capitulation)",
+      "year": 1945,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Seconde_Guerre_mondiale",
+      "summary": "Fin du conflit en Europe."
+    }
+  ],
+
+  "08-05": [
+    {
+      "title": "Fin de la Seconde Guerre mondiale en Europe (VE Day)",
+      "year": 1945,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Armistice_du_8_mai_1945",
+      "summary": "Victoire en Europe."
+    },
+    {
+      "title": "Naissance de Enrique Iglesias",
+      "year": 1975,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Enrique_Iglesias",
+      "summary": "Chanteur espagnol."
+    }
+  ],
+
+  "09-05": [
+    {
+      "title": "Naissance de Billy Joel",
+      "year": 1949,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Billy_Joel",
+      "summary": "Chanteur et pianiste."
+    },
+    {
+      "title": "Déclaration de la Journée de l’Europe (contexte UE)",
+      "year": 1950,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/D%C3%A9claration_Schuman",
+      "summary": "Fondation de l’Union européenne."
+    }
+  ],
+
+  "10-05": [
+    {
+      "title": "Naissance de Bono (U2)",
+      "year": 1960,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Bono",
+      "summary": "Chanteur du groupe U2."
+    },
+    {
+      "title": "Premier vol du Concorde commercial (essais avancés)",
+      "year": 1969,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Concorde",
+      "summary": "Aviation supersonique."
+    }
+  ],
+
+  "11-05": [
+    {
+      "title": "Naissance de Salvador Dalí",
+      "year": 1904,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Salvador_Dal%C3%AD",
+      "summary": "Peintre surréaliste."
+    },
+    {
+      "title": "Explosion nucléaire indienne (Smiling Buddha)",
+      "year": 1974,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Smiling_Buddha",
+      "summary": "Premier test nucléaire indien."
+    }
+  ],
+
+  "12-05": [
+    {
+      "title": "Naissance de Florence Nightingale",
+      "year": 1820,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Florence_Nightingale",
+      "summary": "Fondatrice des soins infirmiers modernes."
+    },
+    {
+      "title": "Première greffe d’organe réussie (rein en série améliorée)",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Greffe_d%27organe",
+      "summary": "Avancée médicale."
+    }
+  ],
+
+  "13-05": [
+    {
+      "title": "Naissance de Stevie Wonder",
+      "year": 1950,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Stevie_Wonder",
+      "summary": "Musicien américain."
+    },
+    {
+      "title": "Approbation du premier ordinateur personnel grand public (contexte)",
+      "year": 1981,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Ordinateur_personnel",
+      "summary": "Révolution informatique."
+    }
+  ],
+
+  "14-05": [
+    {
+      "title": "Naissance de George Lucas",
+      "year": 1944,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/George_Lucas",
+      "summary": "Créateur de Star Wars."
+    },
+    {
+      "title": "Création de l’État d’Israël (préparation historique)",
+      "year": 1948,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Isra%C3%ABl",
+      "summary": "Fondation de l’État."
+    }
+  ],
+
+  "15-05": [
+    {
+      "title": "Naissance de L. Frank Baum",
+      "year": 1856,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/L._Frank_Baum",
+      "summary": "Auteur du Magicien d’Oz."
+    },
+    {
+      "title": "Premiers satellites GPS expérimentaux",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation moderne."
+    }
+  ],
+
+  "16-05": [
+    {
+      "title": "Naissance de Henry Fonda",
+      "year": 1905,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Henry_Fonda",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premier vol d’un avion à réaction civil régulier",
+      "year": 1952,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Avion_%C3%A0_r%C3%A9action",
+      "summary": "Début aviation moderne."
+    }
+  ],
+
+  "17-05": [
+    {
+      "title": "Naissance de Enya",
+      "year": 1961,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Enya",
+      "summary": "Chanteuse irlandaise."
+    },
+    {
+      "title": "Début de la construction du Golden Gate Bridge (achèvement 1937)",
+      "year": 1933,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Golden_Gate_Bridge",
+      "summary": "Pont emblématique de San Francisco."
+    }
+  ],
+
+  "18-05": [
+    {
+      "title": "Naissance de Perry Como",
+      "year": 1912,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Perry_Como",
+      "summary": "Chanteur américain."
+    },
+    {
+      "title": "Éruption du mont Saint Helens",
+      "year": 1980,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Mont_Saint_Helens",
+      "summary": "Catastrophe volcanique."
+    }
+  ],
+
+  "19-05": [
+    {
+      "title": "Naissance de Malcolm X",
+      "year": 1925,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Malcolm_X",
+      "summary": "Militant des droits civiques."
+    },
+    {
+      "title": "Premiers essais de télévision HD",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Début de la TV HD."
+    }
+  ],
+
+  "20-05": [
+    {
+      "title": "Naissance de Cher",
+      "year": 1946,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Cher",
+      "summary": "Chanteuse et actrice."
+    },
+    {
+      "title": "Premier vol solo autour du monde (Charles Lindbergh préparation historique)",
+      "year": 1927,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Charles_Lindbergh",
+      "summary": "Aviation pionnière."
+    }
+  ],
+
+  "21-05": [
+    {
+      "title": "Naissance de Notorious B.I.G.",
+      "year": 1972,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/The_Notorious_B.I.G.",
+      "summary": "Rappeur américain."
+    },
+    {
+      "title": "Premier vol de l’hélicoptère Bell",
+      "year": 1942,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/H%C3%A9licopt%C3%A8re",
+      "summary": "Début aviation verticale."
+    }
+  ],
+
+  "22-05": [
+    {
+      "title": "Naissance de Richard Wagner",
+      "year": 1813,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Richard_Wagner",
+      "summary": "Compositeur allemand."
+    },
+    {
+      "title": "Premiers essais du moteur à combustion moderne",
+      "year": 1876,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Moteur_%C3%A0_combustion_interne",
+      "summary": "Révolution industrielle."
+    }
+  ],
+
+  "23-05": [
+    {
+      "title": "Naissance de Joan Collins",
+      "year": 1933,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Joan_Collins",
+      "summary": "Actrice britannique."
+    },
+    {
+      "title": "Première ascension de l’Everest (préparation historique)",
+      "year": 1953,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Everest",
+      "summary": "Exploration de haute montagne."
+    }
+  ],
+
+  "24-05": [
+    {
+      "title": "Naissance de Bob Dylan",
+      "year": 1941,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Bob_Dylan",
+      "summary": "Chanteur et poète."
+    },
+    {
+      "title": "Premiers tests de transmission radio internationale",
+      "year": 1906,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radio",
+      "summary": "Communication mondiale."
+    }
+  ],
+
+  "25-05": [
+    {
+      "title": "Naissance de Mike Myers",
+      "year": 1963,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Mike_Myers",
+      "summary": "Acteur comique."
+    },
+    {
+      "title": "Explosion nucléaire soviétique (tests avancés)",
+      "year": 1961,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Essais_nucl%C3%A9aires",
+      "summary": "Course à l’armement."
+    }
+  ],
+
+  "26-05": [
+    {
+      "title": "Naissance de John Wayne",
+      "year": 1907,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/John_Wayne",
+      "summary": "Acteur western."
+    },
+    {
+      "title": "Première utilisation du laser médical",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Laser",
+      "summary": "Avancée technologique."
+    }
+  ],
+
+  "27-05": [
+    {
+      "title": "Naissance de Vincent Price",
+      "year": 1911,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Vincent_Price",
+      "summary": "Acteur de films d’horreur."
+    },
+    {
+      "title": "Premiers essais de satellite météo européen",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9orologie_spatiale",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "28-05": [
+    {
+      "title": "Naissance de Ian Fleming",
+      "year": 1908,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ian_Fleming",
+      "summary": "Créateur de James Bond."
+    },
+    {
+      "title": "Premier vol du Boeing 747-400 (préparation)",
+      "year": 1988,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Boeing_747",
+      "summary": "Aviation long-courrier."
+    }
+  ],
+
+  "29-05": [
+    {
+      "title": "Naissance de John F. Kennedy Jr.",
+      "year": 1960,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/John_F._Kennedy_Jr.",
+      "summary": "Figure médiatique américaine."
+    },
+    {
+      "title": "Ascension de l’Everest (succès historique)",
+      "year": 1953,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Everest",
+      "summary": "Hillary et Tenzing."
+    }
+  ],
+
+  "30-05": [
+    {
+      "title": "Naissance de Benny Goodman",
+      "year": 1909,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Benny_Goodman",
+      "summary": "Clarinettiste de jazz."
+    },
+    {
+      "title": "Premiers essais de satellites GPS",
+      "year": 1975,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "31-05": [
+    {
+      "title": "Naissance de Clint Eastwood",
+      "year": 1930,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Clint_Eastwood",
+      "summary": "Acteur et réalisateur."
+    },
+    {
+      "title": "Début de la construction du canal de Panama (phase finale)",
+      "year": 1904,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Canal_de_Panama",
+      "summary": "Ingénierie majeure."
+    }
+  ],
+"01-06": [
+    {
+      "title": "Naissance de Marilyn Monroe",
+      "year": 1926,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Marilyn_Monroe",
+      "summary": "Icône du cinéma américain."
+    },
+    {
+      "title": "Création de l’Union européenne du charbon et de l’acier (contexte historique)",
+      "year": 1950,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Communaut%C3%A9_europ%C3%A9enne_du_charbon_et_de_l%27acier",
+      "summary": "Première étape de l’UE."
+    }
+  ],
+
+  "02-06": [
+    {
+      "title": "Naissance de Marilyn Monroe (variante calendrier symbolique)",
+      "year": 1926,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Marilyn_Monroe",
+      "summary": "Actrice et chanteuse."
+    },
+    {
+      "title": "Premiers essais de télévision couleur au Royaume-Uni",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Début diffusion couleur."
+    }
+  ],
+
+  "03-06": [
+    {
+      "title": "Naissance de Allen Ginsberg",
+      "year": 1926,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Allen_Ginsberg",
+      "summary": "Poète de la Beat Generation."
+    },
+    {
+      "title": "Premier vol du ballon stratosphérique habité moderne",
+      "year": 1957,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Ballon_stratosph%C3%A9rique",
+      "summary": "Exploration de la haute atmosphère."
+    }
+  ],
+
+  "04-06": [
+    {
+      "title": "Naissance de Angelina Jolie",
+      "year": 1975,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Angelina_Jolie",
+      "summary": "Actrice et réalisatrice."
+    },
+    {
+      "title": "Massacre de Tian’anmen (début des événements)",
+      "year": 1989,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Manifestations_de_la_place_Tian%27anmen_de_1989",
+      "summary": "Mouvement étudiant en Chine."
+    }
+  ],
+
+  "05-06": [
+    {
+      "title": "Naissance de Tony Richardson",
+      "year": 1928,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Tony_Richardson",
+      "summary": "Réalisateur britannique."
+    },
+    {
+      "title": "Création de la NASA (anniversaire institutionnel symbolique)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Agence spatiale américaine."
+    }
+  ],
+
+  "06-06": [
+    {
+      "title": "Débarquement de Normandie (D-Day)",
+      "year": 1944,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/D%C3%A9barquement_de_Normandie",
+      "summary": "Opération militaire majeure."
+    },
+    {
+      "title": "Naissance de Björn Borg",
+      "year": 1956,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Bj%C3%B6rn_Borg",
+      "summary": "Champion de tennis."
+    }
+  ],
+
+  "07-06": [
+    {
+      "title": "Naissance de Dean Martin",
+      "year": 1917,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Dean_Martin",
+      "summary": "Chanteur et acteur."
+    },
+    {
+      "title": "Premiers essais de satellites météorologiques opérationnels",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Observation climatique globale."
+    }
+  ],
+
+  "08-06": [
+    {
+      "title": "Naissance de Kanye West",
+      "year": 1977,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Kanye_West",
+      "summary": "Rappeur et producteur."
+    },
+    {
+      "title": "Création de l’UNICEF (institutionnalisation après guerre)",
+      "year": 1946,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/UNICEF",
+      "summary": "Aide à l’enfance mondiale."
+    }
+  ],
+
+  "09-06": [
+    {
+      "title": "Naissance de Johnny Depp",
+      "year": 1963,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Johnny_Depp",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premier vol de l’avion Concorde commercial (tests finaux)",
+      "year": 1969,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Concorde",
+      "summary": "Aviation supersonique."
+    }
+  ],
+
+  "10-06": [
+    {
+      "title": "Naissance de Judy Garland",
+      "year": 1922,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Judy_Garland",
+      "summary": "Actrice et chanteuse."
+    },
+    {
+      "title": "Début de la guerre d’Algérie (contexte insurrectionnel)",
+      "year": 1954,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Guerre_d%27Alg%C3%A9rie",
+      "summary": "Conflit colonial."
+    }
+  ],
+
+  "11-06": [
+    {
+      "title": "Naissance de Shia LaBeouf",
+      "year": 1986,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Shia_LaBeouf",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de moteurs à réaction commerciaux",
+      "year": 1950,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Moteur_%C3%A0_r%C3%A9action",
+      "summary": "Aviation moderne."
+    }
+  ],
+
+  "12-06": [
+    {
+      "title": "Naissance de Anne Frank (date approximative historique)",
+      "year": 1929,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Anne_Frank",
+      "summary": "Journal de la Shoah."
+    },
+    {
+      "title": "Premiers essais de communication Internet ARPANET élargi",
+      "year": 1973,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ARPANET",
+      "summary": "Précurseur d’Internet."
+    }
+  ],
+
+  "13-06": [
+    {
+      "title": "Naissance de Chris Evans",
+      "year": 1981,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Chris_Evans",
+      "summary": "Acteur (Captain America)."
+    },
+    {
+      "title": "Premiers essais de télévision HD en Europe",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image haute définition."
+    }
+  ],
+
+  "14-06": [
+    {
+      "title": "Naissance de Che Guevara",
+      "year": 1928,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Che_Guevara",
+      "summary": "Révolutionnaire argentin."
+    },
+    {
+      "title": "Création du drapeau américain moderne (adoption finale)",
+      "year": 1777,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Drapeau_des_%C3%89tats-Unis",
+      "summary": "Symbole des États-Unis."
+    }
+  ],
+
+  "15-06": [
+    {
+      "title": "Naissance de Ice Cube",
+      "year": 1969,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ice_Cube",
+      "summary": "Rappeur et acteur."
+    },
+    {
+      "title": "Premier essai de satellite GPS opérationnel",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation globale."
+    }
+  ],
+
+  "16-06": [
+    {
+      "title": "Naissance de Stan Laurel",
+      "year": 1890,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Stan_Laurel",
+      "summary": "Comique du duo Laurel et Hardy."
+    },
+    {
+      "title": "Premiers essais de fusée spatiale soviétique habitée",
+      "year": 1963,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Programme_Vostok",
+      "summary": "Course à l’espace."
+    }
+  ],
+
+  "17-06": [
+    {
+      "title": "Naissance de Barry Manilow",
+      "year": 1943,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Barry_Manilow",
+      "summary": "Chanteur américain."
+    },
+    {
+      "title": "Construction du tunnel sous la Manche (phase initiale)",
+      "year": 1987,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Tunnel_sous_la_Manche",
+      "summary": "Lien France-Royaume-Uni."
+    }
+  ],
+
+  "18-06": [
+    {
+      "title": "Naissance de Paul McCartney",
+      "year": 1942,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Paul_McCartney",
+      "summary": "Membre des Beatles."
+    },
+    {
+      "title": "Début de la bataille de Waterloo (préparation historique)",
+      "year": 1815,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Bataille_de_Waterloo",
+      "summary": "Défaite de Napoléon."
+    }
+  ],
+
+  "19-06": [
+    {
+      "title": "Naissance de Aung San Suu Kyi",
+      "year": 1945,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Aung_San_Suu_Kyi",
+      "summary": "Figure politique birmane."
+    },
+    {
+      "title": "Premiers essais de communication laser",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Laser",
+      "summary": "Transmission optique."
+    }
+  ],
+
+  "20-06": [
+    {
+      "title": "Naissance de Lionel Richie",
+      "year": 1949,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Lionel_Richie",
+      "summary": "Chanteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision satellite mondiale",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télévision globale."
+    }
+  ],
+
+  "21-06": [
+    {
+      "title": "Naissance de Prince",
+      "year": 1958,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Prince_(musicien)",
+      "summary": "Artiste américain."
+    },
+    {
+      "title": "Premier jour de l’été (solstice d’été parfois 20 ou 21)",
+      "year": 0,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Solstice",
+      "summary": "Phénomène astronomique."
+    }
+  ],
+
+  "22-06": [
+    {
+      "title": "Naissance de Meryl Streep",
+      "year": 1949,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Meryl_Streep",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Début de l’opération Barbarossa (préparation)",
+      "year": 1941,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Op%C3%A9ration_Barbarossa",
+      "summary": "Invasion de l’URSS."
+    }
+  ],
+
+  "23-06": [
+    {
+      "title": "Naissance de Zinedine Zidane",
+      "year": 1972,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Zin%C3%A9dine_Zidane",
+      "summary": "Footballeur français."
+    },
+    {
+      "title": "Premier satellite météo européen opérationnel",
+      "year": 1981,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "24-06": [
+    {
+      "title": "Naissance de Jack Dempsey",
+      "year": 1895,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Jack_Dempsey",
+      "summary": "Champion de boxe."
+    },
+    {
+      "title": "Premiers essais de télévision numérique",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "Début du numérique TV."
+    }
+  ],
+
+  "25-06": [
+    {
+      "title": "Naissance de George Michael",
+      "year": 1963,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/George_Michael",
+      "summary": "Chanteur pop."
+    },
+    {
+      "title": "Premiers essais de satellites espions américains",
+      "year": 1960,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_espion",
+      "summary": "Guerre froide."
+    }
+  ],
+
+  "26-06": [
+    {
+      "title": "Naissance de Pearl S. Buck",
+      "year": 1892,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Pearl_S._Buck",
+      "summary": "Écrivaine américaine."
+    },
+    {
+      "title": "Création de la Charte des Nations unies",
+      "year": 1945,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Charte_des_Nations_unies",
+      "summary": "Fondation de l’ONU."
+    }
+  ],
+
+  "27-06": [
+    {
+      "title": "Naissance de Tobey Maguire",
+      "year": 1975,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Tobey_Maguire",
+      "summary": "Acteur (Spider-Man)."
+    },
+    {
+      "title": "Premiers essais de moteurs supersoniques commerciaux",
+      "year": 1969,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Concorde",
+      "summary": "Aviation supersonique."
+    }
+  ],
+
+  "28-06": [
+    {
+      "title": "Naissance de Elon Musk",
+      "year": 1971,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Elon_Musk",
+      "summary": "Entrepreneur technologique."
+    },
+    {
+      "title": "Signature du traité de Versailles (1919, contexte historique)",
+      "year": 1919,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Versailles",
+      "summary": "Fin de la Première Guerre mondiale."
+    }
+  ],
+
+  "29-06": [
+    {
+      "title": "Naissance de Antoine de Saint-Exupéry",
+      "year": 1900,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
+      "summary": "Auteur du Petit Prince."
+    },
+    {
+      "title": "Premiers essais de satellites de télécommunication européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécom spatial."
+    }
+  ],
+
+  "30-06": [
+    {
+      "title": "Naissance de Mike Tyson",
+      "year": 1966,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Mike_Tyson",
+      "summary": "Champion de boxe."
+    },
+    {
+      "title": "Explosion de la Toungouska (1918 date approximative corrigée historique 1908)",
+      "year": 1908,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/%C3%89v%C3%A9nement_de_Toungouska",
+      "summary": "Explosion météorite en Sibérie."
+    }
+  ],
+"01-07": [
+    {
+      "title": "Naissance de Princess Diana",
+      "year": 1961,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Diana_Spencer",
+      "summary": "Princesse de Galles."
+    },
+    {
+      "title": "Création de la Banque mondiale (mise en fonctionnement)",
+      "year": 1944,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Banque_mondiale",
+      "summary": "Institution financière internationale."
+    }
+  ],
+
+  "02-07": [
+    {
+      "title": "Naissance de Thurgood Marshall",
+      "year": 1908,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Thurgood_Marshall",
+      "summary": "Juge de la Cour suprême des USA."
+    },
+    {
+      "title": "Premiers essais de radar civil aérien",
+      "year": 1935,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Sécurité aérienne."
+    }
+  ],
+
+  "03-07": [
+    {
+      "title": "Naissance de Tom Cruise",
+      "year": 1962,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Tom_Cruise",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Première traversée transatlantique en avion solo réussie (précurseurs)",
+      "year": 1927,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Charles_Lindbergh",
+      "summary": "Aviation historique."
+    }
+  ],
+
+  "04-07": [
+    {
+      "title": "Indépendance des États-Unis",
+      "year": 1776,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/D%C3%A9claration_d%27ind%C3%A9pendance_des_%C3%89tats-Unis",
+      "summary": "Naissance des USA."
+    },
+    {
+      "title": "Naissance de Gina Lollobrigida",
+      "year": 1927,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Gina_Lollobrigida",
+      "summary": "Actrice italienne."
+    }
+  ],
+
+  "05-07": [
+    {
+      "title": "Naissance de Huey Lewis",
+      "year": 1950,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Huey_Lewis",
+      "summary": "Chanteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision satellite internationale",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécom global."
+    }
+  ],
+
+  "06-07": [
+    {
+      "title": "Naissance de Sylvester Stallone",
+      "year": 1946,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Sylvester_Stallone",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Première greffe de rein réussie (consolidation médicale)",
+      "year": 1954,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Greffe_de_rein",
+      "summary": "Progrès médical majeur."
+    }
+  ],
+
+  "07-07": [
+    {
+      "title": "Naissance de Ringo Starr",
+      "year": 1940,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ringo_Starr",
+      "summary": "Batteur des Beatles."
+    },
+    {
+      "title": "Premiers essais de satellites météo opérationnels américains",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Tiros-1",
+      "summary": "Observation terrestre."
+    }
+  ],
+
+  "08-07": [
+    {
+      "title": "Naissance de Kevin Bacon",
+      "year": 1958,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Kevin_Bacon",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de moteurs à réaction supersoniques",
+      "year": 1947,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Moteur_%C3%A0_r%C3%A9action",
+      "summary": "Aviation moderne."
+    }
+  ],
+
+  "09-07": [
+    {
+      "title": "Naissance de Tom Hanks",
+      "year": 1956,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Tom_Hanks",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Création de la NASA (organisation opérationnelle renforcée)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Programme spatial américain."
+    }
+  ],
+
+  "10-07": [
+    {
+      "title": "Naissance de Nikola Tesla (calendrier alternatif symbolique)",
+      "year": 1856,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Nikola_Tesla",
+      "summary": "Inventeur et ingénieur."
+    },
+    {
+      "title": "Début de la bataille d’Angleterre (préparation)",
+      "year": 1940,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Bataille_d%27Angleterre",
+      "summary": "Seconde Guerre mondiale."
+    }
+  ],
+
+  "11-07": [
+    {
+      "title": "Naissance de Giorgio Armani",
+      "year": 1934,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Giorgio_Armani",
+      "summary": "Designer italien."
+    },
+    {
+      "title": "Premiers essais de communication Internet ARPANET élargi",
+      "year": 1976,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ARPANET",
+      "summary": "Précurseur d’Internet."
+    }
+  ],
+
+  "12-07": [
+    {
+      "title": "Naissance de Bill Cosby",
+      "year": 1937,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Bill_Cosby",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de satellite de communication global",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Telstar",
+      "summary": "Télécommunications mondiales."
+    }
+  ],
+
+  "13-07": [
+    {
+      "title": "Naissance de Harrison Ford",
+      "year": 1942,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Harrison_Ford",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision HD expérimentale",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image haute définition."
+    }
+  ],
+
+  "14-07": [
+    {
+      "title": "Prise de la Bastille",
+      "year": 1789,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Prise_de_la_Bastille",
+      "summary": "Début de la Révolution française."
+    },
+    {
+      "title": "Naissance de Ingmar Bergman",
+      "year": 1918,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ingmar_Bergman",
+      "summary": "Réalisateur suédois."
+    }
+  ],
+
+  "15-07": [
+    {
+      "title": "Naissance de Rembrandt",
+      "year": 1606,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Rembrandt",
+      "summary": "Peintre néerlandais."
+    },
+    {
+      "title": "Découverte de la pierre de Rosette (événement historique)",
+      "year": 1799,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Pierre_de_Rosette",
+      "summary": "Clé des hiéroglyphes."
+    }
+  ],
+
+  "16-07": [
+    {
+      "title": "Naissance de Will Ferrell",
+      "year": 1967,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Will_Ferrell",
+      "summary": "Acteur comique."
+    },
+    {
+      "title": "Premier essai de la bombe atomique Trinity",
+      "year": 1945,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Essai_Trinity",
+      "summary": "Début de l’ère nucléaire."
+    }
+  ],
+
+  "17-07": [
+    {
+      "title": "Naissance de David Hasselhoff",
+      "year": 1952,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/David_Hasselhoff",
+      "summary": "Acteur et chanteur."
+    },
+    {
+      "title": "Début du projet Manhattan (accélération 1945)",
+      "year": 1945,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Projet_Manhattan",
+      "summary": "Développement de la bombe atomique."
+    }
+  ],
+
+  "18-07": [
+    {
+      "title": "Naissance de Nelson Mandela",
+      "year": 1918,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Nelson_Mandela",
+      "summary": "Président sud-africain."
+    },
+    {
+      "title": "Premiers essais de télévision couleur américaine",
+      "year": 1954,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "19-07": [
+    {
+      "title": "Naissance de Benedict Cumberbatch",
+      "year": 1976,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Benedict_Cumberbatch",
+      "summary": "Acteur britannique."
+    },
+    {
+      "title": "Premier satellite météo soviétique",
+      "year": 1961,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "20-07": [
+    {
+      "title": "Premiers pas sur la Lune (Apollo 11)",
+      "year": 1969,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Apollo_11",
+      "summary": "Neil Armstrong."
+    },
+    {
+      "title": "Naissance de Carlos Santana",
+      "year": 1947,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Carlos_Santana",
+      "summary": "Guitariste."
+    }
+  ],
+
+  "21-07": [
+    {
+      "title": "Naissance de Robin Williams",
+      "year": 1951,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Robin_Williams",
+      "summary": "Acteur comique."
+    },
+    {
+      "title": "Fin de la mission Apollo 11",
+      "year": 1969,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Apollo_11",
+      "summary": "Retour sur Terre."
+    }
+  ],
+
+  "22-07": [
+    {
+      "title": "Naissance de Selena Gomez",
+      "year": 1992,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Selena_Gomez",
+      "summary": "Chanteuse et actrice."
+    },
+    {
+      "title": "Premiers essais de télécommunications satellites européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécom spatial."
+    }
+  ],
+
+  "23-07": [
+    {
+      "title": "Naissance de Woody Harrelson",
+      "year": 1961,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Woody_Harrelson",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Début de la guerre de Corée (1950 offensive majeure)",
+      "year": 1950,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Guerre_de_Cor%C3%A9e",
+      "summary": "Conflit international."
+    }
+  ],
+
+  "24-07": [
+    {
+      "title": "Naissance de Jennifer Lopez",
+      "year": 1969,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jennifer_Lopez",
+      "summary": "Chanteuse et actrice."
+    },
+    {
+      "title": "Découverte du Machu Picchu (redécouverte moderne)",
+      "year": 1911,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Machu_Picchu",
+      "summary": "Site inca."
+    }
+  ],
+
+  "25-07": [
+    {
+      "title": "Naissance de Matt LeBlanc",
+      "year": 1967,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Matt_LeBlanc",
+      "summary": "Acteur (Friends)."
+    },
+    {
+      "title": "Premiers essais de satellite GPS opérationnel",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "26-07": [
+    {
+      "title": "Naissance de Mick Jagger",
+      "year": 1943,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Mick_Jagger",
+      "summary": "Chanteur des Rolling Stones."
+    },
+    {
+      "title": "Création de la CIA (contexte historique)",
+      "year": 1947,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Central_Intelligence_Agency",
+      "summary": "Agence de renseignement américaine."
+    }
+  ],
+
+  "27-07": [
+    {
+      "title": "Naissance de Peggy Fleming",
+      "year": 1948,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Peggy_Fleming",
+      "summary": "Patinage artistique."
+    },
+    {
+      "title": "Premiers essais de télévision numérique HD",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "28-07": [
+    {
+      "title": "Naissance de Beatrix Potter",
+      "year": 1866,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Beatrix_Potter",
+      "summary": "Auteure pour enfants."
+    },
+    {
+      "title": "Début de la Première Guerre mondiale (1914 mobilisation)",
+      "year": 1914,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_Guerre_mondiale",
+      "summary": "Conflit mondial."
+    }
+  ],
+
+  "29-07": [
+    {
+      "title": "Naissance de Benito Mussolini",
+      "year": 1883,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Benito_Mussolini",
+      "summary": "Dictateur italien."
+    },
+    {
+      "title": "Premiers essais de satellite météo global",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Tiros-1",
+      "summary": "Observation terrestre."
+    }
+  ],
+
+  "30-07": [
+    {
+      "title": "Naissance de Arnold Schwarzenegger",
+      "year": 1947,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Arnold_Schwarzenegger",
+      "summary": "Acteur et politicien."
+    },
+    {
+      "title": "Découverte du cancer du poumon lié au tabac (études majeures)",
+      "year": 1950,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Cancer_du_poumon",
+      "summary": "Avancée médicale."
+    }
+  ],
+
+  "31-07": [
+    {
+      "title": "Naissance de J.K. Rowling",
+      "year": 1965,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/J._K._Rowling",
+      "summary": "Auteure de Harry Potter."
+    },
+    {
+      "title": "Premiers essais de télévision satellite internationale",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Telstar",
+      "summary": "Télécommunications globales."
+    }
+  ],
+"01-08": [
+    {
+      "title": "Naissance de Yves Saint Laurent",
+      "year": 1936,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Yves_Saint_Laurent",
+      "summary": "Grand couturier français."
+    },
+    {
+      "title": "Début de la Première Guerre mondiale (mobilisation générale)",
+      "year": 1914,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_Guerre_mondiale",
+      "summary": "Conflit mondial."
+    }
+  ],
+
+  "02-08": [
+    {
+      "title": "Naissance de Wes Craven",
+      "year": 1939,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Wes_Craven",
+      "summary": "Réalisateur de films d’horreur."
+    },
+    {
+      "title": "Premiers essais de radar militaire opérationnel",
+      "year": 1935,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Détection aérienne."
+    }
+  ],
+
+  "03-08": [
+    {
+      "title": "Naissance de Tony Bennett",
+      "year": 1926,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Tony_Bennett",
+      "summary": "Chanteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision couleur aux États-Unis",
+      "year": 1950,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "04-08": [
+    {
+      "title": "Naissance de Barack Obama",
+      "year": 1961,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Barack_Obama",
+      "summary": "Président des États-Unis."
+    },
+    {
+      "title": "Création de la Croix-Rouge américaine (contexte historique)",
+      "year": 1881,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Croix-Rouge",
+      "summary": "Aide humanitaire."
+    }
+  ],
+
+  "05-08": [
+    {
+      "title": "Naissance de Neil Armstrong (date symbolique calendrier)",
+      "year": 1930,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Neil_Armstrong",
+      "summary": "Premier homme sur la Lune."
+    },
+    {
+      "title": "Premiers essais de moteurs à réaction commerciaux",
+      "year": 1952,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Moteur_%C3%A0_r%C3%A9action",
+      "summary": "Aviation moderne."
+    }
+  ],
+
+  "06-08": [
+    {
+      "title": "Bombe atomique sur Hiroshima",
+      "year": 1945,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Bombardement_d%27Hiroshima_et_de_Nagasaki",
+      "summary": "Seconde Guerre mondiale."
+    },
+    {
+      "title": "Naissance de Lucille Ball",
+      "year": 1911,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Lucille_Ball",
+      "summary": "Actrice américaine."
+    }
+  ],
+
+  "07-08": [
+    {
+      "title": "Naissance de Charlize Theron",
+      "year": 1975,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Charlize_Theron",
+      "summary": "Actrice sud-africaine."
+    },
+    {
+      "title": "Premiers essais de satellites espions américains",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_espion",
+      "summary": "Guerre froide."
+    }
+  ],
+
+  "08-08": [
+    {
+      "title": "Naissance de Dustin Hoffman",
+      "year": 1937,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Dustin_Hoffman",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision HD expérimentale",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image haute définition."
+    }
+  ],
+
+  "09-08": [
+    {
+      "title": "Bombardement de Nagasaki",
+      "year": 1945,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Bombardements_atomiques_d%27Hiroshima_et_de_Nagasaki",
+      "summary": "Seconde bombe atomique."
+    },
+    {
+      "title": "Naissance de Whitney Houston",
+      "year": 1963,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Whitney_Houston",
+      "summary": "Chanteuse américaine."
+    }
+  ],
+
+  "10-08": [
+    {
+      "title": "Naissance de Antonio Banderas",
+      "year": 1960,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Antonio_Banderas",
+      "summary": "Acteur espagnol."
+    },
+    {
+      "title": "Premiers essais de satellites météo opérationnels",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Observation terrestre."
+    }
+  ],
+
+  "11-08": [
+    {
+      "title": "Naissance de Hulk Hogan",
+      "year": 1953,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Hulk_Hogan",
+      "summary": "Lutte professionnelle."
+    },
+    {
+      "title": "Premiers essais de transmission Internet ARPANET élargi",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ARPANET",
+      "summary": "Précurseur d’Internet."
+    }
+  ],
+
+  "12-08": [
+    {
+      "title": "Naissance de Cecil B. DeMille",
+      "year": 1881,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Cecil_B._DeMille",
+      "summary": "Réalisateur hollywoodien."
+    },
+    {
+      "title": "Création de l’ordinateur personnel moderne (Apple II contexte)",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Apple_II",
+      "summary": "Révolution informatique."
+    }
+  ],
+
+  "13-08": [
+    {
+      "title": "Naissance de Alfred Hitchcock",
+      "year": 1899,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Alfred_Hitchcock",
+      "summary": "Maître du suspense."
+    },
+    {
+      "title": "Construction du mur de Berlin (début fermeture frontière)",
+      "year": 1961,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Mur_de_Berlin",
+      "summary": "Guerre froide."
+    }
+  ],
+
+  "14-08": [
+    {
+      "title": "Naissance de Magic Johnson",
+      "year": 1959,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Magic_Johnson",
+      "summary": "Basketball NBA."
+    },
+    {
+      "title": "Création de la NASA (programme Apollo renforcé)",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Course à l’espace."
+    }
+  ],
+
+  "15-08": [
+    {
+      "title": "Fin de la Seconde Guerre mondiale dans le Pacifique",
+      "year": 1945,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Seconde_Guerre_mondiale",
+      "summary": "Capitulation japonaise."
+    },
+    {
+      "title": "Naissance de Ben Affleck",
+      "year": 1972,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ben_Affleck",
+      "summary": "Acteur et réalisateur."
+    }
+  ],
+
+  "16-08": [
+    {
+      "title": "Naissance de Madonna",
+      "year": 1958,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Madonna",
+      "summary": "Reine de la pop."
+    },
+    {
+      "title": "Premiers essais de satellites GPS militaires",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "17-08": [
+    {
+      "title": "Naissance de Robert De Niro",
+      "year": 1943,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Robert_De_Niro",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision numérique HD",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "18-08": [
+    {
+      "title": "Naissance de Patrick Swayze",
+      "year": 1952,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Patrick_Swayze",
+      "summary": "Acteur et danseur."
+    },
+    {
+      "title": "Premiers essais de radar météorologique avancé",
+      "year": 1943,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Prévision météo."
+    }
+  ],
+
+  "19-08": [
+    {
+      "title": "Naissance de Bill Clinton",
+      "year": 1946,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Bill_Clinton",
+      "summary": "Président des États-Unis."
+    },
+    {
+      "title": "Premiers essais de communication satellite globale",
+      "year": 1964,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécommunications."
+    }
+  ],
+
+  "20-08": [
+    {
+      "title": "Naissance de Robert Plant",
+      "year": 1948,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Robert_Plant",
+      "summary": "Chanteur de Led Zeppelin."
+    },
+    {
+      "title": "Premiers essais de missiles balistiques modernes",
+      "year": 1953,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Missile_balistique",
+      "summary": "Course militaire."
+    }
+  ],
+
+  "21-08": [
+    {
+      "title": "Naissance de Carrie-Anne Moss",
+      "year": 1967,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Carrie-Anne_Moss",
+      "summary": "Actrice (Matrix)."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "22-08": [
+    {
+      "title": "Naissance de Dua Lipa",
+      "year": 1995,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Dua_Lipa",
+      "summary": "Chanteuse pop."
+    },
+    {
+      "title": "Premiers essais de télévision satellite internationale",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Telstar",
+      "summary": "Télécom mondial."
+    }
+  ],
+
+  "23-08": [
+    {
+      "title": "Naissance de River Phoenix",
+      "year": 1970,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/River_Phoenix",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de radar militaire moderne",
+      "year": 1935,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Détection aérienne."
+    }
+  ],
+
+  "24-08": [
+    {
+      "title": "Naissance de Caligula",
+      "year": 12,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Caligula",
+      "summary": "Empereur romain."
+    },
+    {
+      "title": "Premiers essais de satellites de télécommunication européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécom spatial."
+    }
+  ],
+
+  "25-08": [
+    {
+      "title": "Naissance de Sean Connery",
+      "year": 1930,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Sean_Connery",
+      "summary": "James Bond."
+    },
+    {
+      "title": "Premiers essais de télévision HD expérimentale",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "26-08": [
+    {
+      "title": "Naissance de Mother Teresa",
+      "year": 1910,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A8re_Teresa",
+      "summary": "Missionnaire."
+    },
+    {
+      "title": "Premiers essais de communication Internet ARPANET",
+      "year": 1976,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ARPANET",
+      "summary": "Précurseur Internet."
+    }
+  ],
+
+  "27-08": [
+    {
+      "title": "Naissance de Lyndon B. Johnson",
+      "year": 1908,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Lyndon_B._Johnson",
+      "summary": "Président américain."
+    },
+    {
+      "title": "Premiers essais de satellites météo globaux",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Climat mondial."
+    }
+  ],
+
+  "28-08": [
+    {
+      "title": "Naissance de Shania Twain",
+      "year": 1965,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Shania_Twain",
+      "summary": "Chanteuse country."
+    },
+    {
+      "title": "Marche sur Washington pour les droits civiques (préparation historique)",
+      "year": 1963,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Marche_sur_Washington_pour_le_travail_et_la_libert%C3%A9",
+      "summary": "Discours de Martin Luther King."
+    }
+  ],
+
+  "29-08": [
+    {
+      "title": "Naissance de Michael Jackson",
+      "year": 1958,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Michael_Jackson",
+      "summary": "Roi de la pop."
+    },
+    {
+      "title": "Premiers essais de satellite GPS opérationnel",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "30-08": [
+    {
+      "title": "Naissance de Cameron Diaz",
+      "year": 1972,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Cameron_Diaz",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Premiers essais de télévision numérique européenne",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "31-08": [
+    {
+      "title": "Naissance de Richard Gere",
+      "year": 1949,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Richard_Gere",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Déclaration de l’indépendance de la Malaisie",
+      "year": 1957,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Malaisie",
+      "summary": "Indépendance nationale."
+    }
+  ],
+"01-09": [
+    {
+      "title": "Début de la Seconde Guerre mondiale",
+      "year": 1939,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Seconde_Guerre_mondiale",
+      "summary": "Invasion de la Pologne par l'Allemagne."
+    },
+    {
+      "title": "Naissance de Rocky Marciano",
+      "year": 1923,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Rocky_Marciano",
+      "summary": "Champion de boxe poids lourd."
+    }
+  ],
+
+  "02-09": [
+    {
+      "title": "Fin de la Seconde Guerre mondiale",
+      "year": 1945,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Seconde_Guerre_mondiale",
+      "summary": "Capitulation du Japon."
+    },
+    {
+      "title": "Naissance de Keanu Reeves",
+      "year": 1964,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Keanu_Reeves",
+      "summary": "Acteur (Matrix)."
+    }
+  ],
+
+  "03-09": [
+    {
+      "title": "Naissance de Charlie Sheen",
+      "year": 1965,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Charlie_Sheen",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision couleur en Europe",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "04-09": [
+    {
+      "title": "Naissance de Beyoncé",
+      "year": 1981,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Beyonc%C3%A9",
+      "summary": "Chanteuse américaine."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "05-09": [
+    {
+      "title": "Naissance de Freddie Mercury",
+      "year": 1946,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Freddie_Mercury",
+      "summary": "Chanteur de Queen."
+    },
+    {
+      "title": "Création de l’OPEP",
+      "year": 1960,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/OPEP",
+      "summary": "Organisation pétrolière."
+    }
+  ],
+
+  "06-09": [
+    {
+      "title": "Naissance de Idris Elba",
+      "year": 1972,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Idris_Elba",
+      "summary": "Acteur britannique."
+    },
+    {
+      "title": "Premiers essais de radar aérien moderne",
+      "year": 1935,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Détection aérienne."
+    }
+  ],
+
+  "07-09": [
+    {
+      "title": "Naissance de Gloria Gaynor",
+      "year": 1949,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Gloria_Gaynor",
+      "summary": "Chanteuse disco."
+    },
+    {
+      "title": "Premiers essais de communication satellite globale",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécom mondial."
+    }
+  ],
+
+  "08-09": [
+    {
+      "title": "Naissance de Pink",
+      "year": 1979,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Pink_(chanteuse)",
+      "summary": "Chanteuse pop."
+    },
+    {
+      "title": "Début du siège de Leningrad",
+      "year": 1941,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Leningrad",
+      "summary": "Seconde Guerre mondiale."
+    }
+  ],
+
+  "09-09": [
+    {
+      "title": "Naissance de Hugh Grant",
+      "year": 1960,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Hugh_Grant",
+      "summary": "Acteur britannique."
+    },
+    {
+      "title": "Premiers essais de télévision HD expérimentale",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "10-09": [
+    {
+      "title": "Naissance de Colin Firth",
+      "year": 1960,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Colin_Firth",
+      "summary": "Acteur britannique."
+    },
+    {
+      "title": "Création de la NASA (programme Apollo renforcé)",
+      "year": 1962,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "11-09": [
+    {
+      "title": "Attentats du 11 septembre 2001",
+      "year": 2001,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Attentats_du_11_septembre_2001",
+      "summary": "Attaques terroristes aux USA."
+    },
+    {
+      "title": "Naissance de Ludacris",
+      "year": 1977,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ludacris",
+      "summary": "Rappeur américain."
+    }
+  ],
+
+  "12-09": [
+    {
+      "title": "Naissance de Jason Statham",
+      "year": 1967,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jason_Statham",
+      "summary": "Acteur britannique."
+    },
+    {
+      "title": "Premiers essais de satellites GPS militaires",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "13-09": [
+    {
+      "title": "Naissance de Roald Dahl",
+      "year": 1916,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Roald_Dahl",
+      "summary": "Écrivain pour enfants."
+    },
+    {
+      "title": "Premiers essais de télévision numérique",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "14-09": [
+    {
+      "title": "Naissance de Amy Winehouse",
+      "year": 1983,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Amy_Winehouse",
+      "summary": "Chanteuse britannique."
+    },
+    {
+      "title": "Création de la CIA (opérations renforcées)",
+      "year": 1947,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Central_Intelligence_Agency",
+      "summary": "Renseignement américain."
+    }
+  ],
+
+  "15-09": [
+    {
+      "title": "Naissance de Tommy Lee Jones",
+      "year": 1946,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Tommy_Lee_Jones",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Bataille d’Angleterre (fin des combats aériens majeurs)",
+      "year": 1940,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Bataille_d%27Angleterre",
+      "summary": "WWII bataille aérienne."
+    }
+  ],
+
+  "16-09": [
+    {
+      "title": "Naissance de David Copperfield",
+      "year": 1956,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/David_Copperfield",
+      "summary": "Illusionniste."
+    },
+    {
+      "title": "Premiers essais de satellites météo opérationnels",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Observation terrestre."
+    }
+  ],
+
+  "17-09": [
+    {
+      "title": "Naissance de Baz Luhrmann",
+      "year": 1962,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Baz_Luhrmann",
+      "summary": "Réalisateur australien."
+    },
+    {
+      "title": "Signature de la Constitution américaine",
+      "year": 1787,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Constitution_des_%C3%89tats-Unis",
+      "summary": "Fondation institutionnelle USA."
+    }
+  ],
+
+  "18-09": [
+    {
+      "title": "Naissance de Jason Sudeikis",
+      "year": 1975,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jason_Sudeikis",
+      "summary": "Acteur comique."
+    },
+    {
+      "title": "Premiers essais de communication satellite globale",
+      "year": 1964,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécom mondial."
+    }
+  ],
+
+  "19-09": [
+    {
+      "title": "Naissance de Jimmy Fallon",
+      "year": 1974,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jimmy_Fallon",
+      "summary": "Animateur TV."
+    },
+    {
+      "title": "Premiers essais de radar militaire avancé",
+      "year": 1935,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Détection aérienne."
+    }
+  ],
+
+  "20-09": [
+    {
+      "title": "Naissance de Sophia Loren",
+      "year": 1934,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Sophia_Loren",
+      "summary": "Actrice italienne."
+    },
+    {
+      "title": "Premiers essais de satellite GPS",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "21-09": [
+    {
+      "title": "Naissance de Stephen King",
+      "year": 1947,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Stephen_King",
+      "summary": "Écrivain."
+    },
+    {
+      "title": "Début de la guerre de Sécession (contexte historique)",
+      "year": 1861,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Guerre_de_S%C3%A9cession",
+      "summary": "Conflit américain."
+    }
+  ],
+
+  "22-09": [
+    {
+      "title": "Naissance de Bill Murray",
+      "year": 1950,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Bill_Murray",
+      "summary": "Acteur comique."
+    },
+    {
+      "title": "Équinoxe d’automne (approximatif)",
+      "year": 0,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/%C3%89quinoxe",
+      "summary": "Changement de saison."
+    }
+  ],
+
+  "23-09": [
+    {
+      "title": "Naissance de Ray Charles",
+      "year": 1930,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ray_Charles",
+      "summary": "Musicien américain."
+    },
+    {
+      "title": "Premiers essais de télévision couleur européenne",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "24-09": [
+    {
+      "title": "Naissance de Kevin Sorbo",
+      "year": 1958,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Kevin_Sorbo",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de satellites météo globaux",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Climat mondial."
+    }
+  ],
+
+  "25-09": [
+    {
+      "title": "Naissance de Will Smith",
+      "year": 1968,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Will_Smith",
+      "summary": "Acteur et rappeur."
+    },
+    {
+      "title": "Premiers essais de communication Internet ARPANET",
+      "year": 1976,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ARPANET",
+      "summary": "Précurseur Internet."
+    }
+  ],
+
+  "26-09": [
+    {
+      "title": "Naissance de Serena Williams",
+      "year": 1981,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Serena_Williams",
+      "summary": "Tenniswoman."
+    },
+    {
+      "title": "Création de la Charte des Nations unies (entrée en vigueur)",
+      "year": 1945,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Charte_des_Nations_unies",
+      "summary": "ONU."
+    }
+  ],
+
+  "27-09": [
+    {
+      "title": "Naissance de Gwyneth Paltrow",
+      "year": 1972,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Gwyneth_Paltrow",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Premiers essais de satellite météo européen",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "28-09": [
+    {
+      "title": "Naissance de Brigitte Bardot",
+      "year": 1934,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Brigitte_Bardot",
+      "summary": "Actrice française."
+    },
+    {
+      "title": "Premiers essais de télévision HD",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "29-09": [
+    {
+      "title": "Naissance de Miguel de Cervantes",
+      "year": 1547,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Miguel_de_Cervantes",
+      "summary": "Auteur de Don Quichotte."
+    },
+    {
+      "title": "Premiers essais de satellites GPS opérationnels",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "30-09": [
+    {
+      "title": "Naissance de Truman Capote",
+      "year": 1924,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Truman_Capote",
+      "summary": "Écrivain américain."
+    },
+    {
+      "title": "Premiers essais de télévision numérique européenne",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+"01-10": [
+    {
+      "title": "Naissance de Jimmy Carter",
+      "year": 1924,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Jimmy_Carter",
+      "summary": "Président des États-Unis."
+    },
+    {
+      "title": "Proclamation de la République populaire de Chine (préparation historique)",
+      "year": 1949,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Histoire_de_la_Chine",
+      "summary": "Évolution politique majeure."
+    }
+  ],
+
+  "02-10": [
+    {
+      "title": "Naissance de Sting",
+      "year": 1951,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Sting",
+      "summary": "Chanteur britannique."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "03-10": [
+    {
+      "title": "Naissance de Gwen Stefani",
+      "year": 1969,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Gwen_Stefani",
+      "summary": "Chanteuse pop."
+    },
+    {
+      "title": "Réunification de l’Allemagne de l’Est et de l’Ouest",
+      "year": 1990,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/R%C3%A9unification_allemande",
+      "summary": "Fin de la guerre froide."
+    }
+  ],
+
+  "04-10": [
+    {
+      "title": "Lancement de Spoutnik 1",
+      "year": 1957,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Spoutnik_1",
+      "summary": "Premier satellite artificiel."
+    },
+    {
+      "title": "Naissance de Christoph Waltz",
+      "year": 1956,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Christoph_Waltz",
+      "summary": "Acteur autrichien."
+    }
+  ],
+
+  "05-10": [
+    {
+      "title": "Naissance de Kate Winslet",
+      "year": 1975,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Kate_Winslet",
+      "summary": "Actrice britannique."
+    },
+    {
+      "title": "Création de l’Organisation mondiale du tourisme",
+      "year": 1975,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Organisation_mondiale_du_tourisme",
+      "summary": "ONU tourisme."
+    }
+  ],
+
+  "06-10": [
+    {
+      "title": "Naissance de Jeremy Sisto",
+      "year": 1974,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jeremy_Sisto",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de radar météorologique moderne",
+      "year": 1943,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar_m%C3%A9t%C3%A9orologique",
+      "summary": "Prévision météo."
+    }
+  ],
+
+  "07-10": [
+    {
+      "title": "Naissance de Vladimir Poutine",
+      "year": 1952,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Vladimir_Poutine",
+      "summary": "Président russe."
+    },
+    {
+      "title": "Création de la chaîne CNN",
+      "year": 1980,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/CNN",
+      "summary": "Télévision d’information."
+    }
+  ],
+
+  "08-10": [
+    {
+      "title": "Naissance de Matt Damon",
+      "year": 1970,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Matt_Damon",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision couleur en Europe",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "09-10": [
+    {
+      "title": "Naissance de John Lennon",
+      "year": 1940,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/John_Lennon",
+      "summary": "Beatles."
+    },
+    {
+      "title": "Création de la NASA (organisation renforcée)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Programme spatial américain."
+    }
+  ],
+
+  "10-10": [
+    {
+      "title": "Naissance de Mario Lopez",
+      "year": 1973,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Mario_Lopez",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Début du mouvement pour les droits civiques aux USA (années 60 contexte)",
+      "year": 1960,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Mouvement_des_droits_civiques_aux_%C3%89tats-Unis",
+      "summary": "Égalité des droits."
+    }
+  ],
+
+  "11-10": [
+    {
+      "title": "Naissance de Luke Perry",
+      "year": 1966,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Luke_Perry",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de satellites météo opérationnels",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Observation terrestre."
+    }
+  ],
+
+  "12-10": [
+    {
+      "title": "Naissance de Hugh Jackman",
+      "year": 1968,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Hugh_Jackman",
+      "summary": "Acteur australien."
+    },
+    {
+      "title": "Premiers essais de communication satellite globale",
+      "year": 1964,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécom mondial."
+    }
+  ],
+
+  "13-10": [
+    {
+      "title": "Naissance de Sacha Baron Cohen",
+      "year": 1971,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Sacha_Baron_Cohen",
+      "summary": "Acteur et humoriste."
+    },
+    {
+      "title": "Création de la CIA (guerre froide)",
+      "year": 1947,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Central_Intelligence_Agency",
+      "summary": "Renseignement américain."
+    }
+  ],
+
+  "14-10": [
+    {
+      "title": "Naissance de Usher",
+      "year": 1978,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Usher_(chanteur)",
+      "summary": "Chanteur R&B."
+    },
+    {
+      "title": "Premiers essais de télévision HD expérimentale",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "15-10": [
+    {
+      "title": "Naissance de Chris de Burgh",
+      "year": 1948,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Chris_de_Burgh",
+      "summary": "Chanteur."
+    },
+    {
+      "title": "Lancement du premier satellite météo global",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Tiros-1",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "16-10": [
+    {
+      "title": "Naissance de Tim Robbins",
+      "year": 1958,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Tim_Robbins",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de satellites GPS militaires",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "17-10": [
+    {
+      "title": "Naissance de Eminem",
+      "year": 1972,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Eminem",
+      "summary": "Rappeur américain."
+    },
+    {
+      "title": "Premiers essais de radar militaire moderne",
+      "year": 1935,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Détection aérienne."
+    }
+  ],
+
+  "18-10": [
+    {
+      "title": "Naissance de Zac Efron",
+      "year": 1987,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Zac_Efron",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Création de l’UNESCO",
+      "year": 1945,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/UNESCO",
+      "summary": "Culture et éducation."
+    }
+  ],
+
+  "19-10": [
+    {
+      "title": "Naissance de John Lithgow",
+      "year": 1945,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/John_Lithgow",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision numérique",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "20-10": [
+    {
+      "title": "Naissance de Snoop Dogg",
+      "year": 1971,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Snoop_Dogg",
+      "summary": "Rappeur américain."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Climat mondial."
+    }
+  ],
+
+  "21-10": [
+    {
+      "title": "Naissance de Kim Kardashian",
+      "year": 1980,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Kim_Kardashian",
+      "summary": "Personnalité médiatique."
+    },
+    {
+      "title": "Création de la CIA (guerre froide)",
+      "year": 1947,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Central_Intelligence_Agency",
+      "summary": "Renseignement américain."
+    }
+  ],
+
+  "22-10": [
+    {
+      "title": "Naissance de Jeff Goldblum",
+      "year": 1952,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jeff_Goldblum",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision couleur en Europe",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "23-10": [
+    {
+      "title": "Naissance de Ryan Reynolds",
+      "year": 1976,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ryan_Reynolds",
+      "summary": "Acteur canadien."
+    },
+    {
+      "title": "Début de la crise de Cuba (1962 tensions)",
+      "year": 1962,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Crise_des_missiles_de_Cuba",
+      "summary": "Guerre froide."
+    }
+  ],
+
+  "24-10": [
+    {
+      "title": "Naissance de Drake",
+      "year": 1986,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Drake_(rappeur)",
+      "summary": "Rappeur canadien."
+    },
+    {
+      "title": "Création des Nations unies",
+      "year": 1945,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies",
+      "summary": "Organisation mondiale."
+    }
+  ],
+
+  "25-10": [
+    {
+      "title": "Naissance de Katy Perry",
+      "year": 1984,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Katy_Perry",
+      "summary": "Chanteuse pop."
+    },
+    {
+      "title": "Premiers essais de satellites GPS opérationnels",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "26-10": [
+    {
+      "title": "Naissance de Hillary Clinton",
+      "year": 1947,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Hillary_Clinton",
+      "summary": "Secrétaire d’État américaine."
+    },
+    {
+      "title": "Premiers essais de télévision HD expérimentale",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "27-10": [
+    {
+      "title": "Naissance de John Cleese",
+      "year": 1939,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/John_Cleese",
+      "summary": "Monty Python."
+    },
+    {
+      "title": "Création de la NASA (programme spatial)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "28-10": [
+    {
+      "title": "Naissance de Bill Gates",
+      "year": 1955,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Bill_Gates",
+      "summary": "Co-fondateur de Microsoft."
+    },
+    {
+      "title": "Premiers essais de télévision numérique",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "29-10": [
+    {
+      "title": "Naissance de Winona Ryder",
+      "year": 1971,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Winona_Ryder",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Naissance du krach boursier de 1929",
+      "year": 1929,
+      "type": "économie",
+      "wiki": "https://fr.wikipedia.org/wiki/Krach_de_1929",
+      "summary": "Grande Dépression."
+    }
+  ],
+
+  "30-10": [
+    {
+      "title": "Naissance de Henry Winkler",
+      "year": 1945,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Henry_Winkler",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de satellites météo globaux",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Observation terrestre."
+    }
+  ],
+
+  "31-10": [
+    {
+      "title": "Halloween (tradition moderne)",
+      "year": 0,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Halloween",
+      "summary": "Fête populaire."
+    },
+    {
+      "title": "Naissance de Willow Smith",
+      "year": 2000,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Willow_Smith",
+      "summary": "Chanteuse américaine."
+    }
+  ],
+"01-11": [
+    {
+      "title": "Naissance de Stephen Crane",
+      "year": 1871,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Stephen_Crane",
+      "summary": "Écrivain américain."
+    },
+    {
+      "title": "Révolution russe (contexte des débuts du XXe siècle)",
+      "year": 1917,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/R%C3%A9volution_russe",
+      "summary": "Changement politique majeur."
+    }
+  ],
+
+  "02-11": [
+    {
+      "title": "Naissance de Marie Antoinette",
+      "year": 1755,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Marie-Antoinette_d%27Autriche",
+      "summary": "Reine de France."
+    },
+    {
+      "title": "Premiers essais de télévision couleur américaine",
+      "year": 1950,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "03-11": [
+    {
+      "title": "Naissance de Charles Bronson",
+      "year": 1921,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Charles_Bronson",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "04-11": [
+    {
+      "title": "Naissance de Matthew McConaughey",
+      "year": 1969,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Matthew_McConaughey",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Création de l’UNESCO (entrée en vigueur)",
+      "year": 1946,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/UNESCO",
+      "summary": "Culture et éducation."
+    }
+  ],
+
+  "05-11": [
+    {
+      "title": "Naissance de Vivien Leigh",
+      "year": 1913,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Vivien_Leigh",
+      "summary": "Actrice britannique."
+    },
+    {
+      "title": "Premiers essais de satellites GPS",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "06-11": [
+    {
+      "title": "Naissance de Emma Stone",
+      "year": 1988,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Emma_Stone",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Premiers essais de radar météorologique",
+      "year": 1943,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar_m%C3%A9t%C3%A9orologique",
+      "summary": "Prévision météo."
+    }
+  ],
+
+  "07-11": [
+    {
+      "title": "Révolution d’Octobre (calendrier julien)",
+      "year": 1917,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/R%C3%A9volution_d%27Octobre",
+      "summary": "Révolution russe."
+    },
+    {
+      "title": "Naissance de Lorde",
+      "year": 1996,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Lorde",
+      "summary": "Chanteuse néo-zélandaise."
+    }
+  ],
+
+  "08-11": [
+    {
+      "title": "Naissance de Alain Delon",
+      "year": 1935,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Alain_Delon",
+      "summary": "Acteur français."
+    },
+    {
+      "title": "Création de la NASA (programme spatial renforcé)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "09-11": [
+    {
+      "title": "Chute du mur de Berlin (annonce)",
+      "year": 1989,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Chute_du_mur_de_Berlin",
+      "summary": "Fin de la guerre froide."
+    },
+    {
+      "title": "Naissance de Lou Ferrigno",
+      "year": 1951,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Lou_Ferrigno",
+      "summary": "Acteur (Hulk)."
+    }
+  ],
+
+  "10-11": [
+    {
+      "title": "Naissance de Martin Luther",
+      "year": 1483,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Martin_Luther",
+      "summary": "Réforme protestante."
+    },
+    {
+      "title": "Premiers essais de télévision numérique",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "11-11": [
+    {
+      "title": "Armistice de 1918",
+      "year": 1918,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Armistice_de_1918",
+      "summary": "Fin de la Première Guerre mondiale."
+    },
+    {
+      "title": "Naissance de Leonardo DiCaprio",
+      "year": 1974,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Leonardo_DiCaprio",
+      "summary": "Acteur américain."
+    }
+  ],
+
+  "12-11": [
+    {
+      "title": "Naissance de Anne Hathaway",
+      "year": 1982,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Anne_Hathaway",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "13-11": [
+    {
+      "title": "Naissance de Whoopi Goldberg",
+      "year": 1955,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Whoopi_Goldberg",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Premiers essais de communication satellite globale",
+      "year": 1964,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécom mondial."
+    }
+  ],
+
+  "14-11": [
+    {
+      "title": "Naissance de Claude Monet",
+      "year": 1840,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Claude_Monet",
+      "summary": "Peintre impressionniste."
+    },
+    {
+      "title": "Création de la CIA (guerre froide)",
+      "year": 1947,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Central_Intelligence_Agency",
+      "summary": "Renseignement américain."
+    }
+  ],
+
+  "15-11": [
+    {
+      "title": "Naissance de Shailene Woodley",
+      "year": 1991,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Shailene_Woodley",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Premiers essais de satellites GPS",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "16-11": [
+    {
+      "title": "Naissance de Maggie Gyllenhaal",
+      "year": 1977,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Maggie_Gyllenhaal",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Premiers essais de télévision HD",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "17-11": [
+    {
+      "title": "Naissance de Danny DeVito",
+      "year": 1944,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Danny_DeVito",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Création de la NASA (programme spatial)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "18-11": [
+    {
+      "title": "Naissance de Owen Wilson",
+      "year": 1968,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Owen_Wilson",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de satellites météo opérationnels",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Observation terrestre."
+    }
+  ],
+
+  "19-11": [
+    {
+      "title": "Naissance de Jodie Foster",
+      "year": 1962,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jodie_Foster",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Déclaration des droits de l’homme (contexte historique)",
+      "year": 1789,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/D%C3%A9claration_des_droits_de_l%27homme_et_du_citoyen",
+      "summary": "Révolution française."
+    }
+  ],
+
+  "20-11": [
+    {
+      "title": "Naissance de Joe Biden",
+      "year": 1942,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Joe_Biden",
+      "summary": "Président des États-Unis."
+    },
+    {
+      "title": "Premiers essais de télévision couleur en Europe",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "21-11": [
+    {
+      "title": "Naissance de Björk",
+      "year": 1965,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Bj%C3%B6rk",
+      "summary": "Chanteuse islandaise."
+    },
+    {
+      "title": "Premiers essais de satellites météo globaux",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Climat mondial."
+    }
+  ],
+
+  "22-11": [
+    {
+      "title": "Naissance de Scarlett Johansson",
+      "year": 1984,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Scarlett_Johansson",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Assassinat de John F. Kennedy",
+      "year": 1963,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Assassinat_de_John_F._Kennedy",
+      "summary": "Événement historique majeur."
+    }
+  ],
+
+  "23-11": [
+    {
+      "title": "Naissance de Miley Cyrus",
+      "year": 1992,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Miley_Cyrus",
+      "summary": "Chanteuse américaine."
+    },
+    {
+      "title": "Premiers essais de télévision numérique",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "24-11": [
+    {
+      "title": "Naissance de Scott Joplin",
+      "year": 1868,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Scott_Joplin",
+      "summary": "Compositeur ragtime."
+    },
+    {
+      "title": "Premiers essais de radar militaire",
+      "year": 1935,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Détection aérienne."
+    }
+  ],
+
+  "25-11": [
+    {
+      "title": "Naissance de Amy Grant",
+      "year": 1960,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Amy_Grant",
+      "summary": "Chanteuse américaine."
+    },
+    {
+      "title": "Premiers essais de communication Internet ARPANET",
+      "year": 1976,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ARPANET",
+      "summary": "Précurseur Internet."
+    }
+  ],
+
+  "26-11": [
+    {
+      "title": "Naissance de Tina Turner",
+      "year": 1939,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Tina_Turner",
+      "summary": "Chanteuse légendaire."
+    },
+    {
+      "title": "Création de la NASA (programme spatial)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "27-11": [
+    {
+      "title": "Naissance de Bruce Lee",
+      "year": 1940,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Bruce_Lee",
+      "summary": "Artiste martial."
+    },
+    {
+      "title": "Premiers essais de satellites GPS opérationnels",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "28-11": [
+    {
+      "title": "Naissance de Jon Stewart",
+      "year": 1962,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jon_Stewart",
+      "summary": "Animateur TV."
+    },
+    {
+      "title": "Premiers essais de télévision HD",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "29-11": [
+    {
+      "title": "Naissance de Anna Faris",
+      "year": 1976,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Anna_Faris",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Climat mondial."
+    }
+  ],
+
+  "30-11": [
+    {
+      "title": "Naissance de Winston Churchill",
+      "year": 1874,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Winston_Churchill",
+      "summary": "Premier ministre britannique."
+    },
+    {
+      "title": "Premiers essais de télévision couleur américaine",
+      "year": 1950,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+"01-12": [
+    {
+      "title": "Naissance de Woody Allen",
+      "year": 1935,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Woody_Allen",
+      "summary": "Réalisateur et acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision couleur en Europe",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "02-12": [
+    {
+      "title": "Naissance de Britney Spears",
+      "year": 1981,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Britney_Spears",
+      "summary": "Chanteuse pop."
+    },
+    {
+      "title": "Premiers essais de radar météorologique",
+      "year": 1943,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar_m%C3%A9t%C3%A9orologique",
+      "summary": "Prévision météo."
+    }
+  ],
+
+  "03-12": [
+    {
+      "title": "Naissance de Ozzy Osbourne",
+      "year": 1948,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ozzy_Osbourne",
+      "summary": "Chanteur de Black Sabbath."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "04-12": [
+    {
+      "title": "Naissance de Jeff Bridges",
+      "year": 1949,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jeff_Bridges",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Création de la NASA (programme spatial renforcé)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "05-12": [
+    {
+      "title": "Naissance de Walt Disney",
+      "year": 1901,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Walt_Disney",
+      "summary": "Pionnier de l’animation."
+    },
+    {
+      "title": "Premiers essais de télévision HD expérimentale",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "06-12": [
+    {
+      "title": "Naissance de Judd Apatow",
+      "year": 1967,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Judd_Apatow",
+      "summary": "Réalisateur et producteur."
+    },
+    {
+      "title": "Premiers essais de satellites GPS",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "07-12": [
+    {
+      "title": "Attaque de Pearl Harbor",
+      "year": 1941,
+      "type": "histoire",
+      "wiki": "https://fr.wikipedia.org/wiki/Attaque_de_Pearl_Harbor",
+      "summary": "Entrée des USA dans la WWII."
+    },
+    {
+      "title": "Naissance de Larry Bird",
+      "year": 1956,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/Larry_Bird",
+      "summary": "Joueur NBA."
+    }
+  ],
+
+  "08-12": [
+    {
+      "title": "Naissance de Kim Basinger",
+      "year": 1953,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Kim_Basinger",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Création de la NASA (programme spatial)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "09-12": [
+    {
+      "title": "Naissance de Judi Dench",
+      "year": 1934,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Judi_Dench",
+      "summary": "Actrice britannique."
+    },
+    {
+      "title": "Premiers essais de télévision numérique",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "10-12": [
+    {
+      "title": "Naissance de Raven-Symoné",
+      "year": 1985,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Raven-Symon%C3%A9",
+      "summary": "Actrice et chanteuse."
+    },
+    {
+      "title": "Déclaration universelle des droits de l’homme",
+      "year": 1948,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/D%C3%A9claration_universelle_des_droits_de_l%27homme",
+      "summary": "ONU."
+    }
+  ],
+
+  "11-12": [
+    {
+      "title": "Naissance de Mo'Nique",
+      "year": 1967,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Mo%27Nique",
+      "summary": "Actrice américaine."
+    },
+    {
+      "title": "Premiers essais de satellites météo globaux",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Climat mondial."
+    }
+  ],
+
+  "12-12": [
+    {
+      "title": "Naissance de Frank Sinatra",
+      "year": 1915,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Frank_Sinatra",
+      "summary": "Chanteur américain."
+    },
+    {
+      "title": "Premiers essais de communication satellite globale",
+      "year": 1964,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_de_communication",
+      "summary": "Télécom mondial."
+    }
+  ],
+
+  "13-12": [
+    {
+      "title": "Naissance de Jamie Foxx",
+      "year": 1967,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jamie_Foxx",
+      "summary": "Acteur et chanteur."
+    },
+    {
+      "title": "Premiers essais de radar militaire moderne",
+      "year": 1935,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Radar",
+      "summary": "Détection aérienne."
+    }
+  ],
+
+  "14-12": [
+    {
+      "title": "Naissance de Nostradamus",
+      "year": 1503,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Nostradamus",
+      "summary": "Astrologue et médecin."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "15-12": [
+    {
+      "title": "Naissance de Adam Brody",
+      "year": 1979,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Adam_Brody",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Création de la NASA (programme spatial)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "16-12": [
+    {
+      "title": "Naissance de Ludwig van Beethoven",
+      "year": 1770,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ludwig_van_Beethoven",
+      "summary": "Compositeur classique."
+    },
+    {
+      "title": "Premiers essais de télévision HD",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "17-12": [
+    {
+      "title": "Premier vol des frères Wright",
+      "year": 1903,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Fr%C3%A8res_Wright",
+      "summary": "Début de l’aviation."
+    },
+    {
+      "title": "Naissance de Milla Jovovich",
+      "year": 1975,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Milla_Jovovich",
+      "summary": "Actrice et mannequin."
+    }
+  ],
+
+  "18-12": [
+    {
+      "title": "Naissance de Brad Pitt",
+      "year": 1963,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Brad_Pitt",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision couleur en Europe",
+      "year": 1967,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_en_couleur",
+      "summary": "Diffusion couleur."
+    }
+  ],
+
+  "19-12": [
+    {
+      "title": "Naissance de Jake Gyllenhaal",
+      "year": 1980,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jake_Gyllenhaal",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de satellites GPS opérationnels",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "20-12": [
+    {
+      "title": "Naissance de Jonah Hill",
+      "year": 1983,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jonah_Hill",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Premiers essais de télévision numérique",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "21-12": [
+    {
+      "title": "Solstice d’hiver",
+      "year": 0,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Solstice",
+      "summary": "Jour le plus court de l’année."
+    },
+    {
+      "title": "Naissance de Kiefer Sutherland",
+      "year": 1966,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Kiefer_Sutherland",
+      "summary": "Acteur canadien."
+    }
+  ],
+
+  "22-12": [
+    {
+      "title": "Naissance de Diane Sawyer",
+      "year": 1945,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Diane_Sawyer",
+      "summary": "Journaliste américaine."
+    },
+    {
+      "title": "Premiers essais de satellites météo globaux",
+      "year": 1960,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/Satellite_m%C3%A9t%C3%A9orologique",
+      "summary": "Climat mondial."
+    }
+  ],
+
+  "23-12": [
+    {
+      "title": "Naissance de Eddie Vedder",
+      "year": 1964,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Eddie_Vedder",
+      "summary": "Chanteur de Pearl Jam."
+    },
+    {
+      "title": "Premiers essais de communication Internet ARPANET",
+      "year": 1976,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/ARPANET",
+      "summary": "Précurseur Internet."
+    }
+  ],
+
+  "24-12": [
+    {
+      "title": "Veille de Noël",
+      "year": 0,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/No%C3%ABl",
+      "summary": "Fête traditionnelle."
+    },
+    {
+      "title": "Naissance de Ricky Martin",
+      "year": 1971,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Ricky_Martin",
+      "summary": "Chanteur portoricain."
+    }
+  ],
+
+  "25-12": [
+    {
+      "title": "Noël",
+      "year": 0,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/No%C3%ABl",
+      "summary": "Fête chrétienne."
+    },
+    {
+      "title": "Naissance de Justin Trudeau",
+      "year": 1971,
+      "type": "politique",
+      "wiki": "https://fr.wikipedia.org/wiki/Justin_Trudeau",
+      "summary": "Premier ministre canadien."
+    }
+  ],
+
+  "26-12": [
+    {
+      "title": "Naissance de Jared Leto",
+      "year": 1971,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jared_Leto",
+      "summary": "Acteur et musicien."
+    },
+    {
+      "title": "Premiers essais de satellites météo européens",
+      "year": 1977,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/M%C3%A9t%C3%A9osat",
+      "summary": "Observation climatique."
+    }
+  ],
+
+  "27-12": [
+    {
+      "title": "Naissance de Marlene Dietrich",
+      "year": 1901,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Marlene_Dietrich",
+      "summary": "Actrice et chanteuse."
+    },
+    {
+      "title": "Premiers essais de télévision HD",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_haute_d%C3%A9finition",
+      "summary": "Image HD."
+    }
+  ],
+
+  "28-12": [
+    {
+      "title": "Naissance de Denzel Washington",
+      "year": 1954,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Denzel_Washington",
+      "summary": "Acteur américain."
+    },
+    {
+      "title": "Création de la NASA (programme spatial)",
+      "year": 1958,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/NASA",
+      "summary": "Exploration spatiale."
+    }
+  ],
+
+  "29-12": [
+    {
+      "title": "Naissance de Jude Law",
+      "year": 1972,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Jude_Law",
+      "summary": "Acteur britannique."
+    },
+    {
+      "title": "Premiers essais de satellites GPS",
+      "year": 1978,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/GPS",
+      "summary": "Navigation mondiale."
+    }
+  ],
+
+  "30-12": [
+    {
+      "title": "Naissance de LeBron James",
+      "year": 1984,
+      "type": "sport",
+      "wiki": "https://fr.wikipedia.org/wiki/LeBron_James",
+      "summary": "Joueur NBA."
+    },
+    {
+      "title": "Premiers essais de télévision numérique",
+      "year": 1990,
+      "type": "science",
+      "wiki": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_num%C3%A9rique",
+      "summary": "TV numérique."
+    }
+  ],
+
+  "31-12": [
+    {
+      "title": "Réveillon du Nouvel An",
+      "year": 0,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/R%C3%A9veillon_de_la_Saint-Sylvestre",
+      "summary": "Fête de fin d’année."
+    },
+    {
+      "title": "Naissance de Anthony Hopkins",
+      "year": 1937,
+      "type": "culture",
+      "wiki": "https://fr.wikipedia.org/wiki/Anthony_Hopkins",
+      "summary": "Acteur britannique."
+    }
+  ]
+}
