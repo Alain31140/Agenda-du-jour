@@ -1398,3 +1398,252 @@ body {
 body.carte-ouverte {
     overflow: hidden;
 }
+
+/* ==================================================
+   MENU PRINCIPAL
+================================================== */
+
+.menu-principal {
+    display: grid;
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap: 20px;
+
+    grid-column: 1 / -1;
+
+    margin-top: 4px;
+}
+
+
+.menu-carte {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        auto 1fr auto;
+
+    gap: 16px;
+
+    align-items: center;
+
+    min-width: 0;
+
+    padding: 24px 22px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius:
+        var(--rayon-carte);
+
+    box-shadow:
+        var(--ombre-legere);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+
+.menu-carte::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.12) 45%,
+            transparent 75%
+        );
+
+    transform:
+        translateX(-120%);
+
+    transition:
+        transform 0.55s ease;
+}
+
+
+.menu-carte:hover {
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        var(--ombre-survol);
+}
+
+
+.menu-carte:hover::before {
+    transform:
+        translateX(120%);
+}
+
+
+.menu-icone {
+    position: relative;
+
+    z-index: 1;
+
+    font-size:
+        clamp(
+            2.4rem,
+            5vw,
+            3.5rem
+        );
+
+    line-height: 1;
+}
+
+
+.menu-contenu {
+    position: relative;
+
+    z-index: 1;
+
+    min-width: 0;
+
+    text-align: left;
+}
+
+
+.menu-contenu h2 {
+    margin:
+        0
+        0
+        8px;
+
+    color: white;
+
+    font-size:
+        clamp(
+            1.15rem,
+            2.5vw,
+            1.45rem
+        );
+
+    line-height: 1.2;
+}
+
+
+.menu-contenu p {
+    margin: 0;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.88
+        );
+
+    font-size: 0.95rem;
+
+    line-height: 1.45;
+}
+
+
+.menu-fleche {
+    position: relative;
+
+    z-index: 1;
+
+    font-size: 1.8rem;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.22s ease;
+}
+
+
+.menu-carte:hover .menu-fleche {
+    transform:
+        translateX(5px);
+}
+
+
+/* Couleurs des trois cartes */
+
+.menu-personnalites {
+    background:
+        linear-gradient(
+            145deg,
+            #7a4f9d,
+            #ad78cf
+        );
+}
+
+
+.menu-culture {
+    background:
+        linear-gradient(
+            145deg,
+            #b55c31,
+            #dc8b50
+        );
+}
+
+
+.menu-evenements {
+    background:
+        linear-gradient(
+            145deg,
+            #355f8a,
+            #5d8db7
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE DU MENU
+================================================== */
+
+@media (max-width: 950px) {
+
+    .menu-principal {
+        grid-template-columns: 1fr;
+    }
+
+
+    .menu-carte {
+        padding:
+            22px
+            20px;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .menu-carte {
+        grid-template-columns:
+            auto
+            1fr;
+
+        gap: 14px;
+    }
+
+
+    .menu-fleche {
+        display: none;
+    }
+
+
+    .menu-contenu h2 {
+        font-size: 1.2rem;
+    }
+
+}

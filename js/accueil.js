@@ -501,6 +501,92 @@ async function afficherAccueil() {
                 ${carteLocalisation}
 
             </div>
+            <nav class="menu-principal" aria-label="Navigation principale">
+
+                <a
+                    class="menu-carte menu-personnalites"
+                    href="personnalites.html"
+                >
+
+                    <div class="menu-icone">
+                        👤
+                    </div>
+
+                    <div class="menu-contenu">
+
+                        <h2>
+                            Personnalités du jour
+                        </h2>
+
+                        <p>
+                            Naissances, décès et parcours remarquables
+                        </p>
+
+                    </div>
+
+                    <div class="menu-fleche">
+                        →
+                    </div>
+
+                </a>
+
+
+                <a
+                    class="menu-carte menu-culture"
+                    href="culture.html"
+                >
+
+                    <div class="menu-icone">
+                        🎭
+                    </div>
+
+                    <div class="menu-contenu">
+
+                        <h2>
+                            Culture du jour
+                        </h2>
+
+                        <p>
+                            Musique, cinéma, livres et concerts
+                        </p>
+
+                    </div>
+
+                    <div class="menu-fleche">
+                        →
+                    </div>
+
+                </a>
+
+
+                <a
+                    class="menu-carte menu-evenements"
+                    href="evenements.html"
+                >
+
+                    <div class="menu-icone">
+                        📜
+                    </div>
+
+                    <div class="menu-contenu">
+
+                        <h2>
+                            Événements du jour
+                        </h2>
+
+                        <p>
+                            Les faits marquants survenus à cette date
+                        </p>
+
+                    </div>
+
+                    <div class="menu-fleche">
+                        →
+                    </div>
+
+                </a>
+
+            </nav>
 
         </section>
     `;
