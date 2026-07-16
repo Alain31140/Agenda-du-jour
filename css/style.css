@@ -937,20 +937,12 @@ body {
    CARTE LUNE
 ================================================== */
 
-..lune-carte {
+.lune-carte {
 
+    background: #000000 !important;
     color: white;
+    border: 1px solid rgba(255,255,255,.12);
 
-    background: #000000;
-
-    border:
-        1px solid
-        rgba(
-            255,
-            255,
-            255,
-            0.12
-        );
 }
 
 .lune-carte .info-carte-titre {
