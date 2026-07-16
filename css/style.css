@@ -625,6 +625,7 @@ body {
 }
 
 
+
 /* ==================================================
    TABLETTE ET GRAND ÉCRAN
 ================================================== */
@@ -886,4 +887,514 @@ body {
     font-weight: 700;
 
     line-height: 1.4;
+}
+/* ==================================================
+   CARTES LUNE / SOLEIL / LOCALISATION
+================================================== */
+
+.info-carte {
+    min-width: 0;
+    padding: 26px 22px;
+    text-align: center;
+    background: var(--couleur-carte);
+    border: 1px solid rgba(53, 107, 140, 0.10);
+    border-radius: var(--rayon-carte);
+    box-shadow: var(--ombre-legere);
+}
+
+.info-carte-titre {
+    margin-bottom: 16px;
+    color: var(--couleur-principale);
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+    font-weight: 800;
+}
+
+
+/* ==================================================
+   GRILLE DES TROIS CARTES
+================================================== */
+
+.widgets-principaux {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    grid-column: 1 / -1;
+    align-items: stretch;
+}
+
+.widgets-principaux .info-carte {
+    width: 100%;
+    height: 100%;
+    grid-column: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* ==================================================
+   CARTE LUNE
+================================================== */
+
+.lune-carte {
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #05070d,
+            #111827
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.15
+        );
+}
+
+.lune-carte .info-carte-titre {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.lune-phase {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+.lune-carte strong {
+    color: white;
+}
+
+.lune-image {
+    margin: 4px 0 18px;
+}
+
+.lune-image img {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 1;
+    margin: 0 auto 18px;
+    object-fit: contain;
+}
+
+.lune-details {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.90);
+}
+
+.lune-age {
+    margin-top: 6px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+}
+
+
+/* ==================================================
+   CARTE SOLEIL + MÉTÉO
+================================================== */
+
+.soleil-meteo-carte {
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #4f93ce,
+            #86c7ea
+        );
+
+    transition:
+        background 0.4s ease;
+}
+
+.soleil-meteo-carte .info-carte-titre,
+.soleil-meteo-carte strong,
+.soleil-meteo-carte .meteo-temperature {
+    color: white;
+}
+
+.soleil-ligne {
+    margin: 9px 0;
+    line-height: 1.5;
+}
+
+.compte-rebours-soleil {
+    margin-top: 16px;
+    padding: 12px;
+    line-height: 1.5;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.16
+        );
+
+    border-radius: 12px;
+}
+
+.compte-rebours-soleil strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.15rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.meteo-separateur {
+    width: 70%;
+    height: 1px;
+    margin: 18px auto;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.35
+        );
+}
+
+.meteo-icone {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.meteo-description {
+    margin-top: 10px;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.meteo-temperature {
+    margin-top: 12px;
+    font-size: clamp(1.45rem, 4vw, 1.9rem);
+    font-weight: 800;
+}
+
+.meteo-erreur {
+    padding: 25px 10px;
+    line-height: 1.6;
+}
+
+
+/* Fonds selon la météo */
+
+.meteo-code-0,
+.meteo-code-1 {
+    background:
+        linear-gradient(
+            145deg,
+            #f3a23a,
+            #f6cd65
+        );
+}
+
+.meteo-code-2,
+.meteo-code-3 {
+    background:
+        linear-gradient(
+            145deg,
+            #617589,
+            #9eafbd
+        );
+}
+
+.meteo-code-45,
+.meteo-code-48 {
+    background:
+        linear-gradient(
+            145deg,
+            #7b8790,
+            #b7c0c6
+        );
+}
+
+.meteo-code-51,
+.meteo-code-53,
+.meteo-code-55,
+.meteo-code-61,
+.meteo-code-63,
+.meteo-code-65,
+.meteo-code-80,
+.meteo-code-81,
+.meteo-code-82 {
+    background:
+        linear-gradient(
+            145deg,
+            #2f5f86,
+            #668fad
+        );
+}
+
+.meteo-code-71,
+.meteo-code-73,
+.meteo-code-75 {
+    color: #24313b;
+
+    background:
+        linear-gradient(
+            145deg,
+            #e8f2f7,
+            #b9d5e3
+        );
+}
+
+.meteo-code-71 .info-carte-titre,
+.meteo-code-73 .info-carte-titre,
+.meteo-code-75 .info-carte-titre,
+.meteo-code-71 strong,
+.meteo-code-73 strong,
+.meteo-code-75 strong,
+.meteo-code-71 .meteo-temperature,
+.meteo-code-73 .meteo-temperature,
+.meteo-code-75 .meteo-temperature {
+    color: #24313b;
+}
+
+.meteo-code-95,
+.meteo-code-96,
+.meteo-code-99 {
+    background:
+        linear-gradient(
+            145deg,
+            #293446,
+            #5a6477
+        );
+}
+
+.meteo-indisponible {
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #66727c,
+            #909ba3
+        );
+}
+
+
+/* ==================================================
+   CARTE LOCALISATION
+================================================== */
+
+.localisation-carte {
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #2f7a68,
+            #64a997
+        );
+}
+
+.localisation-carte .info-carte-titre,
+.localisation-carte strong {
+    color: white;
+}
+
+
+/* ==================================================
+   CARTE DICTON — PLEINE LARGEUR
+================================================== */
+
+.dicton-carte {
+    width: 100%;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.dicton-carte blockquote {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* ==================================================
+   RESPONSIVE DES TROIS CARTES
+================================================== */
+
+@media (max-width: 900px) {
+
+    .widgets-principaux {
+        grid-template-columns: 1fr;
+    }
+
+    .widgets-principaux .info-carte {
+        height: auto;
+    }
+
+    .lune-image img {
+        width: min(80vw, 260px);
+    }
+
+}
+
+/* ==================================================
+   CARTE LOCALISATION
+================================================== */
+
+.localisation-carte {
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #2f7a68,
+            #64a997
+        );
+}
+
+.localisation-carte .info-carte-titre,
+.localisation-carte strong {
+    color: white;
+}
+
+.localisation-sous-titre {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    font-weight: 750;
+}
+
+.localisation-adresse {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.localisation-coordonnees {
+    display: grid;
+    gap: 6px;
+    margin-bottom: 22px;
+    font-variant-numeric: tabular-nums;
+}
+
+
+
+.bouton-carte:hover {
+    transform: translateY(-1px);
+}
+
+.carte-position {
+    width: 100%;
+    height: 320px;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.localisation-erreur {
+    padding: 20px 5px;
+    line-height: 1.6;
+}
+
+/* ==================================================
+   CARTE GÉOGRAPHIQUE
+================================================== */
+
+.conteneur-carte-position {
+    position: relative;
+
+    width: 100%;
+    height: 300px;
+
+    margin-top: 20px;
+
+    overflow: hidden;
+
+    background: #e8edf0;
+
+    border-radius: 16px;
+
+    cursor: zoom-in;
+
+    transition:
+        border-radius 0.2s ease;
+}
+
+
+.carte-position {
+    width: 100%;
+    height: 100%;
+}
+
+
+.bouton-plein-ecran {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 1000;
+
+    display: grid;
+    place-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 0;
+
+    color: #245f52;
+
+    font-size: 1.45rem;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.94
+        );
+
+    border: 0;
+    border-radius: 50%;
+
+    box-shadow:
+        0 4px 14px
+        rgba(
+            0,
+            0,
+            0,
+            0.22
+        );
+}
+
+
+/* Carte ouverte en plein écran */
+
+.conteneur-carte-position.plein-ecran {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    width: 100vw;
+    height: 100dvh;
+
+    margin: 0;
+
+    border-radius: 0;
+
+    cursor: default;
+}
+
+
+body.carte-ouverte {
+    overflow: hidden;
 }

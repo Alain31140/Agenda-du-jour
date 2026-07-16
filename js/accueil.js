@@ -323,6 +323,12 @@ async function afficherAccueil() {
                 .join("<br>")
             : "🌍 Aucune journée mondiale renseignée";
 
+    const carteSoleilMeteo =
+        await creerCarteSoleilMeteo();
+
+    const carteLocalisation =
+        await creerCarteLocalisation();  
+
     application.innerHTML = `
 
         <section class="accueil-principal">
@@ -474,7 +480,7 @@ async function afficherAccueil() {
             ` : ""}
 
 
-            <article class="accueil-carte">
+            <article class="accueil-carte dicton-carte">
 
                 <div class="accueil-carte-titre">
                     💬 Le dicton du jour
@@ -486,10 +492,24 @@ async function afficherAccueil() {
 
             </article>
 
+           <div class="widgets-principaux">
+
+                ${creerCarteLune()}
+
+                ${carteSoleilMeteo}
+
+                ${carteLocalisation}
+
+            </div>
+
         </section>
     `;
 
     demarrerHorloge();
+
+    demarrerCompteReboursSoleil();
+
+    initialiserLocalisation();
 }
 
 
