@@ -377,7 +377,9 @@ function creerFicheCulture(
         echapperHTML(
             element.resume
             ||
-            "Une découverte culturelle à explorer."
+            obtenirResumeParDefaut(
+                categorie
+            )
         );
 
     const image =
@@ -616,7 +618,6 @@ async function afficherCultureDuJour() {
             new Intl.DateTimeFormat(
                 "fr-FR",
                 {
-                    weekday: "long",
                     day: "numeric",
                     month: "long"
                 }
@@ -625,8 +626,7 @@ async function afficherCultureDuJour() {
             );
 
         dateElement.textContent =
-            `Les découvertes du ${dateComplete}`;
-
+            `Les découvertes culturelles d’un ${dateComplete}`;
         if (
             Object.keys(categories).length === 0
         ) {
@@ -877,3 +877,50 @@ document.addEventListener(
     "DOMContentLoaded",
     afficherCultureDuJour
 );
+
+function obtenirResumeParDefaut(categorie) {
+
+    const textes = {
+        film:
+            "Un film à découvrir ou à redécouvrir.",
+
+        livre:
+            "Un ouvrage qui a marqué son époque.",
+
+        disque:
+            "Un album ou un enregistrement à écouter.",
+
+        concert:
+            "Un rendez-vous musical mémorable.",
+
+        bd:
+            "Une bande dessinée à parcourir.",
+
+        "jeu vidéo":
+            "Un jeu vidéo qui a marqué son univers.",
+
+        "jeu-video":
+            "Un jeu vidéo qui a marqué son univers.",
+
+        "série tv":
+            "Une série à découvrir ou à revoir.",
+
+        "serie-tv":
+            "Une série à découvrir ou à revoir.",
+
+        opéra:
+            "Une œuvre lyrique à découvrir.",
+
+        opera:
+            "Une œuvre lyrique à découvrir.",
+
+        exposition:
+            "Une exposition ou une œuvre à explorer."
+    };
+
+    return (
+        textes[categorie]
+        ||
+        "Une découverte culturelle à explorer."
+    );
+}

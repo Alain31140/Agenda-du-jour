@@ -1,0 +1,35 @@
+RAPPORT DE CONVERSION — CULTURE
+======================================
+
+Dates conservées : 366
+Items conservés : 739
+Identifiants uniques générés : 739
+
+Répartition par type normalisé :
+  - film: 208
+  - livre: 146
+  - disque: 116
+  - bd: 80
+  - jeu-video: 72
+  - serie-tv: 50
+  - opera: 47
+  - exposition: 8
+  - comedie-musicale: 6
+  - concert: 4
+  - spectacle: 2
+
+Champs à enrichir ou vérifier :
+  - Résumés absents : 739
+  - Images absentes : 669
+  - Liens Wikipédia absents : 639
+  - Créateurs absents : 0
+  - Années absentes : 0
+  - Images distantes à contrôler : 53
+  - Images locales existantes : 17
+
+IMPORTANT
+La clé de date d'origine est conservée dans date_agenda.
+date_precision vaut volontairement « a-verifier » : la conversion ne prétend
+pas que cette date est la date officielle de sortie ou de publication.
+
+Le fichier original n'a pas été modifié.
