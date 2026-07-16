@@ -3719,3 +3719,231 @@ body.carte-ouverte {
 
 }
 
+/* ==================================================
+   EN-TÊTE COMPACT AGENDA
+================================================== */
+
+.entete-agenda {
+    color: white;
+
+    box-shadow:
+        0 4px 14px
+        rgba(
+            0,
+            0,
+            0,
+            0.18
+        );
+}
+
+
+/* Couleurs selon la rubrique */
+
+.entete-culture {
+    background:
+        linear-gradient(
+            135deg,
+            #9c5b31,
+            #c67c45
+        );
+}
+
+
+.entete-personnalites {
+    background:
+        linear-gradient(
+            135deg,
+            #47372d,
+            #80654f
+        );
+}
+
+
+/* ==================================================
+   PETITE BARRE DE NAVIGATION
+================================================== */
+
+.entete-navigation {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding:
+        8px
+        14px;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.16
+        );
+
+    border-bottom:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.14
+        );
+}
+
+
+.entete-lien {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    min-height: 34px;
+
+    padding:
+        5px
+        9px;
+
+    color: white;
+
+    font-size: 0.92rem;
+
+    font-weight: 750;
+
+    text-decoration: none;
+
+    border-radius: 999px;
+
+    transition:
+        background 0.2s ease;
+}
+
+
+.entete-lien:hover {
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.14
+        );
+}
+
+
+/* ==================================================
+   TITRE DE LA RUBRIQUE
+================================================== */
+
+.entete-rubrique {
+    padding:
+        16px
+        14px
+        18px;
+
+    text-align: center;
+}
+
+
+.entete-rubrique h1 {
+    margin:
+        0
+        0
+        6px;
+
+    color: white;
+
+    font-size:
+        clamp(
+            1.55rem,
+            5vw,
+            2.3rem
+        );
+
+    line-height: 1.1;
+}
+
+
+.entete-rubrique p {
+    margin: 0;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.88
+        );
+
+    font-size:
+        clamp(
+            0.9rem,
+            3vw,
+            1.05rem
+        );
+
+    line-height: 1.35;
+}
+
+
+/* ==================================================
+   TÉLÉPHONE
+================================================== */
+
+@media (max-width: 520px) {
+
+    .entete-navigation {
+        padding:
+            6px
+            8px;
+    }
+
+
+    .entete-lien {
+        min-height: 32px;
+
+        padding:
+            4px
+            7px;
+
+        font-size: 0.84rem;
+    }
+
+
+    .entete-rubrique {
+        padding:
+            12px
+            10px
+            14px;
+    }
+
+
+    .entete-rubrique h1 {
+        margin-bottom: 5px;
+
+        font-size: 1.55rem;
+    }
+
+
+    .entete-rubrique p {
+        font-size: 0.9rem;
+    }
+
+}
+
+.page-rubrique-header,
+.personnalites-entete {
+    padding: 0;
+}
+
+
+.page-rubrique-header h1,
+.personnalites-entete h1 {
+    margin:
+        0
+        0
+        6px;
+}

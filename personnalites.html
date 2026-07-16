@@ -26,20 +26,50 @@ Personnalités du jour
 
 <body>
 
-<header
-    class="page-entete personnalites-entete"
->
+<header class="entete-agenda entete-personnalites">
 
-    <h1>
+    <nav
+        class="entete-navigation"
+        aria-label="Navigation"
+    >
 
-        👤 Personnalités du jour
+        <a
+            href="index.html"
+            class="entete-lien"
+        >
+            <span aria-hidden="true">
+                ←
+            </span>
 
-    </h1>
+            Agenda du Jour
+        </a>
 
-    <div
-        id="personnalites-date"
-        class="page-date"
-    ></div>
+
+        <a
+            href="index.html#menu-principal"
+            class="entete-lien"
+        >
+            <span aria-hidden="true">
+                ☰
+            </span>
+
+            Menu
+        </a>
+
+    </nav>
+
+
+    <div class="entete-rubrique">
+
+        <h1>
+            👤 Personnalités du jour
+        </h1>
+
+        <p id="personnalites-date">
+            Chargement…
+        </p>
+
+    </div>
 
 </header>
 

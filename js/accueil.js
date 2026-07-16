@@ -501,7 +501,11 @@ async function afficherAccueil() {
                 ${carteLocalisation}
 
             </div>
-            <nav class="menu-principal" aria-label="Navigation principale">
+            <nav
+                id="menu-principal"
+                class="menu-principal"
+                aria-label="Navigation principale"
+>
 
                 <a
                     class="menu-carte menu-personnalites"
