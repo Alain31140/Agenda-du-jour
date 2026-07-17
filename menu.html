@@ -12,10 +12,10 @@
 
     <meta
         name="description"
-        content="Explorer les rubriques de l'Agenda du Jour."
+        content="Explorer les rubriques de l'Agenda du jour."
     >
 
-    <title>Explorer l'Agenda</title>
+    <title>Explorer l’Agenda</title>
 
     <link
         rel="stylesheet"
@@ -24,9 +24,9 @@
 
 </head>
 
-<body class="page-menu">
+<body>
 
-    <header class="entete-agenda entete-menu">
+    <header class="site-header">
 
         <nav
             class="entete-navigation"
@@ -37,155 +37,149 @@
                 href="index.html"
                 class="entete-lien"
             >
-                🏠 Agenda
+                🏠 Accueil
             </a>
 
         </nav>
 
-
-        <div class="entete-rubrique">
-
-            <h1>
-                📋 Explorer l'Agenda
-            </h1>
-
-            <p>
-                Choisissez ce que vous souhaitez découvrir
-            </p>
-
-        </div>
-
     </header>
 
 
-   <main class="menu-page">
+    <main>
 
-    <section class="menu-section">
+        <section class="section-menu-principal">
 
-        <h2 class="menu-section-titre">
-            Aujourd'hui
-        </h2>
+            <h1 class="titre-menu-principal">
+                Explorer l’Agenda
+            </h1>
 
-        <div class="menu-grille menu-grille-principale">
-
-            <a
-                href="personnalites.html"
-                class="menu-carte menu-personnalites"
+            <nav
+                class="explorer-menu"
+                aria-label="Menu principal"
             >
-                <div class="menu-icone">
-                    👤
-                </div>
 
-                <div class="menu-contenu">
-                    <h3>
-                        Personnalités
-                    </h3>
+                <a
+                    class="explorer-carte explorer-personnalites"
+                    href="personnalites.html"
+                >
 
-                    <p>
-                        Naissances, décès et parcours remarquables.
-                    </p>
-                </div>
+                    <div class="explorer-icone">
+                        🎂
+                    </div>
 
-                <div class="menu-fleche">
-                    →
-                </div>
-            </a>
+                    <div class="explorer-contenu">
 
+                        <h2>
+                            Personnalités du jour
+                        </h2>
 
-            <a
-                href="culture.html"
-                class="menu-carte menu-culture"
-            >
-                <div class="menu-icone">
-                    🎭
-                </div>
+                        <p>
+                            Naissances et disparitions à cette date
+                        </p>
 
-                <div class="menu-contenu">
-                    <h3>
-                        Culture
-                    </h3>
+                    </div>
 
-                    <p>
-                        Films, livres, musique et autres découvertes.
-                    </p>
-                </div>
+                    <div class="explorer-fleche">
+                        →
+                    </div>
 
-                <div class="menu-fleche">
-                    →
-                </div>
-            </a>
+                </a>
 
 
-            <a
-                href="evenements.html"
-                class="menu-carte menu-evenements"
-            >
-                <div class="menu-icone">
-                    📜
-                </div>
+                <a
+                    class="explorer-carte explorer-culture"
+                    href="culture.html"
+                >
 
-                <div class="menu-contenu">
-                    <h3>
-                        Événements
-                    </h3>
+                    <div class="explorer-icone">
+                        🎭
+                    </div>
 
-                    <p>
-                        Les faits marquants survenus à cette date.
-                    </p>
-                </div>
+                    <div class="explorer-contenu">
 
-                <div class="menu-fleche">
-                    →
-                </div>
-            </a>
+                        <h2>
+                            Culture du jour
+                        </h2>
 
-        </div>
+                        <p>
+                            Musique, cinéma, livres et concerts
+                        </p>
 
-    </section>
+                    </div>
+
+                    <div class="explorer-fleche">
+                        →
+                    </div>
+
+                </a>
 
 
-    <section class="menu-section">
+                <a
+                    class="explorer-carte explorer-evenements"
+                    href="evenements.html"
+                >
 
-        <h2 class="menu-section-titre">
-            Participer
-        </h2>
+                    <div class="explorer-icone">
+                        📜
+                    </div>
 
-        <a
-            href="avis.html"
-            class="menu-avis"
-        >
-            <div class="menu-avis-icone">
-                💬
-            </div>
+                    <div class="explorer-contenu">
 
-            <div class="menu-avis-contenu">
-                <h3>
-                    Votre avis
-                </h3>
+                        <h2>
+                            Événements du jour
+                        </h2>
 
-                <p>
-                    💡 Une idée ? 🐞 Un bug ? ❤️ Un coup de cœur ?
-                </p>
+                        <p>
+                            Les faits marquants survenus à cette date
+                        </p>
 
-                <span>
-                    Aidez-moi à améliorer Agenda du Jour
-                </span>
-            </div>
+                    </div>
 
-            <div class="menu-fleche">
-                →
-            </div>
-        </a>
+                    <div class="explorer-fleche">
+                        →
+                    </div>
 
-    </section>
+                </a>
 
-</main>
+
+                <a
+                    class="explorer-carte explorer-avis"
+                    href="avis.html"
+                >
+
+                    <div class="explorer-icone">
+                        💬
+                    </div>
+
+                    <div class="explorer-contenu">
+
+                        <h2>
+                            Votre avis
+                        </h2>
+
+                        <p>
+                            Une idée, un bug ou un coup de cœur ?
+                        </p>
+
+                    </div>
+
+                    <div class="explorer-fleche">
+                        →
+                    </div>
+
+                </a>
+
+            </nav>
+
+        </section>
+
+    </main>
 
 
     <footer class="site-footer">
 
         <p>
-            Agenda du Jour
+            Agenda du jour
         </p>
 
     </footer>
