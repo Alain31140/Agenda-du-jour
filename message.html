@@ -10,7 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Nous écrire - Agenda du Jour</title>
+    <title>Écrire à Alain - Agenda du Jour</title>
 
     <link
         rel="stylesheet"
@@ -46,24 +46,45 @@
 
             <header class="message-entete">
 
-                <div class="message-icone">
-                    ✉️
+                <div
+                    class="message-icone"
+                    aria-hidden="true"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        role="img"
+                    >
+                        <path
+                            d="M3 5.5h18v13H3z"
+                        ></path>
+
+                        <path
+                            d="m4 7 8 6 8-6"
+                        ></path>
+                    </svg>
                 </div>
 
                 <h1>
-                    Nous écrire
+                    Écrire à Alain
                 </h1>
 
-                <p>
+                <p class="message-introduction">
 
-                    Une remarque,
-                    une suggestion,
-                    une idée d'amélioration
-                    ou simplement un petit bonjour...
+                    Une question, une suggestion,
+                    une erreur à signaler
+                    ou simplement un petit bonjour&nbsp;?
 
-                    <br><br>
+                    <strong>
+                        Je serai ravi de vous lire.
+                    </strong>
 
-                    Tous les messages sont les bienvenus.
+                </p>
+
+                <p class="message-encouragement">
+
+                    💬 Tous les messages sont lus.
+                    Vos suggestions permettent de faire évoluer
+                    Agenda du Jour.
 
                 </p>
 
@@ -79,12 +100,14 @@
 
                     <label for="prenom">
 
+                        <span aria-hidden="true">
+                            👤
+                        </span>
+
                         Votre prénom
 
                         <span class="message-facultatif">
-
                             (facultatif)
-
                         </span>
 
                     </label>
@@ -101,17 +124,18 @@
                 </div>
 
 
-
                 <div class="message-champ">
 
                     <label for="email">
 
-                        Adresse e-mail
+                        <span aria-hidden="true">
+                            ✉️
+                        </span>
+
+                        Votre adresse e-mail
 
                         <span class="message-facultatif">
-
                             (facultatif)
-
                         </span>
 
                     </label>
@@ -122,25 +146,32 @@
                         type="email"
                         maxlength="120"
                         autocomplete="email"
-                        placeholder="nom@exemple.fr"
+                        placeholder="exemple@email.fr"
                     >
 
                     <p class="message-aide">
 
-                        Indiquez votre adresse uniquement
-                        si vous souhaitez recevoir une réponse.
+                        🔒 Elle sera utilisée uniquement
+                        pour vous répondre.
 
                     </p>
 
                 </div>
 
 
-
                 <div class="message-champ">
 
                     <label for="message">
 
+                        <span aria-hidden="true">
+                            💬
+                        </span>
+
                         Votre message
+
+                        <span class="message-obligatoire">
+                            *
+                        </span>
 
                     </label>
 
@@ -149,7 +180,7 @@
                         name="message"
                         maxlength="1000"
                         required
-                        placeholder="Votre message..."
+                        placeholder="Écrivez votre message ici..."
                     ></textarea>
 
                     <div
@@ -162,13 +193,11 @@
                 </div>
 
 
-
                 <div
                     id="message-retour"
                     class="message-retour"
                     hidden
                 ></div>
-
 
 
                 <button
@@ -177,22 +206,27 @@
                     type="submit"
                 >
 
-                    <span class="message-bouton-icone">
+                    <svg
+                        class="message-bouton-icone"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M21 3 9.5 14.5"
+                        ></path>
 
-                        ✉️
-
-                    </span>
+                        <path
+                            d="m21 3-7 18-4.5-6.5L3 10z"
+                        ></path>
+                    </svg>
 
                     <span>
-
-                        Envoyer le message
-
+                        Envoyer mon message
                     </span>
 
                 </button>
 
             </form>
-
 
 
             <section
@@ -202,65 +236,51 @@
             >
 
                 <div class="message-confirmation-icone">
-
                     ✅
-
                 </div>
 
                 <h2>
-
-                    Merci !
-
+                    Message envoyé
                 </h2>
 
                 <p>
-
-                    Votre message a bien été envoyé.
-
+                    Merci pour votre message.
                 </p>
 
                 <p>
-
                     Il sera lu avec attention.
-
                 </p>
 
                 <a
                     href="index.html"
                     class="message-retour-accueil"
                 >
-
                     Retour à l'accueil
-
                 </a>
 
             </section>
-
 
 
             <footer class="message-pied">
 
                 <p>
 
-                    🔒 Les informations que vous saisissez
-                    sont uniquement utilisées
-                    pour traiter votre message.
+                    🔒 Vos informations ne sont utilisées
+                    que pour lire votre message
+                    et vous répondre.
 
                 </p>
 
-                <div class="message-signature">
+                <p class="message-signature">
 
-                    <strong>Agenda du Jour</strong>
+                    <strong>
+                        Agenda du Jour
+                    </strong>
 
-                    <br>
+                    — imaginé et développé par Alain,
+                    avec l'assistance de ChatGPT d'OpenAI.
 
-                    Projet personnel développé par Alain.
-
-                    <br>
-
-                    Conçu avec l'assistance de ChatGPT (OpenAI).
-
-                </div>
+                </p>
 
             </footer>
 
