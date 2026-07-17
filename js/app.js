@@ -49,6 +49,19 @@ async function demarrerApplication() {
     await chargerDonneesAccueil();
     afficherAccueil();
 
+    if (window.location.hash === "#menu-principal") {
+
+        setTimeout(() => {
+
+            document
+                .getElementById("menu-principal")
+                ?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+        }, 200);
+}
 
     if (message) {
 
