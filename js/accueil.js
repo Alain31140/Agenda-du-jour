@@ -506,8 +506,6 @@ async function afficherAccueil() {
 
     demarrerHorloge();
 
-}
-
     demarrerCompteReboursSoleil();
 
     initialiserLocalisation();
