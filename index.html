@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -14,7 +16,9 @@
         content="Agenda du jour : saints, dictons, événements, culture, journées mondiales et informations quotidiennes."
     >
 
-    <title>Agenda du jour</title>
+    <title>
+        Agenda du jour
+    </title>
 
     <link
         rel="stylesheet"
@@ -23,11 +27,11 @@
         crossorigin=""
     >
 
-    <!-- Feuille de style principale -->
     <link
         rel="stylesheet"
         href="css/style.css"
     >
+
 </head>
 
 <body>
@@ -73,8 +77,9 @@
 
     </main>
 
+
     <!-- =========================
-        MENU PRINCIPAL
+         MENU PRINCIPAL
     ========================== -->
 
     <section class="section-menu-principal">
@@ -88,144 +93,150 @@
             aria-label="Menu principal"
         >
 
-            <a
-                class="explorer-carte explorer-personnalites"
-                href="personnalites.html"
-            >
+            <!-- Personnalités -->
 
-                <div class="explorer-icone">
-                    🎂
-                </div>
-
-                <div class="explorer-contenu">
-
-                    <h2>
-                        Personnalités du jour
-                    </h2>
-
-                    <p>
-                        Naissances et disparitions à cette date
-                    </p>
-
-                </div>
-
-                <div class="explorer-fleche">
-                    →
-                </div>
-
-            
-                <a
-                    href="message.html"
-                    class="explorer-message"
-                    aria-label="Me laisser un message"
-                    title="Me laisser un message"
-                >
-                    💬
-                 </a>
-            </a>
-
-            <a
-                class="explorer-carte explorer-culture"
-                href="culture.html"
-            >
-
-                <div class="explorer-icone">
-                    🎭
-                </div>
-
-                <div class="explorer-contenu">
-
-                    <h2>
-                        Culture du jour
-                    </h2>
-
-                    <p>
-                        Musique, cinéma, livres et concerts
-                    </p>
-
-                </div>
-
-                <div class="explorer-fleche">
-                    →
-                </div>
-
-            
+            <div class="explorer-carte explorer-personnalites">
 
                 <a
-                    href="message.html"
-                    class="explorer-message"
-                    aria-label="Me laisser un message"
-                    title="Me laisser un message"
+                    class="explorer-carte-lien"
+                    href="personnalites.html"
                 >
-                    💬
+
+                    <div class="explorer-icone">
+                        🎂
+                    </div>
+
+                    <div class="explorer-contenu">
+
+                        <h2>
+                            Personnalités du jour
+                        </h2>
+
+                        <p>
+                            Naissances et disparitions à cette date
+                        </p>
+
+                    </div>
+
+                    <div
+                        class="explorer-fleche"
+                        aria-hidden="true"
+                    >
+                        →
+                    </div>
+
                 </a>
-            </a>
-            <a
-                class="explorer-carte explorer-evenements"
-                href="evenements.html"
-            >
-
-                <div class="explorer-icone">
-                    📜
-                </div>
-
-                <div class="explorer-contenu">
-
-                    <h2>
-                        Événements du jour
-                    </h2>
-
-                    <p>
-                        Les faits marquants survenus à cette date
-                    </p>
-
-                </div>
-
-                <div class="explorer-fleche">
-                    →
-                </div>
-
-            </a>
 
 
-            <a
-                class="explorer-carte explorer-avis"
-                href="avis.html"
-            >
-
-                <div class="explorer-icone">
-                    💬
-                </div>
-
-                <div class="explorer-contenu">
-
-                    <h2>
-                        Votre avis
-                    </h2>
-
-                    <p>
-                        Une idée, un bug ou un coup de cœur ?
-                    </p>
-
-                </div>
-
-                <div class="explorer-fleche">
-                    →
-                </div>
-
-            
                 <a
                     href="message.html"
                     class="explorer-message"
-                    aria-label="Me laisser un message"
-                    title="Me laisser un message"
+                    aria-label="Écrire un message"
+                    title="Écrire un message"
                 >
-                    💬
+                    ✉️
                 </a>
-            </a>
+
+            </div>
+
+
+            <!-- Culture -->
+
+            <div class="explorer-carte explorer-culture">
+
+                <a
+                    class="explorer-carte-lien"
+                    href="culture.html"
+                >
+
+                    <div class="explorer-icone">
+                        🎭
+                    </div>
+
+                    <div class="explorer-contenu">
+
+                        <h2>
+                            Culture du jour
+                        </h2>
+
+                        <p>
+                            Musique, cinéma, livres et concerts
+                        </p>
+
+                    </div>
+
+                    <div
+                        class="explorer-fleche"
+                        aria-hidden="true"
+                    >
+                        →
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="message.html"
+                    class="explorer-message"
+                    aria-label="Écrire un message"
+                    title="Écrire un message"
+                >
+                    ✉️
+                </a>
+
+            </div>
+
+
+            <!-- Événements -->
+
+            <div class="explorer-carte explorer-evenements">
+
+                <a
+                    class="explorer-carte-lien"
+                    href="evenements.html"
+                >
+
+                    <div class="explorer-icone">
+                        📜
+                    </div>
+
+                    <div class="explorer-contenu">
+
+                        <h2>
+                            Événements du jour
+                        </h2>
+
+                        <p>
+                            Les faits marquants survenus à cette date
+                        </p>
+
+                    </div>
+
+                    <div
+                        class="explorer-fleche"
+                        aria-hidden="true"
+                    >
+                        →
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="message.html"
+                    class="explorer-message"
+                    aria-label="Écrire un message"
+                    title="Écrire un message"
+                >
+                    ✉️
+                </a>
+
+            </div>
+
         </nav>
 
-    </section>   
+    </section>
+
 
     <!-- =========================
          PIED DE PAGE
