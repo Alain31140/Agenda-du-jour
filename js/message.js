@@ -398,17 +398,30 @@ formulaire.addEventListener(
         const donnees =
             creerDonneesMessage();
 
-        try {
+       try {
 
             await envoyerMessage(
                 donnees
             );
 
 
+            const carteMessage =
+                document.querySelector(
+                    ".message-carte"
+                );
+
+
             /*
-                On laisse brièvement l’animation
-                terminer son mouvement avant
-                d’afficher la confirmation.
+                La carte glisse vers la droite.
+            */
+
+            carteMessage.classList.add(
+                "message-disparition"
+            );
+
+
+            /*
+                On attend la fin de l’animation.
             */
 
             await new Promise(
@@ -416,11 +429,16 @@ formulaire.addEventListener(
 
                     window.setTimeout(
                         resolution,
-                        450
+                        550
                     );
                 }
             );
 
+
+            /*
+                On remplace le formulaire
+                par le message de confirmation.
+            */
 
             formulaire.hidden =
                 true;
@@ -428,7 +446,60 @@ formulaire.addEventListener(
             confirmation.hidden =
                 false;
 
-            confirmation.focus?.();
+
+            /*
+                On remet la carte à sa place,
+                sans animation visible.
+            */
+
+            carteMessage.style.transition =
+                "none";
+
+            carteMessage.classList.remove(
+                "message-disparition"
+            );
+
+            carteMessage.style.transform =
+                "none";
+
+            carteMessage.style.opacity =
+                "1";
+
+
+            /*
+                On force le navigateur à prendre
+                en compte l’état initial.
+            */
+
+            confirmation.offsetHeight;
+
+
+            /*
+                Apparition douce de la confirmation.
+            */
+
+            confirmation.classList.add(
+                "message-confirmation-visible"
+            );
+
+
+            /*
+                On réactive les transitions normales.
+            */
+
+            window.requestAnimationFrame(
+                () => {
+
+                    carteMessage.style.transition =
+                        "";
+
+                    carteMessage.style.transform =
+                        "";
+
+                    carteMessage.style.opacity =
+                        "";
+                }
+            );
 
         } catch (erreur) {
 

@@ -5286,3 +5286,40 @@ body.carte-ouverte {
         animation: none;
     }
 }
+
+/* ==================================================
+   TRANSITION APRÈS ENVOI
+================================================== */
+
+.message-carte {
+    transition:
+        transform 0.55s ease,
+        opacity 0.45s ease;
+}
+
+.message-carte.message-disparition {
+    transform: translateX(110%);
+    opacity: 0;
+}
+
+.message-confirmation {
+    opacity: 0;
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+.message-confirmation.message-confirmation-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .message-carte,
+    .message-confirmation {
+        transition: none;
+    }
+}
