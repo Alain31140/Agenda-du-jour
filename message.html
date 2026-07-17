@@ -10,12 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <meta
-        name="description"
-        content="Envoyer un message à Alain au sujet de l’Agenda du Jour."
-    >
-
-    <title>Écrire à Alain — Agenda du Jour</title>
+    <title>Nous écrire - Agenda du Jour</title>
 
     <link
         rel="stylesheet"
@@ -56,37 +51,48 @@
                 </div>
 
                 <h1>
-                    Écrire à Alain
+                    Nous écrire
                 </h1>
 
                 <p>
-                    Une question, une suggestion, une erreur à signaler
-                    ou simplement un petit bonjour ?
-                    Je serai ravi de vous lire.
+
+                    Une remarque,
+                    une suggestion,
+                    une idée d'amélioration
+                    ou simplement un petit bonjour...
+
+                    <br><br>
+
+                    Tous les messages sont les bienvenus.
+
                 </p>
 
             </header>
 
 
             <form
-                id="formulaire-message"
+                id="message-formulaire"
                 class="message-formulaire"
-                novalidate
             >
 
                 <div class="message-champ">
 
-                    <label for="message-prenom">
-                        👤 Votre prénom
+                    <label for="prenom">
+
+                        Votre prénom
+
                         <span class="message-facultatif">
-                            facultatif
+
+                            (facultatif)
+
                         </span>
+
                     </label>
 
                     <input
-                        type="text"
-                        id="message-prenom"
+                        id="prenom"
                         name="prenom"
+                        type="text"
                         maxlength="60"
                         autocomplete="given-name"
                         placeholder="Votre prénom"
@@ -95,80 +101,98 @@
                 </div>
 
 
+
                 <div class="message-champ">
 
-                    <label for="message-email">
-                        📧 Votre adresse e-mail
+                    <label for="email">
+
+                        Adresse e-mail
+
                         <span class="message-facultatif">
-                            facultatif
+
+                            (facultatif)
+
                         </span>
+
                     </label>
 
                     <input
-                        type="email"
-                        id="message-email"
+                        id="email"
                         name="email"
-                        maxlength="150"
+                        type="email"
+                        maxlength="120"
                         autocomplete="email"
-                        inputmode="email"
-                        placeholder="exemple@email.fr"
+                        placeholder="nom@exemple.fr"
                     >
 
                     <p class="message-aide">
-                        Elle sera utilisée uniquement pour vous répondre.
+
+                        Indiquez votre adresse uniquement
+                        si vous souhaitez recevoir une réponse.
+
                     </p>
 
                 </div>
 
 
+
                 <div class="message-champ">
 
-                    <label for="message-texte">
-                        💬 Votre message
+                    <label for="message">
+
+                        Votre message
+
                     </label>
 
                     <textarea
-                        id="message-texte"
+                        id="message"
                         name="message"
-                        rows="7"
-                        maxlength="2000"
+                        maxlength="1000"
                         required
-                        placeholder="Écrivez votre message ici..."
+                        placeholder="Votre message..."
                     ></textarea>
 
-                    <div class="message-compteur">
-                        <span id="message-nombre-caracteres">
-                            0
-                        </span>
-                        / 2000
+                    <div
+                        id="message-compteur"
+                        class="message-compteur"
+                    >
+                        0 / 1000
                     </div>
 
                 </div>
 
 
+
                 <div
-                    id="message-erreur"
-                    class="message-retour message-retour-erreur"
-                    role="alert"
+                    id="message-retour"
+                    class="message-retour"
                     hidden
                 ></div>
 
 
+
                 <button
-                    type="submit"
-                    id="message-envoyer"
+                    id="message-bouton"
                     class="message-bouton"
+                    type="submit"
                 >
+
                     <span class="message-bouton-icone">
-                        📨
+
+                        ✉️
+
                     </span>
 
-                    <span id="message-bouton-texte">
+                    <span>
+
                         Envoyer le message
+
                     </span>
+
                 </button>
 
             </form>
+
 
 
             <section
@@ -178,44 +202,65 @@
             >
 
                 <div class="message-confirmation-icone">
+
                     ✅
+
                 </div>
 
                 <h2>
+
                     Merci !
+
                 </h2>
 
                 <p>
+
                     Votre message a bien été envoyé.
+
                 </p>
 
                 <p>
-                    Je le lirai avec plaisir.
+
+                    Il sera lu avec attention.
+
                 </p>
 
                 <a
                     href="index.html"
                     class="message-retour-accueil"
                 >
-                    ← Retour à l’accueil
+
+                    Retour à l'accueil
+
                 </a>
 
             </section>
 
 
+
             <footer class="message-pied">
 
                 <p>
-                    🔒 Les informations saisies ne sont utilisées
-                    que pour lire votre message et vous répondre.
+
+                    🔒 Les informations que vous saisissez
+                    sont uniquement utilisées
+                    pour traiter votre message.
+
                 </p>
 
-                <p class="message-signature">
-                    Agenda du Jour est un projet personnel imaginé
-                    et développé avec passion par Alain, avec l’aide
-                    de ChatGPT d’OpenAI pour la conception,
-                    le développement et l’enrichissement des contenus.
-                </p>
+                <div class="message-signature">
+
+                    <strong>Agenda du Jour</strong>
+
+                    <br>
+
+                    Projet personnel développé par Alain.
+
+                    <br>
+
+                    Conçu avec l'assistance de ChatGPT (OpenAI).
+
+                </div>
 
             </footer>
 
@@ -224,7 +269,7 @@
     </main>
 
 
-    <script src="message.js"></script>
+    <script src="js/message.js"></script>
 
 </body>
 

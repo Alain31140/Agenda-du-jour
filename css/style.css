@@ -4704,64 +4704,96 @@ body.carte-ouverte {
 ================================================== */
 
 .page-message {
-    width: min(720px, calc(100% - 32px));
-    margin: 28px auto 48px;
+    width: min(720px, calc(100% - 24px));
+    margin: 24px auto 48px;
 }
+
+
+/* Carte principale */
 
 .message-carte {
     overflow: hidden;
 
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 24px;
+    border: 1px solid rgba(46, 125, 50, 0.12);
+    border-radius: 26px;
 
     background: #ffffff;
 
     box-shadow:
-        0 12px 34px rgba(0, 0, 0, 0.1);
+        0 14px 38px rgba(38, 50, 56, 0.12);
 }
 
 
-/* En-tête */
+/* ==================================================
+   EN-TÊTE
+================================================== */
 
 .message-entete {
-    padding: 30px 30px 26px;
+    position: relative;
+
+    padding: 34px 28px 30px;
 
     text-align: center;
 
     background:
         linear-gradient(
-            135deg,
-            #e8f5e9,
-            #c8e6c9
+            145deg,
+            #f1f8f2 0%,
+            #ffffff 52%,
+            #fffaf0 100%
         );
 }
+
+.message-entete::after {
+    content: "";
+
+    position: absolute;
+    right: 16%;
+    bottom: 0;
+    left: 16%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(46, 125, 50, 0.28),
+            transparent
+        );
+}
+
+
+/* Icône enveloppe */
 
 .message-icone {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 68px;
-    height: 68px;
+    width: 72px;
+    height: 72px;
 
-    margin: 0 auto 16px;
+    margin: 0 auto 18px;
 
-    border-radius: 22px;
+    border: 1px solid rgba(46, 125, 50, 0.12);
+    border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.72);
+    background: rgba(255, 255, 255, 0.92);
 
-    font-size: 2.3rem;
+    font-size: 2.25rem;
 
     box-shadow:
-        0 6px 18px rgba(0, 0, 0, 0.1);
+        0 9px 22px rgba(38, 50, 56, 0.12);
 }
 
 .message-entete h1 {
-    margin: 0 0 12px;
+    margin: 0 0 14px;
 
-    color: #263238;
+    color: #1b5e20;
 
-    font-size: clamp(1.7rem, 5vw, 2.3rem);
+    font-size: clamp(1.8rem, 5vw, 2.55rem);
+    line-height: 1.12;
 }
 
 .message-entete p {
@@ -4769,14 +4801,16 @@ body.carte-ouverte {
 
     margin: 0 auto;
 
-    color: rgba(38, 50, 56, 0.82);
+    color: #455a64;
 
     font-size: 1rem;
-    line-height: 1.55;
+    line-height: 1.6;
 }
 
 
-/* Formulaire */
+/* ==================================================
+   FORMULAIRE
+================================================== */
 
 .message-formulaire {
     display: grid;
@@ -4787,10 +4821,15 @@ body.carte-ouverte {
 
 .message-champ {
     display: grid;
-    gap: 8px;
+    gap: 9px;
 }
 
 .message-champ label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
     color: #263238;
 
     font-size: 1rem;
@@ -4798,13 +4837,14 @@ body.carte-ouverte {
 }
 
 .message-facultatif {
-    margin-left: 5px;
+    color: #78909c;
 
-    color: #607d8b;
-
-    font-size: 0.8rem;
+    font-size: 0.84rem;
     font-weight: 400;
 }
+
+
+/* Champs */
 
 .message-champ input,
 .message-champ textarea {
@@ -4812,10 +4852,10 @@ body.carte-ouverte {
 
     box-sizing: border-box;
 
-    border: 1px solid #b0bec5;
-    border-radius: 13px;
+    border: 1px solid #cfd8dc;
+    border-radius: 16px;
 
-    padding: 13px 14px;
+    padding: 15px 16px;
 
     color: #263238;
     background: #ffffff;
@@ -4825,25 +4865,37 @@ body.carte-ouverte {
 
     outline: none;
 
+    box-shadow:
+        0 4px 12px rgba(38, 50, 56, 0.05);
+
     transition:
         border-color 0.2s ease,
-        box-shadow 0.2s ease;
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
 }
 
 .message-champ textarea {
-    min-height: 165px;
+    min-height: 180px;
 
-    line-height: 1.5;
+    line-height: 1.55;
 
     resize: vertical;
+}
+
+.message-champ input:hover,
+.message-champ textarea:hover {
+    border-color: #a5d6a7;
 }
 
 .message-champ input:focus,
 .message-champ textarea:focus {
     border-color: #43a047;
 
+    background: #ffffff;
+
     box-shadow:
-        0 0 0 4px rgba(67, 160, 71, 0.14);
+        0 0 0 4px rgba(67, 160, 71, 0.13),
+        0 6px 16px rgba(38, 50, 56, 0.07);
 }
 
 .message-champ input::placeholder,
@@ -4851,63 +4903,80 @@ body.carte-ouverte {
     color: #90a4ae;
 }
 
+
+/* Texte d’aide */
+
 .message-aide {
     margin: 0;
 
-    color: #607d8b;
-
-    font-size: 0.82rem;
-    line-height: 1.4;
-}
-
-.message-compteur {
     color: #78909c;
 
-    font-size: 0.8rem;
+    font-size: 0.84rem;
+    line-height: 1.45;
+}
+
+
+/* Compteur */
+
+.message-compteur {
+    margin-top: -2px;
+
+    color: #78909c;
+
+    font-size: 0.82rem;
     text-align: right;
 }
 
 
-/* Bouton */
+/* ==================================================
+   BOUTON ENVOYER
+================================================== */
 
 .message-bouton {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 9px;
+    gap: 10px;
 
-    min-height: 52px;
+    width: 100%;
+    min-height: 56px;
 
     border: 0;
-    border-radius: 14px;
+    border-radius: 16px;
 
-    padding: 13px 20px;
+    padding: 14px 22px;
 
     color: #ffffff;
-    background: #2e7d32;
+
+    background:
+        linear-gradient(
+            135deg,
+            #43a047,
+            #2e7d32
+        );
 
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.04rem;
     font-weight: 700;
 
     cursor: pointer;
 
     box-shadow:
-        0 7px 18px rgba(46, 125, 50, 0.25);
+        0 9px 20px rgba(46, 125, 50, 0.28);
 
     transition:
         transform 0.2s ease,
-        background-color 0.2s ease,
-        box-shadow 0.2s ease;
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
 }
 
 .message-bouton:hover {
     transform: translateY(-2px);
 
-    background: #256c2a;
+    filter: brightness(1.04);
 
     box-shadow:
-        0 10px 22px rgba(46, 125, 50, 0.32);
+        0 12px 25px rgba(46, 125, 50, 0.34);
 }
 
 .message-bouton:active {
@@ -4917,21 +4986,30 @@ body.carte-ouverte {
 .message-bouton:disabled {
     cursor: wait;
 
-    opacity: 0.7;
+    opacity: 0.68;
 
     transform: none;
+
+    box-shadow:
+        0 5px 12px rgba(46, 125, 50, 0.18);
+}
+
+.message-bouton-icone {
+    font-size: 1.25rem;
 }
 
 
-/* Retours et erreurs */
+/* ==================================================
+   ERREUR
+================================================== */
 
 .message-retour {
-    padding: 12px 14px;
+    padding: 13px 15px;
 
-    border-radius: 12px;
+    border-radius: 13px;
 
     font-size: 0.92rem;
-    line-height: 1.4;
+    line-height: 1.45;
 }
 
 .message-retour-erreur {
@@ -4942,26 +5020,35 @@ body.carte-ouverte {
 }
 
 
-/* Confirmation */
+/* ==================================================
+   CONFIRMATION
+================================================== */
 
 .message-confirmation {
-    padding: 36px 30px;
+    padding: 42px 28px;
 
     text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f1f8f2,
+            #ffffff
+        );
 }
 
 .message-confirmation-icone {
     margin-bottom: 14px;
 
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .message-confirmation h2 {
-    margin: 0 0 10px;
+    margin: 0 0 12px;
 
     color: #2e7d32;
 
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 
 .message-confirmation p {
@@ -4969,108 +5056,154 @@ body.carte-ouverte {
 
     color: #455a64;
 
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
 .message-retour-accueil {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    margin-top: 22px;
+    margin-top: 23px;
 
-    border-radius: 12px;
+    border-radius: 13px;
 
-    padding: 11px 18px;
+    padding: 12px 19px;
 
-    color: #263238;
-    background: #eceff1;
+    color: #1b5e20;
+    background: #e8f5e9;
 
     text-decoration: none;
     font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.message-retour-accueil:hover {
+    transform: translateY(-2px);
+
+    background: #c8e6c9;
 }
 
 
-/* Pied de page */
+/* ==================================================
+   CONFIDENTIALITÉ ET SIGNATURE
+================================================== */
 
 .message-pied {
-    padding: 20px 30px 24px;
-
-    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 0 30px 28px;
 
     text-align: center;
 
-    background: #fafafa;
+    background: #ffffff;
 }
 
-.message-pied p {
+.message-pied > p:first-child {
     margin: 0;
 
-    color: #607d8b;
+    border-radius: 16px;
 
-    font-size: 0.82rem;
+    padding: 17px 18px;
+
+    color: #546e7a;
+    background: #f3f8f3;
+
+    font-size: 0.86rem;
     line-height: 1.5;
 }
 
 .message-pied .message-signature {
     max-width: 590px;
 
-    margin: 15px auto 0;
+    margin: 25px auto 0;
 
-    padding-top: 15px;
+    padding: 20px 18px;
 
-    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    border-top: 1px solid rgba(46, 125, 50, 0.14);
 
     color: #78909c;
+
+    font-size: 0.82rem;
+    line-height: 1.55;
 }
 
 
-/* Version téléphone */
+/* ==================================================
+   VERSION TÉLÉPHONE
+================================================== */
 
 @media (max-width: 700px) {
 
     .page-message {
-        width: min(100% - 20px, 600px);
-        margin: 18px auto 32px;
+        width: calc(100% - 20px);
+        margin: 16px auto 30px;
     }
 
     .message-carte {
-        border-radius: 18px;
+        border-radius: 20px;
     }
 
     .message-entete {
-        padding: 24px 18px 22px;
+        padding: 27px 18px 24px;
     }
 
     .message-icone {
-        width: 58px;
-        height: 58px;
+        width: 62px;
+        height: 62px;
 
-        margin-bottom: 13px;
+        margin-bottom: 15px;
 
-        border-radius: 18px;
+        font-size: 1.95rem;
+    }
 
-        font-size: 2rem;
+    .message-entete h1 {
+        margin-bottom: 12px;
     }
 
     .message-entete p {
-        font-size: 0.92rem;
+        font-size: 0.93rem;
+        line-height: 1.5;
     }
 
     .message-formulaire {
-        gap: 19px;
+        gap: 20px;
 
-        padding: 22px 18px;
+        padding: 24px 18px;
     }
 
     .message-champ input,
     .message-champ textarea {
+        border-radius: 14px;
+
+        padding: 14px;
+
+        /* Évite le zoom automatique sur iPhone */
         font-size: 16px;
     }
 
+    .message-champ textarea {
+        min-height: 165px;
+    }
+
+    .message-bouton {
+        min-height: 54px;
+
+        border-radius: 14px;
+    }
+
     .message-confirmation {
-        padding: 30px 18px;
+        padding: 35px 18px;
     }
 
     .message-pied {
-        padding: 18px;
+        padding: 0 18px 22px;
+    }
+
+    .message-pied .message-signature {
+        margin-top: 20px;
+
+        padding: 18px 6px 0;
     }
 }
