@@ -3937,3 +3937,199 @@ body.carte-ouverte {
         0
         6px;
 }
+/* ==================================================
+   MENU PRINCIPAL DE L’AGENDA
+================================================== */
+
+.section-menu-principal {
+    width: min(1100px, calc(100% - 32px));
+    margin: 24px auto 40px;
+}
+
+.titre-menu-principal {
+    margin: 0 0 18px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #263238;
+}
+
+
+/* Conteneur des cartes */
+
+.explorer-menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+
+/* Carte */
+
+.explorer-carte {
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr) 28px;
+    align-items: center;
+    gap: 14px;
+
+    min-height: 110px;
+    padding: 18px;
+
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    text-decoration: none;
+    color: #263238;
+
+    background: white;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.explorer-carte:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* Icône */
+
+.explorer-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 16px;
+
+    font-size: 2rem;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Texte */
+
+.explorer-contenu {
+    min-width: 0;
+}
+
+.explorer-contenu h2 {
+    margin: 0 0 7px;
+
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+    color: inherit;
+}
+
+.explorer-contenu p {
+    margin: 0;
+
+    font-size: 0.95rem;
+    line-height: 1.4;
+
+    color: rgba(38, 50, 56, 0.78);
+}
+
+
+/* Flèche */
+
+.explorer-fleche {
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+/* Couleurs des cartes */
+
+.explorer-personnalites {
+    background:
+        linear-gradient(
+            135deg,
+            #f3e5f5,
+            #e1bee7
+        );
+}
+
+.explorer-culture {
+    background:
+        linear-gradient(
+            135deg,
+            #fff3e0,
+            #ffe0b2
+        );
+}
+
+.explorer-evenements {
+    background:
+        linear-gradient(
+            135deg,
+            #e3f2fd,
+            #bbdefb
+        );
+}
+
+.explorer-avis {
+    background:
+        linear-gradient(
+            135deg,
+            #e8f5e9,
+            #c8e6c9
+        );
+}
+
+
+/* Version téléphone */
+
+@media (max-width: 700px) {
+
+    .section-menu-principal {
+        width: min(100% - 20px, 600px);
+        margin-top: 18px;
+    }
+
+    .explorer-menu {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .explorer-carte {
+        grid-template-columns: 48px minmax(0, 1fr) 22px;
+
+        min-height: 90px;
+        padding: 14px;
+        gap: 11px;
+
+        border-radius: 15px;
+    }
+
+    .explorer-icone {
+        width: 46px;
+        height: 46px;
+
+        border-radius: 13px;
+
+        font-size: 1.65rem;
+    }
+
+    .explorer-contenu h2 {
+        font-size: 1.05rem;
+    }
+
+    .explorer-contenu p {
+        font-size: 0.86rem;
+    }
+
+    .explorer-fleche {
+        font-size: 1.35rem;
+    }
+}
