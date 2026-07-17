@@ -28,29 +28,24 @@
 
     <header class="entete-agenda entete-culture">
 
-    <nav class="entete-navigation">
-
-    <a
-        href="index.html"
-        class="entete-lien"
+    <nav
+        class="entete-navigation"
+        aria-label="Navigation"
     >
-        🏠 Agenda
-    </a>
+        <a
+            href="index.html"
+            class="entete-lien"
+        >
+            🏠 Accueil
+        </a>
 
-    <a
-        href="index.html#menu-principal"
-        class="entete-lien"
-        onclick="
-            if (document.referrer.includes('index.html')) {
-                event.preventDefault();
-                history.back();
-            }
-        "
-    >
-        ☰ Menu
-    </a>
-
-</nav>
+        <a
+            href="menu.html"
+            class="entete-lien"
+        >
+            ☰ Menu
+        </a>
+    </nav>
 
     <div class="entete-rubrique">
 
