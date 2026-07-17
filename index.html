@@ -24,7 +24,10 @@
     >
 
     <!-- Feuille de style principale -->
-    <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 </head>
 
 <body>
@@ -47,7 +50,7 @@
 
 
     <!-- =========================
-         CONTENU PRINCIPAL
+         ACCUEIL / AGENDA DU JOUR
     ========================== -->
 
     <main id="app">
@@ -72,6 +75,140 @@
 
 
     <!-- =========================
+         MENU PRINCIPAL
+    ========================== -->
+
+    <section
+        id="menu-principal"
+        class="section-menu-principal"
+    >
+
+        <h2 class="titre-menu-principal">
+            Explorer l’Agenda
+        </h2>
+
+        <nav
+            class="explorer-menu"
+            aria-label="Menu principal"
+        >
+
+            <a
+                class="explorer-carte explorer-personnalites"
+                href="personnalites.html"
+            >
+
+                <div class="explorer-icone">
+                    🎂
+                </div>
+
+                <div class="explorer-contenu">
+
+                    <h2>
+                        Personnalités du jour
+                    </h2>
+
+                    <p>
+                        Naissances et disparitions à cette date
+                    </p>
+
+                </div>
+
+                <div class="explorer-fleche">
+                    →
+                </div>
+
+            </a>
+
+
+            <a
+                class="explorer-carte explorer-culture"
+                href="culture.html"
+            >
+
+                <div class="explorer-icone">
+                    🎭
+                </div>
+
+                <div class="explorer-contenu">
+
+                    <h2>
+                        Culture du jour
+                    </h2>
+
+                    <p>
+                        Musique, cinéma, livres et concerts
+                    </p>
+
+                </div>
+
+                <div class="explorer-fleche">
+                    →
+                </div>
+
+            </a>
+
+
+            <a
+                class="explorer-carte explorer-evenements"
+                href="evenements.html"
+            >
+
+                <div class="explorer-icone">
+                    📜
+                </div>
+
+                <div class="explorer-contenu">
+
+                    <h2>
+                        Événements du jour
+                    </h2>
+
+                    <p>
+                        Les faits marquants survenus à cette date
+                    </p>
+
+                </div>
+
+                <div class="explorer-fleche">
+                    →
+                </div>
+
+            </a>
+
+
+            <a
+                class="explorer-carte explorer-avis"
+                href="avis.html"
+            >
+
+                <div class="explorer-icone">
+                    💬
+                </div>
+
+                <div class="explorer-contenu">
+
+                    <h2>
+                        Votre avis
+                    </h2>
+
+                    <p>
+                        Une idée, un bug ou un coup de cœur ?
+                    </p>
+
+                </div>
+
+                <div class="explorer-fleche">
+                    →
+                </div>
+
+            </a>
+
+        </nav>
+
+    </section>
+
+
+    <!-- =========================
          PIED DE PAGE
     ========================== -->
 
@@ -84,7 +221,7 @@
     </footer>
 
 
-     <!-- Module compteur -->
+    <!-- Module compteur -->
     <script src="js/compteur.js"></script>
 
     <!-- Module lune -->
@@ -93,13 +230,15 @@
     <!-- Module Soleil et météo -->
     <script src="js/soleil-meteo.js"></script>
 
+    <!-- Bibliothèque Leaflet -->
     <script
         src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""
     ></script>
 
-<script src="js/localisation.js"></script>
+    <!-- Module localisation -->
+    <script src="js/localisation.js"></script>
 
     <!-- Module accueil -->
     <script src="js/accueil.js"></script>
