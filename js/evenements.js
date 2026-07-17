@@ -759,3 +759,488 @@ function creerFicheEvenement(
     `;
 
 }
+
+/* ==================================================
+   FERMETURE D'UNE FICHE
+================================================== */
+
+function fermerFicheEvenement(
+    element
+) {
+
+    const detail =
+        element.querySelector(
+            ".evenement-detail"
+        );
+
+
+    const bouton =
+        element.querySelector(
+            ".evenement-element-bouton"
+        );
+
+
+    const fleche =
+        element.querySelector(
+            ".evenement-element-fleche"
+        );
+
+
+    if (
+        !detail
+        ||
+        !bouton
+        ||
+        !fleche
+    ) {
+
+        return;
+
+    }
+
+
+    detail.hidden =
+        true;
+
+
+    bouton.setAttribute(
+        "aria-expanded",
+        "false"
+    );
+
+
+    fleche.textContent =
+        "▶";
+
+}
+
+
+/* ==================================================
+   FERMETURE DES AUTRES FICHES
+================================================== */
+
+function fermerToutesLesFichesEvenements(
+    exception = null
+) {
+
+    document
+        .querySelectorAll(
+            ".evenement-element"
+        )
+        .forEach(
+            element => {
+
+                if (
+                    element !== exception
+                ) {
+
+                    fermerFicheEvenement(
+                        element
+                    );
+
+                }
+
+            }
+        );
+
+}
+
+
+/* ==================================================
+   INITIALISATION DES INTERACTIONS
+================================================== */
+
+function initialiserInteractionsEvenements() {
+
+    document
+        .querySelectorAll(
+            ".evenement-element"
+        )
+        .forEach(
+            element => {
+
+                const bouton =
+                    element.querySelector(
+                        ".evenement-element-bouton"
+                    );
+
+
+                const detail =
+                    element.querySelector(
+                        ".evenement-detail"
+                    );
+
+
+                const fleche =
+                    element.querySelector(
+                        ".evenement-element-fleche"
+                    );
+
+
+                const boutonFermer =
+                    element.querySelector(
+                        ".bouton-fermer-evenement"
+                    );
+
+
+                if (
+                    !bouton
+                    ||
+                    !detail
+                    ||
+                    !fleche
+                    ||
+                    !boutonFermer
+                ) {
+
+                    return;
+
+                }
+
+
+                bouton.addEventListener(
+                    "click",
+                    () => {
+
+                        const ouverture =
+                            detail.hidden;
+
+
+                        fermerToutesLesFichesEvenements(
+                            element
+                        );
+
+
+                        detail.hidden =
+                            !ouverture;
+
+
+                        bouton.setAttribute(
+                            "aria-expanded",
+                            String(
+                                ouverture
+                            )
+                        );
+
+
+                        fleche.textContent =
+                            ouverture
+                                ? "▼"
+                                : "▶";
+
+
+                        if (
+                            ouverture
+                        ) {
+
+                            setTimeout(
+                                () => {
+
+                                    element.scrollIntoView({
+
+                                        behavior:
+                                            "smooth",
+
+                                        block:
+                                            "start"
+
+                                    });
+
+                                },
+                                80
+                            );
+
+                        }
+
+                    }
+                );
+
+
+                boutonFermer.addEventListener(
+                    "click",
+                    () => {
+
+                        fermerFicheEvenement(
+                            element
+                        );
+
+
+                        bouton.scrollIntoView({
+
+                            behavior:
+                                "smooth",
+
+                            block:
+                                "center"
+
+                        });
+
+
+                        bouton.focus();
+
+                    }
+                );
+
+
+                const image =
+                    element.querySelector(
+                        ".evenement-illustration img"
+                    );
+
+
+                if (
+                    image
+                ) {
+
+                    image.addEventListener(
+                        "error",
+                        () => {
+
+                            image.parentElement.innerHTML =
+                                creerPlaceholderEvenement();
+
+                        }
+                    );
+
+                }
+
+            }
+        );
+
+}
+
+
+/* ==================================================
+   AFFICHAGE DE LA PAGE
+================================================== */
+
+async function afficherEvenementsDuJour() {
+
+    const contenu =
+        document.getElementById(
+            "evenements-contenu"
+        );
+
+
+    const dateElement =
+        document.getElementById(
+            "evenements-date"
+        );
+
+
+    if (
+        !contenu
+    ) {
+
+        return;
+
+    }
+
+
+    try {
+
+        const reponse =
+            await fetch(
+
+                EVENEMENTS_DATA_URL
+
+                +
+
+                "?v="
+
+                +
+
+                Date.now()
+
+            );
+
+
+        if (
+            !reponse.ok
+        ) {
+
+            throw new Error(
+                `Erreur HTTP ${reponse.status}`
+            );
+
+        }
+
+
+        const donnees =
+            await reponse.json();
+
+
+        const cle =
+            obtenirCleEvenementsDuJour();
+
+
+        const evenements =
+            Array.isArray(
+                donnees[cle]
+            )
+                ? donnees[cle]
+                : [];
+
+
+        const dateComplete =
+            new Intl.DateTimeFormat(
+
+                "fr-FR",
+
+                {
+
+                    day:
+                        "numeric",
+
+                    month:
+                        "long"
+
+                }
+
+            ).format(
+                new Date()
+            );
+
+
+        if (
+            dateElement
+        ) {
+
+            dateElement.textContent =
+                `Les faits marquants survenus un ${dateComplete}`;
+
+        }
+
+
+        if (
+            evenements.length === 0
+        ) {
+
+            contenu.innerHTML = `
+
+                <section class="personnalites-vide evenements-vide">
+
+                    <div class="personnalites-vide-icone">
+
+                        📜
+
+                    </div>
+
+                    <h2>
+
+                        Aucun événement renseigné pour cette date
+
+                    </h2>
+
+                    <p>
+
+                        Cette journée pourra être enrichie prochainement.
+
+                    </p>
+
+                </section>
+
+            `;
+
+            return;
+
+        }
+
+
+        contenu.innerHTML = `
+
+            <div class="personnalites-dossier evenements-dossier">
+
+                <div class="personnalites-introduction evenements-introduction">
+
+                    <strong>
+
+                        ${evenements.length}
+
+                    </strong>
+
+                    événement${
+
+                        evenements.length > 1
+                            ? "s"
+                            : ""
+
+                    } à découvrir
+
+                </div>
+
+
+                <div class="personnalites-liste evenements-liste">
+
+                    ${evenements
+
+                        .map(
+                            creerFicheEvenement
+                        )
+
+                        .join("")}
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        initialiserInteractionsEvenements();
+
+
+    } catch (
+        erreur
+    ) {
+
+        console.error(
+            "Erreur Événements :",
+            erreur
+        );
+
+
+        contenu.innerHTML = `
+
+            <section class="personnalites-vide evenements-vide">
+
+                <div class="personnalites-vide-icone">
+
+                    ⚠️
+
+                </div>
+
+                <h2>
+
+                    Impossible de charger les événements
+
+                </h2>
+
+                <p>
+
+                    Vérifie que le fichier
+                    data/evenements.json
+                    est bien présent.
+
+                </p>
+
+            </section>
+
+        `;
+
+    }
+
+}
+
+
+/* ==================================================
+   DÉMARRAGE
+================================================== */
+
+document.addEventListener(
+
+    "DOMContentLoaded",
+
+    afficherEvenementsDuJour
+
+);
