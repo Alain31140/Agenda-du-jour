@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Envoyer un message à Alain au sujet de l’Agenda du Jour."
+    >
+
+    <title>Écrire à Alain — Agenda du Jour</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <nav class="entete-navigation">
+
+        <a
+            href="index.html"
+            class="entete-lien"
+        >
+            🏠 Accueil
+        </a>
+
+        <a
+            href="menu.html"
+            class="entete-lien"
+        >
+            ☰ Menu
+        </a>
+
+    </nav>
+
+
+    <main class="page-message">
+
+        <section class="message-carte">
+
+            <header class="message-entete">
+
+                <div class="message-icone">
+                    ✉️
+                </div>
+
+                <h1>
+                    Écrire à Alain
+                </h1>
+
+                <p>
+                    Une question, une suggestion, une erreur à signaler
+                    ou simplement un petit bonjour ?
+                    Je serai ravi de vous lire.
+                </p>
+
+            </header>
+
+
+            <form
+                id="formulaire-message"
+                class="message-formulaire"
+                novalidate
+            >
+
+                <div class="message-champ">
+
+                    <label for="message-prenom">
+                        👤 Votre prénom
+                        <span class="message-facultatif">
+                            facultatif
+                        </span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="message-prenom"
+                        name="prenom"
+                        maxlength="60"
+                        autocomplete="given-name"
+                        placeholder="Votre prénom"
+                    >
+
+                </div>
+
+
+                <div class="message-champ">
+
+                    <label for="message-email">
+                        📧 Votre adresse e-mail
+                        <span class="message-facultatif">
+                            facultatif
+                        </span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="message-email"
+                        name="email"
+                        maxlength="150"
+                        autocomplete="email"
+                        inputmode="email"
+                        placeholder="exemple@email.fr"
+                    >
+
+                    <p class="message-aide">
+                        Elle sera utilisée uniquement pour vous répondre.
+                    </p>
+
+                </div>
+
+
+                <div class="message-champ">
+
+                    <label for="message-texte">
+                        💬 Votre message
+                    </label>
+
+                    <textarea
+                        id="message-texte"
+                        name="message"
+                        rows="7"
+                        maxlength="2000"
+                        required
+                        placeholder="Écrivez votre message ici..."
+                    ></textarea>
+
+                    <div class="message-compteur">
+                        <span id="message-nombre-caracteres">
+                            0
+                        </span>
+                        / 2000
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="message-erreur"
+                    class="message-retour message-retour-erreur"
+                    role="alert"
+                    hidden
+                ></div>
+
+
+                <button
+                    type="submit"
+                    id="message-envoyer"
+                    class="message-bouton"
+                >
+                    <span class="message-bouton-icone">
+                        📨
+                    </span>
+
+                    <span id="message-bouton-texte">
+                        Envoyer le message
+                    </span>
+                </button>
+
+            </form>
+
+
+            <section
+                id="message-confirmation"
+                class="message-confirmation"
+                hidden
+            >
+
+                <div class="message-confirmation-icone">
+                    ✅
+                </div>
+
+                <h2>
+                    Merci !
+                </h2>
+
+                <p>
+                    Votre message a bien été envoyé.
+                </p>
+
+                <p>
+                    Je le lirai avec plaisir.
+                </p>
+
+                <a
+                    href="index.html"
+                    class="message-retour-accueil"
+                >
+                    ← Retour à l’accueil
+                </a>
+
+            </section>
+
+
+            <footer class="message-pied">
+
+                <p>
+                    🔒 Les informations saisies ne sont utilisées
+                    que pour lire votre message et vous répondre.
+                </p>
+
+                <p class="message-signature">
+                    Agenda du Jour est un projet personnel imaginé
+                    et développé avec passion par Alain, avec l’aide
+                    de ChatGPT d’OpenAI pour la conception,
+                    le développement et l’enrichissement des contenus.
+                </p>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <script src="message.js"></script>
+
+</body>
+
+</html>
