@@ -246,6 +246,57 @@
     <!-- Démarrage principal -->
     <script src="js/app.js"></script>
 
+    <script>
+        function positionnerSurLeMenu() {
+
+            if (
+                window.location.hash !==
+                "#menu-principal"
+            ) {
+                return;
+            }
+
+            const menu =
+                document.getElementById(
+                    "menu-principal"
+                );
+
+            if (!menu) {
+                return;
+            }
+
+            menu.scrollIntoView({
+                behavior: "auto",
+                block: "start"
+            });
+        }
+
+
+        window.addEventListener(
+            "load",
+            () => {
+
+                positionnerSurLeMenu();
+
+                setTimeout(
+                    positionnerSurLeMenu,
+                    300
+                );
+
+                setTimeout(
+                    positionnerSurLeMenu,
+                    800
+                );
+
+                setTimeout(
+                    positionnerSurLeMenu,
+                    1500
+                );
+
+            }
+        );
+    </script>
+
 </body>
 
 </html>
