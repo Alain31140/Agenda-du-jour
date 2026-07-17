@@ -44,189 +44,229 @@
 
         <section class="message-carte">
 
-            <header class="message-entete">
 
-                <div
-                    class="message-icone"
-                    aria-hidden="true"
-                >
-                    <svg
-                        viewBox="0 0 24 24"
-                        role="img"
-                    >
-                        <path
-                            d="M3 5.5h18v13H3z"
-                        ></path>
+            <!--
+                Ce bloc contient toute la partie
+                qui glissera après l’envoi.
+            -->
 
-                        <path
-                            d="m4 7 8 6 8-6"
-                        ></path>
-                    </svg>
-                </div>
-
-                <h1>
-                    Écrire à Alain
-                </h1>
-
-                <p class="message-introduction">
-
-                    Une question, une suggestion,
-                    une erreur à signaler
-                    ou simplement un petit bonjour&nbsp;?
-
-                    <strong>
-                        Je serai ravi de vous lire.
-                    </strong>
-
-                </p>
-
-                <p class="message-encouragement">
-
-                    💬 Tous les messages sont lus.
-                    Vos suggestions permettent de faire évoluer
-                    Agenda du Jour.
-
-                </p>
-
-            </header>
-
-
-            <form
-                id="message-formulaire"
-                class="message-formulaire"
+            <div
+                id="message-contenu"
+                class="message-contenu"
             >
 
-                <div class="message-champ">
-
-                    <label for="prenom">
-
-                        <span aria-hidden="true">
-                            👤
-                        </span>
-
-                        Votre prénom
-
-                        <span class="message-facultatif">
-                            (facultatif)
-                        </span>
-
-                    </label>
-
-                    <input
-                        id="prenom"
-                        name="prenom"
-                        type="text"
-                        maxlength="60"
-                        autocomplete="given-name"
-                        placeholder="Votre prénom"
-                    >
-
-                </div>
-
-
-                <div class="message-champ">
-
-                    <label for="email">
-
-                        <span aria-hidden="true">
-                            ✉️
-                        </span>
-
-                        Votre adresse e-mail
-
-                        <span class="message-facultatif">
-                            (facultatif)
-                        </span>
-
-                    </label>
-
-                    <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        maxlength="120"
-                        autocomplete="email"
-                        placeholder="exemple@email.fr"
-                    >
-
-                    <p class="message-aide">
-
-                        🔒 Elle sera utilisée uniquement
-                        pour vous répondre.
-
-                    </p>
-
-                </div>
-
-
-                <div class="message-champ">
-
-                    <label for="message">
-
-                        <span aria-hidden="true">
-                            💬
-                        </span>
-
-                        Votre message
-
-                        <span class="message-obligatoire">
-                            *
-                        </span>
-
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        maxlength="1000"
-                        required
-                        placeholder="Écrivez votre message ici..."
-                    ></textarea>
+                <header class="message-entete">
 
                     <div
-                        id="message-compteur"
-                        class="message-compteur"
-                    >
-                        0 / 1000
-                    </div>
-
-                </div>
-
-
-                <div
-                    id="message-retour"
-                    class="message-retour"
-                    hidden
-                ></div>
-
-
-                <button
-                    id="message-bouton"
-                    class="message-bouton"
-                    type="submit"
-                >
-                    <span
-                        class="message-avion"
+                        class="message-icone"
                         aria-hidden="true"
                     >
                         📨
-                    </span>
+                    </div>
 
-                    <span class="message-bouton-texte">
-                        Envoyer mon message
-                    </span>
-                </button>
+                    <h1>
+                        Écrire à Alain
+                    </h1>
 
-            </form>
+                    <p class="message-introduction">
 
+                        Une question, une suggestion,
+                        une erreur à signaler
+                        ou simplement un petit bonjour&nbsp;?
+
+                        <strong>
+                            Je serai ravi de vous lire.
+                        </strong>
+
+                    </p>
+
+                    <p class="message-encouragement">
+
+                        💬 Tous les messages sont lus.
+                        Vos suggestions permettent de faire évoluer
+                        Agenda du Jour.
+
+                    </p>
+
+                </header>
+
+
+                <form
+                    id="message-formulaire"
+                    class="message-formulaire"
+                >
+
+                    <div class="message-champ">
+
+                        <label for="prenom">
+
+                            <span aria-hidden="true">
+                                👤
+                            </span>
+
+                            Votre prénom
+
+                            <span class="message-facultatif">
+                                (facultatif)
+                            </span>
+
+                        </label>
+
+                        <input
+                            id="prenom"
+                            name="prenom"
+                            type="text"
+                            maxlength="60"
+                            autocomplete="given-name"
+                            placeholder="Votre prénom"
+                        >
+
+                    </div>
+
+
+                    <div class="message-champ">
+
+                        <label for="email">
+
+                            <span aria-hidden="true">
+                                ✉️
+                            </span>
+
+                            Votre adresse e-mail
+
+                            <span class="message-facultatif">
+                                (facultatif)
+                            </span>
+
+                        </label>
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            maxlength="120"
+                            autocomplete="email"
+                            placeholder="exemple@email.fr"
+                        >
+
+                        <p class="message-aide">
+
+                            🔒 Elle sera utilisée uniquement
+                            pour vous répondre.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="message-champ">
+
+                        <label for="message">
+
+                            <span aria-hidden="true">
+                                💬
+                            </span>
+
+                            Votre message
+
+                            <span class="message-obligatoire">
+                                *
+                            </span>
+
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            maxlength="1000"
+                            required
+                            placeholder="Écrivez votre message ici..."
+                        ></textarea>
+
+                        <div
+                            id="message-compteur"
+                            class="message-compteur"
+                        >
+                            0 / 1000
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="message-retour"
+                        class="message-retour"
+                        role="alert"
+                        hidden
+                    ></div>
+
+
+                    <button
+                        id="message-bouton"
+                        class="message-bouton"
+                        type="submit"
+                    >
+
+                        <span
+                            class="message-avion"
+                            aria-hidden="true"
+                        >
+                            ➤
+                        </span>
+
+                        <span
+                            id="message-bouton-texte"
+                            class="message-bouton-texte"
+                        >
+                            Envoyer mon message
+                        </span>
+
+                    </button>
+
+                </form>
+
+
+                <footer class="message-pied">
+
+                    <p>
+
+                        🔒 Vos informations ne sont utilisées
+                        que pour lire votre message
+                        et vous répondre.
+
+                    </p>
+
+                    <p class="message-signature">
+
+                        <strong>
+                            Agenda du Jour
+                        </strong>
+
+                        — imaginé et développé par Alain,
+                        avec l'assistance de ChatGPT d'OpenAI.
+
+                    </p>
+
+                </footer>
+
+            </div>
+
+
+            <!--
+                La confirmation reste en dehors du bloc animé.
+            -->
 
             <section
                 id="message-confirmation"
                 class="message-confirmation"
+                tabindex="-1"
                 hidden
             >
 
-                <div class="message-confirmation-icone">
+                <div
+                    class="message-confirmation-icone"
+                    aria-hidden="true"
+                >
                     ✅
                 </div>
 
@@ -250,30 +290,6 @@
                 </a>
 
             </section>
-
-
-            <footer class="message-pied">
-
-                <p>
-
-                    🔒 Vos informations ne sont utilisées
-                    que pour lire votre message
-                    et vous répondre.
-
-                </p>
-
-                <p class="message-signature">
-
-                    <strong>
-                        Agenda du Jour
-                    </strong>
-
-                    — imaginé et développé par Alain,
-                    avec l'assistance de ChatGPT d'OpenAI.
-
-                </p>
-
-            </footer>
 
         </section>
 

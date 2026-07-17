@@ -12,39 +12,48 @@ const WEBHOOK_MESSAGE =
     "COLLER_ICI_L_ADRESSE_DU_WEBHOOK_MAKE";
 
 
+/* ==================================================
+   ÉLÉMENTS DE LA PAGE
+================================================== */
+
+const contenuMessage =
+    document.getElementById(
+        "message-contenu"
+    );
+
 const formulaire =
     document.getElementById(
-        "formulaire-message"
+        "message-formulaire"
     );
 
 const champPrenom =
     document.getElementById(
-        "message-prenom"
+        "prenom"
     );
 
 const champEmail =
     document.getElementById(
-        "message-email"
+        "email"
     );
 
 const champMessage =
     document.getElementById(
-        "message-texte"
+        "message"
     );
 
 const compteurCaracteres =
     document.getElementById(
-        "message-nombre-caracteres"
+        "message-compteur"
     );
 
-const zoneErreur =
+const zoneRetour =
     document.getElementById(
-        "message-erreur"
+        "message-retour"
     );
 
 const boutonEnvoyer =
     document.getElementById(
-        "message-envoyer"
+        "message-bouton"
     );
 
 const texteBouton =
@@ -63,23 +72,20 @@ const confirmation =
 ================================================== */
 
 if (
-    !formulaire
+    !contenuMessage
+    || !formulaire
     || !champPrenom
     || !champEmail
     || !champMessage
     || !compteurCaracteres
-    || !zoneErreur
+    || !zoneRetour
     || !boutonEnvoyer
     || !texteBouton
     || !confirmation
 ) {
 
-    console.error(
-        "Page Message : un ou plusieurs éléments HTML sont introuvables."
-    );
-
     throw new Error(
-        "Initialisation impossible de la page Message."
+        "Page Message : un élément HTML est introuvable."
     );
 }
 
@@ -90,8 +96,11 @@ if (
 
 function actualiserCompteur() {
 
-    compteurCaracteres.textContent =
+    const nombre =
         champMessage.value.length;
+
+    compteurCaracteres.textContent =
+        `${nombre} / 1000`;
 }
 
 
@@ -101,37 +110,36 @@ champMessage.addEventListener(
 );
 
 
-/*
-    Initialise le compteur si le navigateur
-    a restauré un ancien texte.
-*/
-
 actualiserCompteur();
 
 
 /* ==================================================
-   OUTILS
+   AFFICHAGE DES ERREURS
 ================================================== */
 
 function afficherErreur(message) {
 
-    zoneErreur.textContent =
+    zoneRetour.textContent =
         message;
 
-    zoneErreur.hidden =
+    zoneRetour.hidden =
         false;
 }
 
 
 function masquerErreur() {
 
-    zoneErreur.textContent =
+    zoneRetour.textContent =
         "";
 
-    zoneErreur.hidden =
+    zoneRetour.hidden =
         true;
 }
 
+
+/* ==================================================
+   VALIDATION DE L’ADRESSE E-MAIL
+================================================== */
 
 function emailValide(email) {
 
@@ -146,7 +154,7 @@ function emailValide(email) {
 
 
 /* ==================================================
-   ÉTAT ET ANIMATION DU BOUTON
+   ÉTAT DU BOUTON
 ================================================== */
 
 function definirEnvoiEnCours(enCours) {
@@ -193,7 +201,7 @@ function obtenirRubriqueOrigine() {
 
 
 /* ==================================================
-   INFORMATIONS TECHNIQUES SIMPLES
+   INFORMATIONS TECHNIQUES
 ================================================== */
 
 function obtenirInformationsTechniques() {
@@ -281,7 +289,7 @@ function creerDonneesMessage() {
 
 
 /* ==================================================
-   VALIDATION
+   VALIDATION DU FORMULAIRE
 ================================================== */
 
 function verifierFormulaire() {
@@ -343,7 +351,7 @@ async function envoyerMessage(donnees) {
     ) {
 
         throw new Error(
-            "Le webhook Make n’est pas encore configuré."
+            "WEBHOOK_NON_CONFIGURE"
         );
     }
 
@@ -369,14 +377,129 @@ async function envoyerMessage(donnees) {
     if (!reponse.ok) {
 
         throw new Error(
-            `Erreur HTTP ${reponse.status}`
+            `ERREUR_HTTP_${reponse.status}`
         );
     }
 }
 
 
 /* ==================================================
-   VALIDATION DU FORMULAIRE
+   ATTENTE DE L’ANIMATION
+================================================== */
+
+function attendreFinAnimation() {
+
+    return new Promise(
+        resolution => {
+
+            let animationTerminee =
+                false;
+
+
+            function terminer() {
+
+                if (animationTerminee) {
+                    return;
+                }
+
+                animationTerminee =
+                    true;
+
+                contenuMessage.removeEventListener(
+                    "transitionend",
+                    terminer
+                );
+
+                resolution();
+            }
+
+
+            contenuMessage.addEventListener(
+                "transitionend",
+                terminer,
+                {
+                    once:
+                        true
+                }
+            );
+
+
+            /*
+                Sécurité si le navigateur
+                ne déclenche pas transitionend.
+            */
+
+            window.setTimeout(
+                terminer,
+                900
+            );
+        }
+    );
+}
+
+
+/* ==================================================
+   ANIMATION APRÈS ENVOI
+================================================== */
+
+async function afficherConfirmation() {
+
+    /*
+        Déclenche le glissement défini
+        dans le CSS.
+    */
+
+    contenuMessage.classList.add(
+        "envoye"
+    );
+
+
+    /*
+        Attend la fin du glissement.
+    */
+
+    await attendreFinAnimation();
+
+
+    /*
+        Retire le contenu envoyé.
+    */
+
+    contenuMessage.hidden =
+        true;
+
+
+    /*
+        Prépare la confirmation.
+    */
+
+    confirmation.hidden =
+        false;
+
+
+    /*
+        Force le navigateur à afficher
+        l’état initial avant d’ajouter
+        la classe visible.
+    */
+
+    confirmation.getBoundingClientRect();
+
+
+    /*
+        Apparition de la confirmation.
+    */
+
+    confirmation.classList.add(
+        "visible"
+    );
+
+    confirmation.focus();
+}
+
+
+/* ==================================================
+   ENVOI DU FORMULAIRE
 ================================================== */
 
 formulaire.addEventListener(
@@ -398,108 +521,13 @@ formulaire.addEventListener(
         const donnees =
             creerDonneesMessage();
 
-       try {
+        try {
 
             await envoyerMessage(
                 donnees
             );
 
-
-            const carteMessage =
-                document.querySelector(
-                    ".message-carte"
-                );
-
-
-            /*
-                La carte glisse vers la droite.
-            */
-
-            carteMessage.classList.add(
-                "message-disparition"
-            );
-
-
-            /*
-                On attend la fin de l’animation.
-            */
-
-            await new Promise(
-                resolution => {
-
-                    window.setTimeout(
-                        resolution,
-                        550
-                    );
-                }
-            );
-
-
-            /*
-                On remplace le formulaire
-                par le message de confirmation.
-            */
-
-            formulaire.hidden =
-                true;
-
-            confirmation.hidden =
-                false;
-
-
-            /*
-                On remet la carte à sa place,
-                sans animation visible.
-            */
-
-            carteMessage.style.transition =
-                "none";
-
-            carteMessage.classList.remove(
-                "message-disparition"
-            );
-
-            carteMessage.style.transform =
-                "none";
-
-            carteMessage.style.opacity =
-                "1";
-
-
-            /*
-                On force le navigateur à prendre
-                en compte l’état initial.
-            */
-
-            confirmation.offsetHeight;
-
-
-            /*
-                Apparition douce de la confirmation.
-            */
-
-            confirmation.classList.add(
-                "message-confirmation-visible"
-            );
-
-
-            /*
-                On réactive les transitions normales.
-            */
-
-            window.requestAnimationFrame(
-                () => {
-
-                    carteMessage.style.transition =
-                        "";
-
-                    carteMessage.style.transform =
-                        "";
-
-                    carteMessage.style.opacity =
-                        "";
-                }
-            );
+            await afficherConfirmation();
 
         } catch (erreur) {
 
@@ -508,14 +536,21 @@ formulaire.addEventListener(
                 erreur
             );
 
-            afficherErreur(
+            if (
                 erreur.message ===
-                "Le webhook Make n’est pas encore configuré."
+                "WEBHOOK_NON_CONFIGURE"
+            ) {
 
-                    ? "La page fonctionne, mais elle n’est pas encore reliée à Make."
+                afficherErreur(
+                    "La page fonctionne, mais elle n’est pas encore reliée à Make."
+                );
 
-                    : "Le message n’a pas pu être envoyé. Veuillez réessayer dans quelques instants."
-            );
+            } else {
+
+                afficherErreur(
+                    "Le message n’a pas pu être envoyé. Veuillez réessayer dans quelques instants."
+                );
+            }
 
         } finally {
 

@@ -5323,3 +5323,59 @@ body.carte-ouverte {
         transition: none;
     }
 }
+
+/* ============================================
+   ANIMATION ENVOI
+============================================ */
+
+.message-carte{
+
+    overflow:hidden;
+
+}
+
+
+.message-contenu{
+
+    transition:
+
+        transform .70s cubic-bezier(.65,0,.35,1),
+
+        opacity .50s ease;
+
+}
+
+
+.message-contenu.envoye{
+
+    transform:translateX(120%);
+
+    opacity:0;
+
+}
+
+
+
+.message-confirmation{
+
+    opacity:0;
+
+    transform:translateX(-60px);
+
+    transition:
+
+        opacity .45s ease,
+
+        transform .45s ease;
+
+}
+
+
+
+.message-confirmation.visible{
+
+    opacity:1;
+
+    transform:none;
+
+}
