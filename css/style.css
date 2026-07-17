@@ -4255,3 +4255,206 @@ body.carte-ouverte {
     }
 
 }
+
+/* ==================================================
+   CARTES DU MENU AVEC BOUTON MESSAGE
+================================================== */
+
+.explorer-carte {
+    position: relative;
+}
+
+
+/* Le lien principal remplit exactement la carte */
+
+.explorer-carte-lien {
+    display: grid;
+
+    grid-template-columns:
+        auto
+        minmax(0, 1fr)
+        auto;
+
+    align-items: center;
+    gap: 1.25rem;
+
+    width: 100%;
+    min-height: 100%;
+
+    padding: 1.4rem 4.8rem 1.4rem 1.4rem;
+
+    box-sizing: border-box;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Suppression du style bleu et souligné des liens */
+
+.explorer-carte-lien,
+.explorer-carte-lien:visited,
+.explorer-carte-lien:hover,
+.explorer-carte-lien:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.explorer-carte-lien h2,
+.explorer-carte-lien p {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   ICÔNE ET TEXTE
+================================================== */
+
+.explorer-icone {
+    flex-shrink: 0;
+}
+
+
+.explorer-contenu {
+    min-width: 0;
+}
+
+
+.explorer-contenu h2 {
+    margin:
+        0
+        0
+        0.35rem;
+}
+
+
+.explorer-contenu p {
+    margin: 0;
+}
+
+
+/* ==================================================
+   COLONNE DES ACTIONS À DROITE
+================================================== */
+
+.explorer-fleche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: end;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 0;
+
+    font-size: 2.3rem;
+    line-height: 1;
+}
+
+
+/* ==================================================
+   BOUTON MESSAGE
+================================================== */
+
+.explorer-message {
+    position: absolute;
+
+    top: 12px;
+    right: 18px;
+
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.72);
+
+    color: #263238;
+    text-decoration: none;
+
+    font-size: 19px;
+    line-height: 1;
+
+    box-shadow:
+        0 3px 9px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.explorer-message:visited {
+    color: #263238;
+}
+
+
+.explorer-message:hover,
+.explorer-message:focus-visible {
+    transform: scale(1.08);
+
+    background:
+        rgba(255, 255, 255, 0.96);
+}
+
+
+.explorer-message:active {
+    transform: scale(0.94);
+}
+
+
+/* ==================================================
+   SMARTPHONE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .explorer-carte-lien {
+        grid-template-columns:
+            auto
+            minmax(0, 1fr)
+            38px;
+
+        gap: 0.9rem;
+
+        padding:
+            1.15rem
+            4.2rem
+            1.15rem
+            1rem;
+    }
+
+
+    .explorer-message {
+        top: 10px;
+        right: 12px;
+
+        width: 33px;
+        height: 33px;
+
+        font-size: 17px;
+    }
+
+
+    .explorer-fleche {
+        width: 38px;
+        height: 38px;
+
+        font-size: 2rem;
+    }
+
+}
