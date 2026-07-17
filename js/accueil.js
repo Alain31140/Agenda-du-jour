@@ -501,38 +501,6 @@ async function afficherAccueil() {
                 ${carteLocalisation}
 
             </div>
-            <nav
-                id="menu-principal"
-                class="menu-principal"
-                aria-label="Navigation principale"
->
-
-                <a
-                    class="menu-carte menu-personnalites"
-                    href="personnalites.html"
-                >
-
-                    <div class="menu-icone">
-                        👤
-                    </div>
-
-                    <div class="menu-contenu">
-
-                        <h2>
-                            Personnalités du jour
-                        </h2>
-
-                        <p>
-                            Naissances, décès et parcours remarquables
-                        </p>
-
-                    </div>
-
-                    <div class="menu-fleche">
-                        →
-                    </div>
-
-                </a>
 
 
                 <a
