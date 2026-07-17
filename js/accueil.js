@@ -499,95 +499,12 @@ async function afficherAccueil() {
                 ${carteSoleilMeteo}
 
                 ${carteLocalisation}
-
-            </div>
-
-
-                <a
-                    class="menu-carte menu-culture"
-                    href="culture.html"
-                >
-
-                    <div class="menu-icone">
-                        🎭
-                    </div>
-
-                    <div class="menu-contenu">
-
-                        <h2>
-                            Culture du jour
-                        </h2>
-
-                        <p>
-                            Musique, cinéma, livres et concerts
-                        </p>
-
-                    </div>
-
-                    <div class="menu-fleche">
-                        →
-                    </div>
-
-                </a>
-
-
-                <a
-                    class="menu-carte menu-evenements"
-                    href="evenements.html"
-                >
-
-                    <div class="menu-icone">
-                        📜
-                    </div>
-
-                    <div class="menu-contenu">
-
-                        <h2>
-                            Événements du jour
-                        </h2>
-
-                        <p>
-                            Les faits marquants survenus à cette date
-                        </p>
-
-                    </div>
-
-                    <div class="menu-fleche">
-                        →
-                    </div>
-
-                </a>
-
-            </nav>
+            </div>    
 
         </section>
     `;
 
     demarrerHorloge();
-
-    if (
-    window.location.hash ===
-    "#menu-principal"
-) {
-
-    setTimeout(
-        () => {
-
-            document
-                .getElementById(
-                    "menu-principal"
-                )
-                ?.scrollIntoView({
-
-                    behavior: "smooth",
-
-                    block: "start"
-
-                });
-
-        },
-        100
-    );
 
 }
 
