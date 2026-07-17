@@ -4134,19 +4134,3 @@ body.carte-ouverte {
     }
 }
 
-.acces-menu-principal {
-    width: min(1100px, calc(100% - 32px));
-    margin: 24px auto;
-    text-align: center;
-}
-
-.bouton-acces-menu {
-    display: inline-block;
-    padding: 12px 20px;
-    border-radius: 14px;
-    text-decoration: none;
-    font-weight: 700;
-    color: #263238;
-    background: #ffffff;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
-}
