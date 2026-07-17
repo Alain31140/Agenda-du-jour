@@ -28,26 +28,29 @@ Personnalités du jour
 
 <header class="entete-agenda entete-personnalites">
 
-    <nav
-        class="entete-navigation"
-        aria-label="Navigation"
+    <nav class="entete-navigation">
+
+    <a
+        href="index.html"
+        class="entete-lien"
     >
+        🏠 Agenda
+    </a>
 
-         <a
-            href="menu.html"
-            class="entete-lien"
-        >
-            🏠 Agenda
-        </a>
+    <a
+        href="index.html#menu-principal"
+        class="entete-lien"
+        onclick="
+            if (document.referrer.includes('index.html')) {
+                event.preventDefault();
+                history.back();
+            }
+        "
+    >
+        ☰ Menu
+    </a>
 
-        <a
-            href="index.html#menu-principal">
-            class="entete-lien"
-        >
-            ☰ Menu
-        </a>
-
-    </nav>
+</nav>
 
 
     <div class="entete-rubrique">
