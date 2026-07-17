@@ -59,17 +59,54 @@ const confirmation =
 
 
 /* ==================================================
+   VÉRIFICATION DES ÉLÉMENTS
+================================================== */
+
+if (
+    !formulaire
+    || !champPrenom
+    || !champEmail
+    || !champMessage
+    || !compteurCaracteres
+    || !zoneErreur
+    || !boutonEnvoyer
+    || !texteBouton
+    || !confirmation
+) {
+
+    console.error(
+        "Page Message : un ou plusieurs éléments HTML sont introuvables."
+    );
+
+    throw new Error(
+        "Initialisation impossible de la page Message."
+    );
+}
+
+
+/* ==================================================
    COMPTEUR DE CARACTÈRES
 ================================================== */
 
+function actualiserCompteur() {
+
+    compteurCaracteres.textContent =
+        champMessage.value.length;
+}
+
+
 champMessage.addEventListener(
     "input",
-    () => {
-
-        compteurCaracteres.textContent =
-            champMessage.value.length;
-    }
+    actualiserCompteur
 );
+
+
+/*
+    Initialise le compteur si le navigateur
+    a restauré un ancien texte.
+*/
+
+actualiserCompteur();
 
 
 /* ==================================================
@@ -108,15 +145,31 @@ function emailValide(email) {
 }
 
 
+/* ==================================================
+   ÉTAT ET ANIMATION DU BOUTON
+================================================== */
+
 function definirEnvoiEnCours(enCours) {
 
     boutonEnvoyer.disabled =
         enCours;
 
+    boutonEnvoyer.classList.toggle(
+        "envoi-en-cours",
+        enCours
+    );
+
+    boutonEnvoyer.setAttribute(
+        "aria-busy",
+        enCours
+            ? "true"
+            : "false"
+    );
+
     texteBouton.textContent =
         enCours
             ? "Envoi en cours..."
-            : "Envoyer le message";
+            : "Envoyer mon message";
 }
 
 
@@ -298,7 +351,8 @@ async function envoyerMessage(donnees) {
         await fetch(
             WEBHOOK_MESSAGE,
             {
-                method: "POST",
+                method:
+                    "POST",
 
                 headers: {
                     "Content-Type":
@@ -335,11 +389,11 @@ formulaire.addEventListener(
             return;
         }
 
+        masquerErreur();
+
         definirEnvoiEnCours(
             true
         );
-
-        masquerErreur();
 
         const donnees =
             creerDonneesMessage();
@@ -350,11 +404,31 @@ formulaire.addEventListener(
                 donnees
             );
 
+
+            /*
+                On laisse brièvement l’animation
+                terminer son mouvement avant
+                d’afficher la confirmation.
+            */
+
+            await new Promise(
+                resolution => {
+
+                    window.setTimeout(
+                        resolution,
+                        450
+                    );
+                }
+            );
+
+
             formulaire.hidden =
                 true;
 
             confirmation.hidden =
                 false;
+
+            confirmation.focus?.();
 
         } catch (erreur) {
 
@@ -366,7 +440,9 @@ formulaire.addEventListener(
             afficherErreur(
                 erreur.message ===
                 "Le webhook Make n’est pas encore configuré."
+
                     ? "La page fonctionne, mais elle n’est pas encore reliée à Make."
+
                     : "Le message n’a pas pu être envoyé. Veuillez réessayer dans quelques instants."
             );
 
