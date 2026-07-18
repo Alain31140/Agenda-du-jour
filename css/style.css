@@ -3880,10 +3880,12 @@ body.carte-ouverte {
 ================================================== */
 
 .entete-navigation {
-    display: flex;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
 
     width: min(
         calc(100% - 28px),
@@ -3893,6 +3895,7 @@ body.carte-ouverte {
     margin: 0 auto;
 
     padding: 8px 0;
+
 }
 
 
@@ -5378,4 +5381,15 @@ body.carte-ouverte {
 
     transform:none;
 
+}
+.entete-navigation a:first-child {
+    justify-self: start;
+}
+
+.entete-navigation a:nth-child(2) {
+    justify-self: center;
+}
+
+.entete-navigation a:last-child {
+    justify-self: end;
 }
