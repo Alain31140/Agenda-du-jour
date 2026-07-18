@@ -1400,6 +1400,7 @@ body.carte-ouverte {
     margin: 0 0 18px;
     font-size: clamp(1.5rem, 4vw, 2rem);
     color: #263238;
+    text-align: center;
 }
 
 
