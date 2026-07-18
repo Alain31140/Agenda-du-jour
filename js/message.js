@@ -9,7 +9,7 @@
 */
 
 const WEBHOOK_MESSAGE =
-    "COLLER_ICI_L_ADRESSE_DU_WEBHOOK_MAKE";
+    "https://hook.eu1.make.com/m4us5n687vfnx1eyhtbj14nobamr86lw";
 
 
 /* ==================================================
@@ -65,6 +65,11 @@ const confirmation =
     document.getElementById(
         "message-confirmation"
     );
+
+const params = new URLSearchParams(window.location.search);
+
+const origine =
+    params.get("origine") || "Accès direct";
 
 
 /* ==================================================
@@ -283,8 +288,27 @@ function creerDonneesMessage() {
             informations.navigateur,
 
         tailleEcran:
-            informations.tailleEcran
-    };
+            informations.tailleEcran,
+
+        origine: origine,
+
+        identifiant:
+            "MSG-" +
+            maintenant
+                .toLocaleDateString("fr-FR")
+                .replace(/\//g, "") +
+            "-" +
+            maintenant
+                .toLocaleTimeString(
+                    "fr-FR",
+                    {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        second: "2-digit"
+                    }
+                )
+                .replace(/:/g, "")
+            };
 }
 
 
