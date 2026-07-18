@@ -80,8 +80,17 @@ function obtenirOrigine() {
             window.location.search
         );
 
+    const origineAdresse =
+        parametres.get("origine");
+
+    const origineMemorisee =
+        sessionStorage.getItem(
+            "origineMessage"
+        );
+
     return (
-        parametres.get("origine")
+        origineAdresse
+        || origineMemorisee
         || "Accès direct"
     );
 }
