@@ -68,6 +68,9 @@ const confirmation =
         "message-confirmation"
     );
 
+const sujet =
+    document.getElementById("sujet");
+
 
 /* ==================================================
    ORIGINE DU MESSAGE
@@ -319,6 +322,9 @@ function creerDonneesMessage() {
 
         email:
             champEmail.value.trim(),
+
+        sujet:
+            sujet.value,
 
         message:
             champMessage.value.trim(),
