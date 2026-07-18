@@ -3,13 +3,15 @@
 ================================================== */
 
 
-/*
-    Remplacer cette adresse par l’URL
-    du webhook fournie par Make.
-*/
+/* ==================================================
+   CONFIGURATION
+================================================== */
 
 const WEBHOOK_MESSAGE =
     "https://hook.eu1.make.com/m4us5n687vfnx1eyhtbj14nobamr86lw";
+
+const TYPE_MESSAGE =
+    "MSG";
 
 
 /* ==================================================
@@ -66,10 +68,23 @@ const confirmation =
         "message-confirmation"
     );
 
-const params = new URLSearchParams(window.location.search);
 
-const origine =
-    params.get("origine") || "Accès direct";
+/* ==================================================
+   ORIGINE DU MESSAGE
+================================================== */
+
+function obtenirOrigine() {
+
+    const parametres =
+        new URLSearchParams(
+            window.location.search
+        );
+
+    return (
+        parametres.get("origine")
+        || "Accès direct"
+    );
+}
 
 
 /* ==================================================
@@ -77,6 +92,7 @@ const origine =
 ================================================== */
 
 if (
+
     !contenuMessage
     || !formulaire
     || !champPrenom
@@ -87,11 +103,13 @@ if (
     || !boutonEnvoyer
     || !texteBouton
     || !confirmation
+
 ) {
 
     throw new Error(
         "Page Message : un élément HTML est introuvable."
     );
+
 }
 
 
@@ -106,17 +124,15 @@ function actualiserCompteur() {
 
     compteurCaracteres.textContent =
         `${nombre} / 1000`;
-}
 
+}
 
 champMessage.addEventListener(
     "input",
     actualiserCompteur
 );
 
-
 actualiserCompteur();
-
 
 /* ==================================================
    AFFICHAGE DES ERREURS
@@ -129,6 +145,7 @@ function afficherErreur(message) {
 
     zoneRetour.hidden =
         false;
+
 }
 
 
@@ -139,6 +156,7 @@ function masquerErreur() {
 
     zoneRetour.hidden =
         true;
+
 }
 
 
@@ -155,6 +173,7 @@ function emailValide(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(
         email
     );
+
 }
 
 
@@ -183,25 +202,7 @@ function definirEnvoiEnCours(enCours) {
         enCours
             ? "Envoi en cours..."
             : "Envoyer mon message";
-}
 
-
-/* ==================================================
-   ORIGINE DU MESSAGE
-================================================== */
-
-function obtenirRubriqueOrigine() {
-
-    const parametres =
-        new URLSearchParams(
-            window.location.search
-        );
-
-    return (
-        parametres.get("depuis")
-        || document.referrer
-        || "Accès direct"
-    );
 }
 
 
@@ -213,6 +214,12 @@ function obtenirInformationsTechniques() {
 
     return {
 
+        origine:
+            obtenirOrigine(),
+
+        page:
+            window.location.href,
+
         langue:
             navigator.language || "",
 
@@ -220,14 +227,38 @@ function obtenirInformationsTechniques() {
             navigator.userAgent || "",
 
         tailleEcran:
-            `${window.screen.width} × ${window.screen.height}`,
+            `${window.screen.width} × ${window.screen.height}`
 
-        page:
-            window.location.href,
-
-        origine:
-            obtenirRubriqueOrigine()
     };
+
+}
+
+
+/* ==================================================
+   IDENTIFIANT DU MESSAGE
+================================================== */
+
+function creerIdentifiant(maintenant) {
+
+    const date =
+        maintenant
+            .toLocaleDateString("fr-FR")
+            .replace(/\//g, "");
+
+    const heure =
+        maintenant
+            .toLocaleTimeString(
+                "fr-FR",
+                {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit"
+                }
+            )
+            .replace(/:/g, "");
+
+    return `${TYPE_MESSAGE}-${date}-${heure}`;
+
 }
 
 
@@ -266,6 +297,14 @@ function creerDonneesMessage() {
                 }
             ),
 
+        identifiant:
+            creerIdentifiant(
+                maintenant
+            ),
+
+        statut:
+            "🟢 Nouveau",
+
         prenom:
             champPrenom.value.trim(),
 
@@ -288,29 +327,11 @@ function creerDonneesMessage() {
             informations.navigateur,
 
         tailleEcran:
-            informations.tailleEcran,
+            informations.tailleEcran
 
-        origine: origine,
+    };
 
-        identifiant:
-            "MSG-" +
-            maintenant
-                .toLocaleDateString("fr-FR")
-                .replace(/\//g, "") +
-            "-" +
-            maintenant
-                .toLocaleTimeString(
-                    "fr-FR",
-                    {
-                        hour: "2-digit",
-                        minute: "2-digit",
-                        second: "2-digit"
-                    }
-                )
-                .replace(/:/g, "")
-            };
 }
-
 
 /* ==================================================
    VALIDATION DU FORMULAIRE
@@ -335,6 +356,7 @@ function verifierFormulaire() {
         champMessage.focus();
 
         return false;
+
     }
 
     if (message.length < 3) {
@@ -346,6 +368,7 @@ function verifierFormulaire() {
         champMessage.focus();
 
         return false;
+
     }
 
     if (!emailValide(email)) {
@@ -357,9 +380,11 @@ function verifierFormulaire() {
         champEmail.focus();
 
         return false;
+
     }
 
     return true;
+
 }
 
 
@@ -370,32 +395,44 @@ function verifierFormulaire() {
 async function envoyerMessage(donnees) {
 
     if (
-        WEBHOOK_MESSAGE ===
+
+        !WEBHOOK_MESSAGE
+
+        || WEBHOOK_MESSAGE ===
         "COLLER_ICI_L_ADRESSE_DU_WEBHOOK_MAKE"
+
     ) {
 
         throw new Error(
             "WEBHOOK_NON_CONFIGURE"
         );
+
     }
 
     const reponse =
         await fetch(
+
             WEBHOOK_MESSAGE,
+
             {
+
                 method:
                     "POST",
 
                 headers: {
+
                     "Content-Type":
                         "application/json"
+
                 },
 
                 body:
                     JSON.stringify(
                         donnees
                     )
+
             }
+
         );
 
     if (!reponse.ok) {
@@ -403,7 +440,9 @@ async function envoyerMessage(donnees) {
         throw new Error(
             `ERREUR_HTTP_${reponse.status}`
         );
+
     }
+
 }
 
 
@@ -414,11 +453,11 @@ async function envoyerMessage(donnees) {
 function attendreFinAnimation() {
 
     return new Promise(
+
         resolution => {
 
             let animationTerminee =
                 false;
-
 
             function terminer() {
 
@@ -435,18 +474,21 @@ function attendreFinAnimation() {
                 );
 
                 resolution();
+
             }
 
-
             contenuMessage.addEventListener(
+
                 "transitionend",
+
                 terminer,
+
                 {
                     once:
                         true
                 }
-            );
 
+            );
 
             /*
                 Sécurité si le navigateur
@@ -457,8 +499,11 @@ function attendreFinAnimation() {
                 terminer,
                 900
             );
+
         }
+
     );
+
 }
 
 
@@ -468,66 +513,36 @@ function attendreFinAnimation() {
 
 async function afficherConfirmation() {
 
-    /*
-        Déclenche le glissement défini
-        dans le CSS.
-    */
-
     contenuMessage.classList.add(
         "envoye"
     );
 
-
-    /*
-        Attend la fin du glissement.
-    */
-
     await attendreFinAnimation();
-
-
-    /*
-        Retire le contenu envoyé.
-    */
 
     contenuMessage.hidden =
         true;
 
-
-    /*
-        Prépare la confirmation.
-    */
-
     confirmation.hidden =
         false;
 
-
-    /*
-        Force le navigateur à afficher
-        l’état initial avant d’ajouter
-        la classe visible.
-    */
-
     confirmation.getBoundingClientRect();
-
-
-    /*
-        Apparition de la confirmation.
-    */
 
     confirmation.classList.add(
         "visible"
     );
 
     confirmation.focus();
-}
 
+}
 
 /* ==================================================
    ENVOI DU FORMULAIRE
 ================================================== */
 
 formulaire.addEventListener(
+
     "submit",
+
     async evenement => {
 
         evenement.preventDefault();
@@ -574,6 +589,7 @@ formulaire.addEventListener(
                 afficherErreur(
                     "Le message n’a pas pu être envoyé. Veuillez réessayer dans quelques instants."
                 );
+
             }
 
         } finally {
@@ -581,6 +597,9 @@ formulaire.addEventListener(
             definirEnvoiEnCours(
                 false
             );
+
         }
+
     }
+
 );
