@@ -274,7 +274,7 @@ async function afficherAccueil() {
     const langue =
         obtenirLangueAccueil();
 
-);
+    };
 
     const messageHeure =
         obtenirMessageHeure();
