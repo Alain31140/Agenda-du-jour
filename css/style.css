@@ -68,6 +68,7 @@ html {
 body {
 
     margin: 0;
+    padding-bottom: 90px;
 
     min-height: 100vh;
 
@@ -421,6 +422,33 @@ body {
 
 ) {
 
+        .pied-page-fixe {
+
+        padding:
+            6px
+            5px;
+    }
+
+
+    .pied-page-liens {
+
+        gap:
+            4px
+            9px;
+    }
+
+
+    .pied-page-liens a {
+
+        font-size: 0.68rem;
+    }
+
+
+    .pied-page-version {
+
+        font-size: 0.62rem;
+    }
+    
     .site-header {
 
         padding:
@@ -5393,4 +5421,101 @@ body.carte-ouverte {
 
 .entete-navigation a:last-child {
     justify-self: end;
+}
+
+/* ==================================================
+   PIED DE PAGE FIXE
+================================================== */
+
+.pied-page-fixe {
+
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 4px;
+
+    padding:
+        7px
+        12px;
+
+    background:
+        rgba(
+            20,
+            35,
+            55,
+            0.96
+        );
+
+    box-shadow:
+        0 -3px 12px
+        rgba(
+            0,
+            0,
+            0,
+            0.20
+        );
+
+    backdrop-filter:
+        blur(8px);
+}
+
+
+.pied-page-liens {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap:
+        6px
+        16px;
+}
+
+
+.pied-page-liens a {
+
+    color: white;
+
+    font-size: 0.78rem;
+
+    font-weight: 650;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+
+.pied-page-liens a:hover {
+
+    text-decoration: underline;
+}
+
+
+.pied-page-version {
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.72
+        );
+
+    font-size: 0.68rem;
 }

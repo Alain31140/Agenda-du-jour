@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
@@ -36,33 +35,6 @@
 
 <body>
 
-    <!-- =========================
-         EN-TÊTE
-    ========================== -->
-    <nav class="entete-navigation">
-
-        <a
-            href="index.html"
-            class="entete-lien"
-        >
-            🏠 Accueil
-        </a>
-
-        <a
-            href="message.html?origine=Accueil"
-            class="entete-lien"
-        >
-            💬 Contact
-        </a>
-
-        <a
-            href="menu.html"
-            class="entete-lien"
-        >
-            ☰ Menu
-        </a>
-
-    </nav>
     <header class="site-header">
 
         <h1>
@@ -74,11 +46,6 @@
         </p>
 
     </header>
-
-
-    <!-- =========================
-         ACCUEIL / AGENDA DU JOUR
-    ========================== -->
 
     <main id="app">
 
@@ -99,11 +66,6 @@
         </section>
 
     </main>
-
-
-    <!-- =========================
-         MENU PRINCIPAL
-    ========================== -->
 
     <section class="section-menu-principal">
 
@@ -150,18 +112,16 @@
 
                 </a>
 
-
                 <a
                     href="message.html?origine=Personnalités"
                     class="explorer-message"
-                    aria-label="Écrire un message"
+                    aria-label="Écrire un message concernant les personnalités"
                     title="Écrire un message"
                 >
                     ✉️
                 </a>
 
             </div>
-
 
             <!-- Culture -->
 
@@ -197,18 +157,16 @@
 
                 </a>
 
-
                 <a
                     href="message.html?origine=Culture"
                     class="explorer-message"
-                    aria-label="Écrire un message"
+                    aria-label="Écrire un message concernant la culture"
                     title="Écrire un message"
                 >
                     ✉️
                 </a>
 
             </div>
-
 
             <!-- Événements -->
 
@@ -244,11 +202,10 @@
 
                 </a>
 
-
                 <a
-                    href="message.html?origine=Évènements"
+                    href="message.html?origine=Événements"
                     class="explorer-message"
-                    aria-label="Écrire un message"
+                    aria-label="Écrire un message concernant les événements"
                     title="Écrire un message"
                 >
                     ✉️
@@ -260,19 +217,7 @@
 
     </section>
 
-
-    <!-- =========================
-         PIED DE PAGE
-    ========================== -->
-
-    <footer class="site-footer">
-
-        <p>
-            Agenda du jour
-        </p>
-
-    </footer>
-
+    <div id="pied-page"></div>
 
     <!-- Module compteur -->
     <script src="js/compteur.js"></script>
@@ -298,6 +243,9 @@
 
     <!-- Démarrage principal -->
     <script src="js/app.js"></script>
+
+    <!-- Pied de page commun -->
+    <script src="js/footer.js"></script>
 
 </body>
 

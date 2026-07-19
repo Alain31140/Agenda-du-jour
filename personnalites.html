@@ -1,81 +1,62 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<title>
+    <title>
+        Personnalités du jour
+    </title>
 
-Personnalités du jour
-
-</title>
-
-<link
-    rel="stylesheet"
-    href="css/style.css"
->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 
 </head>
 
 <body>
 
-<header class="entete-agenda entete-personnalites">
+    <header class="entete-agenda entete-personnalites">
 
-    <nav class="entete-navigation">
+        <div id="barre-navigation"></div>
 
-        <a href="index.html" class="entete-lien">
-            🏠 Accueil
-        </a>
+        <div class="entete-rubrique">
 
-        <a href="message.html?origine=Accueil" class="entete-lien">
-            💬 Contact
-        </a>
+            <h1>
+                👤 Personnalités du jour
+            </h1>
 
-        <a href="menu.html" class="entete-lien">
-            ☰ Menu
-        </a>
+            <p id="personnalites-date">
+                Chargement…
+            </p>
 
-    </nav>
+        </div>
 
+    </header>
 
-    <div class="entete-rubrique">
-
-        <h1>
-            👤 Personnalités du jour
-        </h1>
-
-        <p id="personnalites-date">
-            Chargement…
-        </p>
-
-    </div>
-
-</header>
-
-
-<main
-    id="personnalites-contenu"
-    class="page-contenu"
->
-
-    <div
-        class="chargement"
+    <main
+        id="personnalites-contenu"
+        class="page-contenu"
     >
 
-        Chargement...
+        <div class="chargement">
+            Chargement...
+        </div>
 
-    </div>
+    </main>
 
-</main>
+    <div id="pied-page"></div>
 
-<script src="js/personnalites.js"></script>
+    <script src="js/personnalites.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
 
 </body>
 

@@ -10,7 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Écrire à Alain - Agenda du Jour</title>
+    <title>Contact - Agenda du Jour</title>
 
     <link
         rel="stylesheet"
@@ -21,32 +21,11 @@
 
 <body>
 
-    <nav class="entete-navigation">
-
-        <a href="index.html" class="entete-lien">
-            🏠 Accueil
-        </a>
-
-        <a href="message.html?origine=Accueil" class="entete-lien">
-            💬 Contact
-        </a>
-
-        <a href="menu.html" class="entete-lien">
-            ☰ Menu
-        </a>
-
-    </nav>
-
+    <div id="barre-navigation"></div>
 
     <main class="page-message">
 
         <section class="message-carte">
-
-
-            <!--
-                Ce bloc contient toute la partie
-                qui glissera après l’envoi.
-            -->
 
             <div
                 id="message-contenu"
@@ -63,7 +42,7 @@
                     </div>
 
                     <h1>
-                        Écrire à Alain
+                        Nous contacter
                     </h1>
 
                     <p class="message-introduction">
@@ -73,21 +52,19 @@
                         ou simplement un petit bonjour&nbsp;?
 
                         <strong>
-                            Je serai ravi de vous lire.
+                            Votre message sera lu avec attention.
                         </strong>
 
                     </p>
 
                     <p class="message-encouragement">
 
-                        💬 Tous les messages sont lus.
-                        Vos suggestions permettent de faire évoluer
+                        💬 Vos suggestions permettent de faire évoluer
                         Agenda du Jour.
 
                     </p>
 
                 </header>
-
 
                 <form
                     id="message-formulaire"
@@ -120,7 +97,6 @@
                         >
 
                     </div>
-
 
                     <div class="message-champ">
 
@@ -239,14 +215,12 @@
 
                     </div>
 
-
                     <div
                         id="message-retour"
                         class="message-retour"
                         role="alert"
                         hidden
                     ></div>
-
 
                     <button
                         id="message-bouton"
@@ -272,7 +246,6 @@
 
                 </form>
 
-
                 <footer class="message-pied">
 
                     <p>
@@ -290,18 +263,13 @@
                         </strong>
 
                         — imaginé et développé par Alain,
-                        avec l'assistance de ChatGPT d'OpenAI.
+                        avec l’assistance de ChatGPT d’OpenAI.
 
                     </p>
 
                 </footer>
 
             </div>
-
-
-            <!--
-                La confirmation reste en dehors du bloc animé.
-            -->
 
             <section
                 id="message-confirmation"
@@ -333,7 +301,7 @@
                     href="index.html"
                     class="message-retour-accueil"
                 >
-                    Retour à l'accueil
+                    Retour à l’accueil
                 </a>
 
             </section>
@@ -342,8 +310,11 @@
 
     </main>
 
+    <div id="pied-page"></div>
 
     <script src="js/message.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
 
 </body>
 

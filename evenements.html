@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
@@ -24,52 +23,40 @@
 
 <body>
 
-<header class="entete-agenda entete-evenements">
+    <header class="entete-agenda entete-evenements">
 
-   <nav class="entete-navigation">
+        <div id="barre-navigation"></div>
 
-        <a href="index.html" class="entete-lien">
-            🏠 Accueil
-        </a>
+        <div class="entete-rubrique">
 
-        <a href="message.html?origine=Accueil" class="entete-lien">
-            💬 Contact
-        </a>
+            <h1>
+                📜 Événements du jour
+            </h1>
 
-        <a href="menu.html" class="entete-lien">
-            ☰ Menu
-        </a>
+            <p id="evenements-date">
+                Chargement…
+            </p>
 
-    </nav>
+        </div>
 
+    </header>
 
-    <div class="entete-rubrique">
+    <main
+        id="evenements-contenu"
+        class="page-contenu"
+    >
 
-        <h1>
-            📜 Événements du jour
-        </h1>
+        <div class="chargement">
+            Chargement...
+        </div>
 
-        <p id="evenements-date">
-            Chargement…
-        </p>
+    </main>
 
-    </div>
+    <div id="pied-page"></div>
 
-</header>
-
-
-<main
-    id="evenements-contenu"
-    class="page-contenu"
->
-
-    <div class="chargement">
-        Chargement...
-    </div>
-
-</main>
-
-<script src="js/evenements.js"></script>
+    <script src="js/evenements.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
 
 </body>
 
