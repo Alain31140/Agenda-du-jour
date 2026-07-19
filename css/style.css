@@ -448,7 +448,7 @@ body {
 
         font-size: 0.62rem;
     }
-    
+
     .site-header {
 
         padding:
@@ -5518,4 +5518,280 @@ body.carte-ouverte {
         );
 
     font-size: 0.68rem;
+}
+/* ==================================================
+   PAGES D’INFORMATIONS
+   À propos - Sources - Versions - Confidentialité
+================================================== */
+
+.page-informations {
+
+    background:
+        linear-gradient(
+            180deg,
+            #eef4fa 0%,
+            #f7f9fc 100%
+        );
+}
+
+
+.entete-informations {
+
+    background:
+        linear-gradient(
+            135deg,
+            #203a57,
+            #315f82
+        );
+}
+
+
+.informations-contenu {
+
+    width: min(
+        920px,
+        calc(100% - 28px)
+    );
+
+    margin:
+        28px
+        auto
+        120px;
+
+    display: grid;
+
+    gap: 18px;
+}
+
+
+.information-carte {
+
+    padding:
+        22px
+        24px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 24px
+        rgba(
+            25,
+            48,
+            72,
+            0.10
+        );
+
+    border:
+        1px solid
+        rgba(
+            49,
+            95,
+            130,
+            0.10
+        );
+}
+
+
+.information-carte h2 {
+
+    margin:
+        0
+        0
+        14px;
+
+    color: #203a57;
+
+    font-size: 1.25rem;
+}
+
+
+.information-carte p {
+
+    margin:
+        10px
+        0;
+
+    line-height: 1.65;
+
+    color: #33475b;
+}
+
+
+.information-carte-centree {
+
+    text-align: center;
+}
+
+
+.information-liste {
+
+    margin:
+        14px
+        0
+        0;
+
+    padding-left: 0;
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 10px;
+}
+
+
+.information-liste li {
+
+    position: relative;
+
+    padding:
+        10px
+        14px;
+
+    background: #f4f7fa;
+
+    border-radius: 10px;
+
+    line-height: 1.45;
+
+    color: #33475b;
+}
+
+
+.version-entete {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+
+.version-entete h2 {
+
+    margin: 0;
+}
+
+
+.version-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        6px
+        11px;
+
+    border-radius: 999px;
+
+    background: #e1f5e8;
+
+    color: #176b38;
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.information-bouton {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 12px;
+
+    padding:
+        12px
+        18px;
+
+    border-radius: 12px;
+
+    background: #315f82;
+
+    color: white;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.information-bouton:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 16px
+        rgba(
+            49,
+            95,
+            130,
+            0.25
+        );
+}
+
+
+@media (max-width: 600px) {
+
+    .informations-contenu {
+
+        width:
+            calc(
+                100% - 20px
+            );
+
+        margin-top: 18px;
+
+        gap: 13px;
+    }
+
+
+    .information-carte {
+
+        padding:
+            18px
+            16px;
+
+        border-radius: 15px;
+    }
+
+
+    .information-carte h2 {
+
+        font-size: 1.12rem;
+    }
+
+
+    .information-carte p,
+    .information-liste li {
+
+        font-size: 0.94rem;
+    }
+
+
+    .version-entete {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
 }
