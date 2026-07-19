@@ -103,6 +103,16 @@ async function chargerDonneesAccueil() {
     donneesAccueil.langues =
         langues;
 
+        console.log(
+    "JSON accueil chargé :",
+    donneesAccueil.langues
+);
+
+console.log(
+    "Bloc FR chargé :",
+    donneesAccueil.langues.fr
+);
+
     console.log(
         "🏠 Données accueil chargées",
         donneesAccueil
@@ -268,6 +278,11 @@ async function afficherAccueil() {
 
     const langue =
         obtenirLangueAccueil();
+
+        console.log(
+    "Langue détectée :",
+    langue
+);
 
     const messageHeure =
         obtenirMessageHeure();
