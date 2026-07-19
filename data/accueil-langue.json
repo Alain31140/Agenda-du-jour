@@ -1,5 +1,5 @@
 {
-  "fr": {
+  "es": {
     "welcome": "Bonjour et bienvenue",
     "visites": "Déjà {compteur} curieux ont découvert mon calendrier 👀",
     "flag": "🇫🇷"
@@ -9,7 +9,7 @@
     "visites": "👁️👁️ lready {compteur} curious visitors have discovered my calendar",
     "flag": "🇬🇧"
   },
-  "es": {
+  "fr": {
     "welcome": "Hola y bienvenido",
     "visites": "Ya {compteur} curiosos han descubierto mi calendario",
     "flag": "🇪🇸"
