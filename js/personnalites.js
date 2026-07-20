@@ -5,11 +5,10 @@
 
 
 const PERSONNALITES_DATA_URL =
-    "data/personnalites.json";
-
+    DATA_URL + "personnalites.json";
 
 const PERSONNALITES_IMAGE_URL =
-    "images/personnalites/";
+    IMAGE_URL + "personnalites/";
 
 
 /* ==================================================

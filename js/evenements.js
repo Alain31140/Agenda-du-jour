@@ -5,11 +5,10 @@
 
 
 const EVENEMENTS_DATA_URL =
-    "data/evenements.json";
-
+    DATA_URL + "evenements.json";
 
 const EVENEMENTS_IMAGE_URL =
-    "images/evenements/";
+    IMAGE_URL + "evenements/";
 
 
 /* ==================================================

@@ -4,10 +4,10 @@
 ================================================== */
 
 const CULTURE_DATA_URL =
-    "data/culture.json";
+    DATA_URL + "culture.json";
 
 const CULTURE_IMAGE_URL =
-    "images/culture/";
+    IMAGE_URL + "culture/";
 
 let cultureOuverte = null;
 
