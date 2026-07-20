@@ -210,7 +210,7 @@ function creerCarteLune() {
             <div class="lune-image">
 
                 <img
-                    src="images/lune/${lune.image}"
+                    src="${IMAGE_URL}lune/${lune.image}"
                     alt="${lune.nom}"
                 >
 
