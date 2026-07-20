@@ -11,8 +11,12 @@
 // Dépôt contenant les fichiers JSON et les images
 
 // const DATA_URL = "data/";
-const DATA_URL =
-    "https://raw.githubusercontent.com/Alain31140/Agenda-data/main/json/";
+//const DATA_URL =
+//   "https://raw.githubusercontent.com/Alain31140/Agenda-data/main/json/";
+const BASE_URL =
+    "https://raw.githubusercontent.com/Alain31140/Agenda-data/main/";
+const DATA_URL = BASE_URL + "json/";
+const IMAGE_URL = BASE_URL + "images/";
 
 /* ==================================================
    DÉMARRAGE DE L'APPLICATION
