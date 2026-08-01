@@ -13,7 +13,7 @@
     "use strict";
 
     const WEBHOOK_VISITES =
-        "https://hook.eu1.make.com/m4us5n687vfnx1eyhtbj14nobamr86lw";
+    "https://hook.eu1.make.com/na702ao24jhdj5c84xbmbfmee3n5pkxt";
 
     const CLE_SESSION = "agenda_visite_anonyme_v1";
 
