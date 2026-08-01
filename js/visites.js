@@ -46,6 +46,33 @@
         return "ordinateur";
     }
 
+    function systemeExploitation() {
+        const agent = navigator.userAgent || "";
+
+        if (/windows/i.test(agent)) return "Windows";
+        if (/iphone|ipad|ipod/i.test(agent)) return "iOS / iPadOS";
+        if (/android/i.test(agent)) return "Android";
+        if (/macintosh|mac os x/i.test(agent)) return "macOS";
+        if (/linux/i.test(agent)) return "Linux";
+
+        return "Inconnu";
+    }
+
+    function navigateurUtilise() {
+        const agent = navigator.userAgent || "";
+
+        if (/edg/i.test(agent)) return "Edge";
+        if (/opr|opera/i.test(agent)) return "Opera";
+        if (/firefox|fxios/i.test(agent)) return "Firefox";
+        if (/chrome|crios/i.test(agent) && !/edg|opr/i.test(agent)) {
+            return "Chrome";
+        }
+        if (/safari/i.test(agent) && !/chrome|crios|android/i.test(agent)) {
+            return "Safari";
+        }
+
+        return "Inconnu";
+    }
     function nomRubrique() {
         const fichier =
             window.location.pathname.split("/").pop() || "index.html";
@@ -106,6 +133,8 @@
             secondesActives: 0,
             origine: origineVisite(null),
             appareil: typeAppareil(),
+            os: systemeExploitation(),
+            navigateur: navigateurUtilise(),        
             rubriques: []
         };
     } else {
@@ -153,6 +182,8 @@
         donnees.set("secondesActives", String(session.secondesActives));
         donnees.set("origine", session.origine);
         donnees.set("appareil", session.appareil);
+        donnees.set("os", session.os);
+        donnees.set("navigateur", session.navigateur);
         donnees.set("rubrique", rubrique);
         donnees.set("rubriques", session.rubriques.join(" → "));
 
