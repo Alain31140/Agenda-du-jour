@@ -7,6 +7,7 @@
      consultées dans un même onglet.
    - Make regroupera ces signaux et enverra une seule
      notification récapitulative après inactivité.
+     test
 ================================================== */
 
 (() => {
