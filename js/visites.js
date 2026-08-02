@@ -194,6 +194,7 @@
         donnees.set("rubrique", rubrique);
         donnees.set("rubriques", session.rubriques.join(" → "));
         donnees.set("lieu", session.lieu || "Non renseigné");
+        donnees.set("coordonnees",session.coordonnees || "Non disponibles");
         donnees.set("debutFrancais", maintenantFrancais());
         return donnees;
     }
@@ -250,28 +251,45 @@
     function demanderLocalisationPuisEnvoyer() {
         if (!navigator.geolocation) {
             session.lieu = "Localisation indisponible";
+            session.coordonnees = "Non disponibles";
+
+            enregistrerSession(session);
             envoyerSignal("ouverture-page");
             return;
         }
 
         navigator.geolocation.getCurrentPosition(
-            (position) => {
-                session.lieu =
-                    `${position.coords.latitude.toFixed(4)}, ` +
-                    `${position.coords.longitude.toFixed(4)}`;
+            async (position) => {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                session.coordonnees =
+                    `${latitude.toFixed(4)}, ${longitude.toFixed(4)}`;
+
+                session.lieu = await rechercherCommune(
+                    latitude,
+                    longitude
+                );
 
                 enregistrerSession(session);
                 envoyerSignal("ouverture-page");
             },
+
             (erreur) => {
-                session.lieu =
-                    erreur.code === erreur.PERMISSION_DENIED
-                        ? "Localisation refusée"
-                        : "Localisation indisponible";
+                session.coordonnees = "Non disponibles";
+
+                if (erreur.code === erreur.PERMISSION_DENIED) {
+                    session.lieu = "Localisation refusée";
+                } else if (erreur.code === erreur.TIMEOUT) {
+                    session.lieu = "Localisation non obtenue à temps";
+                } else {
+                    session.lieu = "Localisation indisponible";
+                }
 
                 enregistrerSession(session);
                 envoyerSignal("ouverture-page");
             },
+
             {
                 enableHighAccuracy: false,
                 timeout: 10000,
@@ -279,6 +297,51 @@
             }
         );
     }
+        async function rechercherCommune(latitude, longitude) {
+            const url =
+                "https://nominatim.openstreetmap.org/reverse" +
+                `?format=jsonv2` +
+                `&lat=${encodeURIComponent(latitude)}` +
+                `&lon=${encodeURIComponent(longitude)}` +
+                "&addressdetails=1" +
+                "&zoom=10" +
+                "&accept-language=fr";
 
+            try {
+                const reponse = await fetch(url, {
+                    method: "GET",
+                    headers: {
+                        Accept: "application/json"
+                    },
+                    cache: "no-store"
+                });
+
+                if (!reponse.ok) {
+                    throw new Error(
+                        `Erreur de géocodage : ${reponse.status}`
+                    );
+                }
+
+                const resultat = await reponse.json();
+                const adresse = resultat.address || {};
+
+                return (
+                    adresse.city ||
+                    adresse.town ||
+                    adresse.village ||
+                    adresse.municipality ||
+                    adresse.commune ||
+                    adresse.county ||
+                    "Commune inconnue"
+                );
+            } catch (erreur) {
+                console.warn(
+                    "Recherche de la commune impossible :",
+                    erreur
+                );
+
+                return "Commune inconnue";
+            }
+        }
     demanderLocalisationPuisEnvoyer();
 })();
