@@ -247,11 +247,28 @@
     window.addEventListener("pageshow", () => {
         dernierChrono = Date.now();
     });
-    function demanderLocalisationPuisEnvoyer() {
+   async function demanderLocalisationPuisEnvoyer() {
         if (!navigator.geolocation) {
-            session.lieu = "Localisation indisponible";
+            session.lieu = "Localisation non prise en charge";
             envoyerSignal("ouverture-page");
             return;
+        }
+
+        try {
+            if (navigator.permissions?.query) {
+                const permission = await navigator.permissions.query({
+                    name: "geolocation"
+                });
+
+                if (permission.state === "denied") {
+                    session.lieu = "Localisation bloquée dans le navigateur";
+                    enregistrerSession(session);
+                    envoyerSignal("ouverture-page");
+                    return;
+                }
+            }
+        } catch (erreur) {
+            console.warn("État de permission non vérifiable :", erreur);
         }
 
         navigator.geolocation.getCurrentPosition(
