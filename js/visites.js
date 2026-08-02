@@ -20,6 +20,13 @@
 
     const maintenantISO = () => new Date().toISOString();
 
+    function maintenantFrancais() {
+    return new Date().toLocaleString("fr-FR", {
+        timeZone: "Europe/Paris",
+        dateStyle: "short",
+        timeStyle: "medium"
+    });
+}
     function creerIdentifiantTemporaire() {
         if (window.crypto?.randomUUID) {
             return window.crypto.randomUUID();
@@ -187,6 +194,7 @@
         donnees.set("rubrique", rubrique);
         donnees.set("rubriques", session.rubriques.join(" → "));
         donnees.set("lieu", session.lieu || "Non renseigné");
+        donnees.set("debutFrancais", maintenantFrancais());
         return donnees;
     }
 
