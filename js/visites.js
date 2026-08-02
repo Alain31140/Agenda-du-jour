@@ -186,7 +186,7 @@
         donnees.set("navigateur", session.navigateur);
         donnees.set("rubrique", rubrique);
         donnees.set("rubriques", session.rubriques.join(" → "));
-
+        donnees.set("lieu", session.lieu || "Non renseigné");
         return donnees;
     }
 
@@ -239,7 +239,38 @@
     window.addEventListener("pageshow", () => {
         dernierChrono = Date.now();
     });
+    function demanderLocalisationPuisEnvoyer() {
+        if (!navigator.geolocation) {
+            session.lieu = "Localisation indisponible";
+            envoyerSignal("ouverture-page");
+            return;
+        }
 
-    envoyerSignal("ouverture-page");
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                session.lieu =
+                    `${position.coords.latitude.toFixed(4)}, ` +
+                    `${position.coords.longitude.toFixed(4)}`;
 
+                enregistrerSession(session);
+                envoyerSignal("ouverture-page");
+            },
+            (erreur) => {
+                session.lieu =
+                    erreur.code === erreur.PERMISSION_DENIED
+                        ? "Localisation refusée"
+                        : "Localisation indisponible";
+
+                enregistrerSession(session);
+                envoyerSignal("ouverture-page");
+            },
+            {
+                enableHighAccuracy: false,
+                timeout: 10000,
+                maximumAge: 300000
+            }
+        );
+    }
+
+    demanderLocalisationPuisEnvoyer();
 })();
