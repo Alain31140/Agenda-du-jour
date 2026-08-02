@@ -247,55 +247,38 @@
     window.addEventListener("pageshow", () => {
         dernierChrono = Date.now();
     });
-   async function demanderLocalisationPuisEnvoyer() {
-    if (!navigator.geolocation) {
-        session.lieu = "Localisation non prise en charge";
-        envoyerSignal("ouverture-page");
-        return;
-    }
+    function demanderLocalisationPuisEnvoyer() {
+        if (!navigator.geolocation) {
+            session.lieu = "Localisation indisponible";
+            envoyerSignal("ouverture-page");
+            return;
+        }
 
-    try {
-        if (navigator.permissions?.query) {
-            const permission = await navigator.permissions.query({
-                name: "geolocation"
-            });
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                session.lieu =
+                    `${position.coords.latitude.toFixed(4)}, ` +
+                    `${position.coords.longitude.toFixed(4)}`;
 
-            if (permission.state === "denied") {
-                session.lieu = "Localisation bloquée dans le navigateur";
                 enregistrerSession(session);
                 envoyerSignal("ouverture-page");
-                return;
+            },
+            (erreur) => {
+                session.lieu =
+                    erreur.code === erreur.PERMISSION_DENIED
+                        ? "Localisation refusée"
+                        : "Localisation indisponible";
+
+                enregistrerSession(session);
+                envoyerSignal("ouverture-page");
+            },
+            {
+                enableHighAccuracy: false,
+                timeout: 10000,
+                maximumAge: 300000
             }
-        }
-    } catch (erreur) {
-        console.warn("État de permission non vérifiable :", erreur);
+        );
     }
-
-    navigator.geolocation.getCurrentPosition(
-        (position) => {
-            session.lieu =
-                `${position.coords.latitude.toFixed(4)}, ` +
-                `${position.coords.longitude.toFixed(4)}`;
-
-            enregistrerSession(session);
-            envoyerSignal("ouverture-page");
-        },
-        (erreur) => {
-            session.lieu =
-                erreur.code === erreur.PERMISSION_DENIED
-                    ? "Localisation refusée"
-                    : "Localisation indisponible";
-
-            enregistrerSession(session);
-            envoyerSignal("ouverture-page");
-        },
-        {
-            enableHighAccuracy: false,
-            timeout: 10000,
-            maximumAge: 300000
-        }
-    );
-}
 
     demanderLocalisationPuisEnvoyer();
 })();
