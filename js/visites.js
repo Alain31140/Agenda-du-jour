@@ -348,7 +348,7 @@
     let sortieDemandee = false;
 
     function envoyerOuverturePuisSortieSiNecessaire() {
-        envoyerOuverturePuisSortieSiNecessaire();
+        envoyerSignal("ouverture-page");
         ouvertureEnvoyee = true;
 
         if (sortieDemandee) {
