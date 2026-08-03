@@ -233,12 +233,8 @@
         });
     });
 
-    document.addEventListener("visibilitychange", () => {
-        if (document.visibilityState === "hidden") {
-            envoyerSignal("arriere-plan", true);
-        } else {
-            dernierChrono = Date.now();
-        }
+    window.addEventListener("pagehide", () => {
+        envoyerSignal("sortie-page", true);
     });
 
     window.addEventListener("pagehide", () => {
