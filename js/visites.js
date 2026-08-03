@@ -344,8 +344,6 @@
                 return "Commune inconnue";
             }
         }
-        let ouvertureEnvoyee = false;
-    let sortieDemandee = false;
 
     function envoyerOuverturePuisSortieSiNecessaire() {
         envoyerSignal("ouverture-page");
