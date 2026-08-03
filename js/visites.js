@@ -158,6 +158,8 @@
     enregistrerSession(session);
 
     let dernierChrono = Date.now();
+    let ouvertureEnvoyee = false;
+    let sortieDemandee = false;
 
     function actualiserTempsActif() {
         const courant = Date.now();
@@ -234,8 +236,15 @@
     });
 
     window.addEventListener("pagehide", () => {
+    if (!ouvertureEnvoyee) {
+        sortieDemandee = true;
+        actualiserTempsActif();
+        return;
+    }
+
         envoyerSignal("sortie-page", true);
     });
+
 
     window.addEventListener("pageshow", () => {
         dernierChrono = Date.now();
@@ -246,7 +255,7 @@
             session.coordonnees = "Non disponibles";
 
             enregistrerSession(session);
-            envoyerSignal("ouverture-page");
+            envoyerOuverturePuisSortieSiNecessaire();
             return;
         }
 
@@ -264,7 +273,7 @@
                 );
 
                 enregistrerSession(session);
-                envoyerSignal("ouverture-page");
+                envoyerOuverturePuisSortieSiNecessaire();
             },
 
             (erreur) => {
@@ -279,7 +288,7 @@
                 }
 
                 enregistrerSession(session);
-                envoyerSignal("ouverture-page");
+                envoyerOuverturePuisSortieSiNecessaire();
             },
 
             {
@@ -335,5 +344,16 @@
                 return "Commune inconnue";
             }
         }
+        let ouvertureEnvoyee = false;
+    let sortieDemandee = false;
+
+    function envoyerOuverturePuisSortieSiNecessaire() {
+        envoyerOuverturePuisSortieSiNecessaire();
+        ouvertureEnvoyee = true;
+
+        if (sortieDemandee) {
+            envoyerSignal("sortie-page", true);
+        }
+    }
     demanderLocalisationPuisEnvoyer();
 })();
