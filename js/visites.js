@@ -237,10 +237,6 @@
         envoyerSignal("sortie-page", true);
     });
 
-    window.addEventListener("pagehide", () => {
-        envoyerSignal("sortie-page", true);
-    });
-
     window.addEventListener("pageshow", () => {
         dernierChrono = Date.now();
     });
