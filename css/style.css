@@ -5795,3 +5795,99 @@ body.carte-ouverte {
     }
 
 }
+/* ==================================================
+   BANDEAU EVENEMENTS IMPORTANTS
+================================================== */
+
+.bandeau-actualites {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin: 14px 0 18px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #202020;
+    color: white;
+}
+
+.bandeau-actualites[hidden] {
+    display: none;
+}
+
+.bandeau-label {
+    position: relative;
+    z-index: 2;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    background: #c90000;
+    color: white;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.bandeau-fenetre {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.bandeau-defilant {
+    display: flex;
+    width: max-content;
+    white-space: nowrap;
+    animation: agenda-defilement 28s linear infinite;
+}
+
+.bandeau-serie {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.bandeau-evenement {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+.bandeau-separateur {
+    opacity: 0.6;
+    padding: 0 4px;
+}
+
+@keyframes agenda-defilement {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 600px) {
+    .bandeau-label {
+        padding: 9px 10px;
+        font-size: 0.85rem;
+    }
+
+    .bandeau-evenement {
+        padding: 9px 14px;
+        font-size: 0.92rem;
+    }
+
+    .bandeau-defilant {
+        animation-duration: 24s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bandeau-defilant {
+        animation: none;
+    }
+}

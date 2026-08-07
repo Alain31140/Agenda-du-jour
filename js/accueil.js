@@ -245,6 +245,52 @@ function obtenirMessageHeure() {
 /* ==================================================
    AFFICHAGE DE L'ACCUEIL
 ================================================== */
+function afficherBandeauActualites() {
+    const bandeau = document.getElementById("bandeau-actualites");
+    const defilant = document.getElementById("bandeau-defilant");
+
+    if (!bandeau || !defilant) {
+        return;
+    }
+
+    // Données provisoires uniquement pour tester le rendu.
+    const evenements = [
+        {
+            icone: "🌞",
+            texte: "12 août 2026 : éclipse solaire totale"
+        },
+        {
+            icone: "⚡",
+            texte: "Exemple d'une actualité importante de dernière minute"
+        },
+        {
+            icone: "🚀",
+            texte: "Exemple d'un autre événement majeur à suivre"
+        }
+    ];
+
+    if (evenements.length === 0) {
+        bandeau.hidden = true;
+        return;
+    }
+
+    const contenu = evenements
+        .map((evenement) => `
+            <span class="bandeau-evenement">
+                ${evenement.icone} ${evenement.texte}
+            </span>
+            <span class="bandeau-separateur">•</span>
+        `)
+        .join("");
+
+    // Deux séries identiques permettent le défilement circulaire.
+    defilant.innerHTML = `
+        <div class="bandeau-serie">${contenu}</div>
+        <div class="bandeau-serie" aria-hidden="true">${contenu}</div>
+    `;
+
+    bandeau.hidden = false;
+}
 
 async function afficherAccueil() {
 
@@ -509,6 +555,8 @@ async function afficherAccueil() {
     demarrerCompteReboursSoleil();
 
     initialiserLocalisation();
+    
+    afficherBandeauActualites();
 }
 
 
