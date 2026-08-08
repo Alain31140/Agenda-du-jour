@@ -5841,7 +5841,7 @@ body.carte-ouverte {
     display: flex;
     width: max-content;
     white-space: nowrap;
-    animation: agenda-defilement 22s linear infinite;
+    animation: agenda-defilement 28s linear infinite;
 }
 
 .bandeau-serie {
@@ -5884,7 +5884,7 @@ body.carte-ouverte {
     }
 
     .bandeau-defilant {
-        animation-duration: 20s;
+        animation-duration: 24s;
     }
 }
 
