@@ -13,7 +13,8 @@ let donneesAccueil = {
     dictons: {},
     journees: {},
     celebrations: {},
-    langues: {}
+    langues: {},
+    evenementsPrevus: []
 };
 
 
@@ -60,12 +61,13 @@ async function chargerJSON(nomFichier) {
 
 async function chargerDonneesAccueil() {
 
-    const [
+        const [
         saints,
         dictons,
         journees,
         celebrations,
-        langues
+        langues,
+        evenementsPrevus
     ] = await Promise.all([
 
         chargerJSON("saints.json"),
@@ -84,7 +86,11 @@ async function chargerDonneesAccueil() {
 
         chargerJSON(
             "accueil-langue.json"
+        ),
+        chargerJSON(
+            "evenements-prevus.json"
         )
+]);
 
     ]);
 
@@ -102,6 +108,11 @@ async function chargerDonneesAccueil() {
 
     donneesAccueil.langues =
         langues;
+
+    donneesAccueil.evenementsPrevus =
+    Array.isArray(evenementsPrevus)
+        ? evenementsPrevus
+        : [];
 
     console.log(
         "🏠 Données accueil chargées",
@@ -253,21 +264,16 @@ function afficherBandeauActualites() {
         return;
     }
 
-    // Données provisoires uniquement pour tester le rendu.
-    const evenements = [
-        {
-            icone: "🌞",
-            texte: "12 août 2026 : éclipse solaire totale"
-        },
-        {
-            icone: "⚡",
-            texte: "Exemple d'une actualité importante de dernière minute"
-        },
-        {
-            icone: "🚀",
-            texte: "Exemple d'un autre événement majeur à suivre"
-        }
-    ];
+    const aujourdHui =
+    new Date().toISOString().slice(0, 10);
+
+const evenements =
+    donneesAccueil.evenementsPrevus.filter(
+        evenement =>
+            aujourdHui >= evenement.afficherDu
+            &&
+            aujourdHui <= evenement.afficherJusquAu
+    );
 
     if (evenements.length === 0) {
         bandeau.hidden = true;
