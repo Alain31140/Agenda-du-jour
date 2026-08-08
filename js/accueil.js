@@ -14,7 +14,8 @@ let donneesAccueil = {
     journees: {},
     celebrations: {},
     langues: {},
-    evenementsPrevus: []
+    evenementsPrevus: [],
+    evenementsLive: []
 };
 
 
@@ -67,7 +68,8 @@ async function chargerDonneesAccueil() {
         journees,
         celebrations,
         langues,
-        evenementsPrevus
+        evenementsPrevus,
+        evenementsLive
     ] = await Promise.all([
 
         chargerJSON("saints.json"),
@@ -89,6 +91,9 @@ async function chargerDonneesAccueil() {
         ),
         chargerJSON(
             "evenements-prevus.json"
+        ),
+        chargerJSON(
+            "evenements-live.json"  
         )
 ]);
 
@@ -108,8 +113,13 @@ async function chargerDonneesAccueil() {
         langues;
 
     donneesAccueil.evenementsPrevus =
-    Array.isArray(evenementsPrevus)
+        Array.isArray(evenementsPrevus)
         ? evenementsPrevus
+        : [];
+
+    donneesAccueil.evenementsLive =
+        Array.isArray(evenementsLive)
+        ? evenementsLive
         : [];
 
     console.log(
@@ -265,7 +275,10 @@ function afficherBandeauActualites() {
     const aujourdHui =
     new Date().toISOString().slice(0, 10);
 
-const evenements =
+const aujourdHui =
+    new Date().toISOString().slice(0, 10);
+
+const evenementsPrevus =
     donneesAccueil.evenementsPrevus.filter(
         evenement =>
             aujourdHui >= evenement.afficherDu
@@ -273,28 +286,13 @@ const evenements =
             aujourdHui <= evenement.afficherJusquAu
     );
 
-    if (evenements.length === 0) {
-        bandeau.hidden = true;
-        return;
-    }
+const evenementsLive =
+    donneesAccueil.evenementsLive;
 
-    const contenu = evenements
-        .map((evenement) => `
-            <span class="bandeau-evenement">
-                ${evenement.icone} ${evenement.texte}
-            </span>
-            <span class="bandeau-separateur">•</span>
-        `)
-        .join("");
-
-    // Deux séries identiques permettent le défilement circulaire.
-    defilant.innerHTML = `
-        <div class="bandeau-serie">${contenu}</div>
-        <div class="bandeau-serie" aria-hidden="true">${contenu}</div>
-    `;
-
-    bandeau.hidden = false;
-}
+const evenements = [
+    ...evenementsLive,
+    ...evenementsPrevus
+];
 
 async function afficherAccueil() {
 
