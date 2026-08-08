@@ -5803,6 +5803,8 @@ body.carte-ouverte {
     display: flex;
     align-items: stretch;
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     margin: 14px 0 18px;
     overflow: hidden;
     border-radius: 10px;
