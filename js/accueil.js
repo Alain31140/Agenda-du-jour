@@ -92,8 +92,6 @@ async function chargerDonneesAccueil() {
         )
 ]);
 
-    ]);
-
     donneesAccueil.saints =
         saints;
 
