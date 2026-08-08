@@ -5893,3 +5893,6 @@ body.carte-ouverte {
         animation: none;
     }
 }
+.accueil-principal .bandeau-actualites {
+    width: 100%;
+}
