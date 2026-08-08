@@ -265,34 +265,76 @@ function obtenirMessageHeure() {
    AFFICHAGE DE L'ACCUEIL
 ================================================== */
 function afficherBandeauActualites() {
-    const bandeau = document.getElementById("bandeau-actualites");
-    const defilant = document.getElementById("bandeau-defilant");
+
+    const bandeau =
+        document.getElementById("bandeau-actualites");
+
+    const defilant =
+        document.getElementById("bandeau-defilant");
 
     if (!bandeau || !defilant) {
         return;
     }
 
+
     const aujourdHui =
-    new Date().toISOString().slice(0, 10);
+        new Date().toISOString().slice(0, 10);
 
-const aujourdHui =
-    new Date().toISOString().slice(0, 10);
 
-const evenementsPrevus =
-    donneesAccueil.evenementsPrevus.filter(
-        evenement =>
-            aujourdHui >= evenement.afficherDu
-            &&
-            aujourdHui <= evenement.afficherJusquAu
-    );
+    const evenementsPrevus =
+        donneesAccueil.evenementsPrevus.filter(
+            evenement =>
+                aujourdHui >= evenement.afficherDu
+                &&
+                aujourdHui <= evenement.afficherJusquAu
+        );
 
-const evenementsLive =
-    donneesAccueil.evenementsLive;
 
-const evenements = [
-    ...evenementsLive,
-    ...evenementsPrevus
-];
+    const evenementsLive =
+        donneesAccueil.evenementsLive;
+
+
+    const evenements = [
+        ...evenementsLive,
+        ...evenementsPrevus
+    ];
+
+
+    if (evenements.length === 0) {
+        bandeau.hidden = true;
+        return;
+    }
+
+
+    const contenu = evenements
+        .map((evenement) => `
+            <span class="bandeau-evenement">
+                ${evenement.icone || "📢"} ${evenement.texte || ""}
+            </span>
+
+            <span class="bandeau-separateur">
+                •
+            </span>
+        `)
+        .join("");
+
+
+    defilant.innerHTML = `
+        <div class="bandeau-serie">
+            ${contenu}
+        </div>
+
+        <div
+            class="bandeau-serie"
+            aria-hidden="true"
+        >
+            ${contenu}
+        </div>
+    `;
+
+
+    bandeau.hidden = false;
+}
 
 async function afficherAccueil() {
 
