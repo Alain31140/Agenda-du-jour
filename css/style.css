@@ -5896,3 +5896,19 @@ body.carte-ouverte {
 .accueil-principal .bandeau-actualites {
     width: 100%;
 }
+.bandeau-actualites {
+    grid-column: 1 / -1;
+}
+.bandeau-actualites {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    grid-column: 1 / -1;
+    margin: 14px 0 18px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #202020;
+    color: white;
+}
