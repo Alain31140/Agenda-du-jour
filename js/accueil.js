@@ -538,7 +538,26 @@ async function afficherAccueil() {
 
             </article>
 
-           <div class="widgets-principaux">
+
+            <section id="bandeau-actualites" class="bandeau-actualites" hidden>
+
+                <div class="bandeau-label">
+                    🔴 À LA UNE
+                </div>
+
+                <div class="bandeau-fenetre">
+
+                    <div
+                        id="bandeau-defilant"
+                        class="bandeau-defilant"
+                    ></div>
+
+                </div>
+
+            </section>
+
+
+            <div class="widgets-principaux">
 
                 ${creerCarteLune()}
 
@@ -555,7 +574,6 @@ async function afficherAccueil() {
     demarrerCompteReboursSoleil();
 
     initialiserLocalisation();
-    
     afficherBandeauActualites();
 }
 
