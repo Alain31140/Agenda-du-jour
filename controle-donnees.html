@@ -26,7 +26,18 @@
 <script>
 "use strict";
 const DATA_URL="https://raw.githubusercontent.com/Alain31140/Agenda-data/main/json/";
-const FICHIERS={saints:"saints.json",dictons:"dictons-du-jour.json",journees:"journees-mondiales.json",celebrations:"celebrations-mensuelles.json",culture:"culture.json",personnalites:"personnalites.json",evenements:"evenements.json",prevus:"evenements-prevus.json",live:"evenements-live.json"};
+const FICHIERS={
+    saints:"saints.json",
+    dictons:"dictons-du-jour.json",
+    journees:"journees-mondiales.json",
+    fun:"journees-insolites.json",
+    celebrations:"celebrations-mensuelles.json",
+    culture:"culture.json",
+    personnalites:"personnalites.json",
+    evenements:"evenements.json",
+    prevus:"evenements-prevus.json",
+    live:"evenements-live.json"
+};
 const data={},erreurs={};
 const QUOTIDIENS=[{cle:"saints",label:"Saint",icone:"🙏"},{cle:"dictons",label:"Dicton",icone:"💬"},{cle:"journees",label:"Journée mondiale",icone:"🌍"},{cle:"culture",label:"Culture",icone:"🎭"},{cle:"personnalites",label:"Personnalités",icone:"👤"},{cle:"evenements",label:"Événements du jour",icone:"📜"}];
 function pad2(n){return String(n).padStart(2,"0")}
