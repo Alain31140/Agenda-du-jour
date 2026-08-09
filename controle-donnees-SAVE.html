@@ -46,34 +46,11 @@ function texteObjet(obj){if(obj==null)return"";if(typeof obj!=="object")return e
 function renduItems(items){return items.map(x=>`<div class="detail-item">• ${texteObjet(x)}</div>`).join("")}
 function ligneQuotidienne(c,date){if(erreurs[c.cle])return `<div class="ligne bad"><div class="ligne-titre">❌ ${c.icone} ${c.label}</div><div class="manquant">FICHIER NON CHARGÉ : ${echapperHTML(FICHIERS[c.cle])}</div></div>`;const items=normaliserItems(valeurDuJour(data[c.cle],date));if(!items.length)return `<div class="ligne bad"><div class="ligne-titre">❌ ${c.icone} ${c.label}</div><div class="manquant">🚨 DONNÉE MANQUANTE</div></div>`;return `<div class="ligne ok"><div class="ligne-titre">✅ ${c.icone} ${c.label}</div><div class="details">${renduItems(items)}</div></div>`}
 function ligneCelebration(date){if(erreurs.celebrations)return `<div class="ligne bad"><div class="ligne-titre">❌ 📅 Célébration du mois</div><div class="manquant">FICHIER NON CHARGÉ : celebrations-mensuelles.json</div></div>`;const items=normaliserItems(valeurDuMois(data.celebrations,date));if(!items.length)return `<div class="ligne bad"><div class="ligne-titre">❌ 📅 Célébration du mois</div><div class="manquant">🚨 DONNÉE MANQUANTE</div></div>`;return `<div class="ligne ok"><div class="ligne-titre">✅ 📅 Célébration du mois</div><div class="details">${renduItems(items)}</div></div>`}
-
-function ligneFun(date) {
-  if (erreurs.fun) {
-    return `<div class="ligne bad"><div class="ligne-titre">❌ 🎉 Journée fun</div><div class="manquant">FICHIER NON CHARGÉ : journees-insolites.json</div></div>`;
-  }
-
-  const items = normaliserItems(valeurDuJour(data.fun,date));
-
-  if (!items.length) {
-    return `<div class="ligne neutral"><div class="ligne-titre">➖ 🎉 Journée fun</div><div class="details">Aucune journée fun ce jour-là — ce n’est pas une anomalie.</div></div>`;
-  }
-
-  const rendu = items.map(item => {
-    const emoji = item && typeof item === "object" && item.emoji
-      ? echapperHTML(item.emoji)
-      : "🎉";
-
-    return `<div class="detail-item"><span class="badge-fun">🎉 FUN</span> ${emoji} ${texteObjet(item)}</div>`;
-  }).join("");
-
-  return `<div class="ligne fun"><div class="ligne-titre">✅ 🎉 Journée fun</div><div class="details">${rendu}</div></div>`;
-}
-
 function evenementsPrevusPourDate(date){if(!Array.isArray(data.prevus))return[];const iso=dateLocaleISO(date);return data.prevus.filter(ev=>{if(!ev||typeof ev!=="object")return false;const debut=ev.afficherDu||ev.date||ev.debut||ev.start,fin=ev.afficherJusquAu||ev.date||ev.fin||ev.end||debut;return debut&&fin&&iso>=String(debut).slice(0,10)&&iso<=String(fin).slice(0,10)})}
 function lignePrevus(date){if(erreurs.prevus)return `<div class="ligne bad"><div class="ligne-titre">❌ 📌 Événements prévus</div><div class="manquant">FICHIER NON CHARGÉ : evenements-prevus.json</div></div>`;const items=evenementsPrevusPourDate(date);if(!items.length)return `<div class="ligne neutral"><div class="ligne-titre">✅ 📌 Événements prévus</div><div class="details">Aucun événement prévu actif pour cette date — c’est normal.</div></div>`;return `<div class="ligne ok"><div class="ligne-titre">✅ 📌 Événements prévus</div><div class="details">${renduItems(items)}</div></div>`}
 function rubriqueEstValide(cle,date){return !erreurs[cle]&&normaliserItems(valeurDuJour(data[cle],date)).length>0}
 function celebrationValide(date){return !erreurs.celebrations&&normaliserItems(valeurDuMois(data.celebrations,date)).length>0}
-function controleJour(date){const vals=[...QUOTIDIENS.map(q=>rubriqueEstValide(q.cle,date)),celebrationValide(date)],manquants=vals.filter(v=>!v).length,complet=manquants===0,dateLongue=new Intl.DateTimeFormat("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).format(date),corps=[ligneQuotidienne(QUOTIDIENS[0],date),ligneQuotidienne(QUOTIDIENS[1],date),ligneQuotidienne(QUOTIDIENS[2],date),ligneFun(date),ligneCelebration(date),ligneQuotidienne(QUOTIDIENS[3],date),ligneQuotidienne(QUOTIDIENS[4],date),ligneQuotidienne(QUOTIDIENS[5],date),lignePrevus(date)].join("");return{complet,manquants,html:`<article class="jour"><div class="jour-entete"><div class="jour-date">${echapperHTML(dateLongue)}</div><div class="jour-statut ${complet?"ok":"bad"}">${complet?"✅ JOURNÉE COMPLÈTE":`❌ JOURNÉE INCOMPLÈTE — ${manquants} donnée(s) manquante(s)`}</div></div>${corps}</article>`}}
+function controleJour(date){const vals=[...QUOTIDIENS.map(q=>rubriqueEstValide(q.cle,date)),celebrationValide(date)],manquants=vals.filter(v=>!v).length,complet=manquants===0,dateLongue=new Intl.DateTimeFormat("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).format(date),corps=[ligneQuotidienne(QUOTIDIENS[0],date),ligneQuotidienne(QUOTIDIENS[1],date),ligneQuotidienne(QUOTIDIENS[2],date),ligneCelebration(date),ligneQuotidienne(QUOTIDIENS[3],date),ligneQuotidienne(QUOTIDIENS[4],date),ligneQuotidienne(QUOTIDIENS[5],date),lignePrevus(date)].join("");return{complet,manquants,html:`<article class="jour"><div class="jour-entete"><div class="jour-date">${echapperHTML(dateLongue)}</div><div class="jour-statut ${complet?"ok":"bad"}">${complet?"✅ JOURNÉE COMPLÈTE":`❌ JOURNÉE INCOMPLÈTE — ${manquants} donnée(s) manquante(s)`}</div></div>${corps}</article>`}}
 function afficherLive(){const bloc=document.getElementById("live");bloc.hidden=false;if(erreurs.live){bloc.innerHTML=`<h2>🔴 ÉVÉNEMENTS LIVE ACTUELS</h2><div class="live-contenu">❌ Impossible de charger evenements-live.json</div>`;return}const live=Array.isArray(data.live)?data.live:[];bloc.innerHTML=`<h2>🔴 ÉVÉNEMENTS LIVE ACTUELS</h2><div class="live-contenu">${live.length?live.map(ev=>`<div class="live-item">${echapperHTML(ev.icone||"📢")} ${echapperHTML(ev.texte||"")}</div>`).join(""):`<div class="live-vide">✅ Aucun événement live actuellement — ce n’est pas une anomalie.</div>`}</div>`}
 function controler(){const id=document.getElementById("date-depart"),inb=document.getElementById("nb-jours");if(!id.value)id.value=dateLocaleISO(new Date());const depart=dateDepuisInput(id.value);let nb=Number(inb.value);if(!Number.isFinite(nb)||nb<1)nb=1;if(nb>366)nb=366;inb.value=nb;let complets=0,incomplets=0,total=0;const html=[];for(let i=0;i<nb;i++){const r=controleJour(ajouterJours(depart,i));html.push(r.html);if(r.complet)complets++;else incomplets++;total+=r.manquants}document.getElementById("resultats").innerHTML=html.join("");const resume=document.getElementById("resume");resume.hidden=false;resume.innerHTML=`<div class="ok">✅ ${complets} jour(s) complet(s)</div><div class="${incomplets?"bad":"ok"}">${incomplets?"❌":"✅"} ${incomplets} jour(s) avec anomalie</div><div class="${total?"bad":"ok"}">${total?"🚨":"✅"} ${total} donnée(s) manquante(s)</div>`;afficherLive()}
 function reglerAujourdHui(){document.getElementById("date-depart").value=dateLocaleISO(new Date());document.getElementById("nb-jours").value=7}
