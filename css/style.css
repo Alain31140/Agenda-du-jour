@@ -5912,3 +5912,25 @@ body.carte-ouverte {
     background: #202020;
     color: white;
 }
+.journee-fun {
+    background: #fff7d6;
+    border: 2px dashed #e3a008;
+}
+
+.journee-fun-ligne {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+    font-weight: 700;
+}
+
+.badge-fun {
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #ffd43b;
+    color: #5f4300;
+    font-weight: 900;
+}

@@ -12,11 +12,12 @@ let donneesAccueil = {
     saints: {},
     dictons: {},
     journees: {},
+    fun: {},
     celebrations: {},
     langues: {},
     evenementsPrevus: [],
     evenementsLive: []
-};
+};;
 
 
 /* ==================================================
@@ -63,39 +64,46 @@ async function chargerJSON(nomFichier) {
 async function chargerDonneesAccueil() {
 
         const [
-        saints,
-        dictons,
-        journees,
-        celebrations,
-        langues,
-        evenementsPrevus,
-        evenementsLive
-    ] = await Promise.all([
+            saints,
+            dictons,
+            journees,
+            fun,
+            celebrations,
+            langues,
+            evenementsPrevus,
+            evenementsLive
+        ] = await Promise.all([
 
-        chargerJSON("saints.json"),
+            chargerJSON("saints.json"),
 
-        chargerJSON(
-            "dictons-du-jour.json"
-        ),
+            chargerJSON(
+                "dictons-du-jour.json"
+            ),
 
-        chargerJSON(
-            "journees-mondiales.json"
-        ),
+            chargerJSON(
+                "journees-mondiales.json"
+            ),
 
-        chargerJSON(
-            "celebrations-mensuelles.json"
-        ),
+            chargerJSON(
+                "journees-insolites.json"
+            ),
 
-        chargerJSON(
-            "accueil-langue.json"
-        ),
-        chargerJSON(
-            "evenements-prevus.json"
-        ),
-        chargerJSON(
-            "evenements-live.json"  
-        )
-]);
+            chargerJSON(
+                "celebrations-mensuelles.json"
+            ),
+
+            chargerJSON(
+                "accueil-langue.json"
+            ),
+
+            chargerJSON(
+                "evenements-prevus.json"
+            ),
+
+            chargerJSON(
+                "evenements-live.json"
+            )
+        ]);
 
     donneesAccueil.saints =
         saints;
@@ -105,6 +113,9 @@ async function chargerDonneesAccueil() {
 
     donneesAccueil.journees =
         journees;
+
+    donneesAccueil.fun =
+        fun;
 
     donneesAccueil.celebrations =
         celebrations;
@@ -387,6 +398,9 @@ async function afficherAccueil() {
     const journee =
         donneesAccueil.journees[cle];
 
+    const fun =
+        donneesAccueil.fun[cle];
+
     const celebration =
         donneesAccueil.celebrations[
             cleMois
@@ -412,6 +426,31 @@ async function afficherAccueil() {
                 )
                 .join("<br>")
             : "🌍 Aucune journée mondiale renseignée";
+
+    const funAffiche = fun
+    ? (
+        Array.isArray(fun)
+            ? fun
+            : [fun]
+      )
+        .map(element => {
+            const emoji =
+                element?.emoji || "🎉";
+
+            const label =
+                element?.label || "";
+
+            return `
+                <div class="journee-fun-ligne">
+                    <span class="badge-fun">🎉 FUN</span>
+                    <span>
+                        ${emoji} ${label}
+                    </span>
+                </div>
+            `;
+        })
+        .join("")
+    : "";
 
     const carteSoleilMeteo =
         await creerCarteSoleilMeteo();
@@ -508,6 +547,13 @@ async function afficherAccueil() {
 
             </article>
 
+            ${funAffiche ? `
+                <article class="accueil-carte journee-fun">
+
+                    ${funAffiche}
+
+                </article>
+            ` : ""}
 
             ${celebration ? `
 
