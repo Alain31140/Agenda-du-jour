@@ -5934,3 +5934,8 @@ body.carte-ouverte {
     color: #5f4300;
     font-weight: 900;
 }
+.carte-pleine-largeur {
+    grid-column: 1 / -1;
+    width: 100%;
+    box-sizing: border-box;
+}
