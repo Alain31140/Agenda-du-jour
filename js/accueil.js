@@ -12,12 +12,9 @@ let donneesAccueil = {
     saints: {},
     dictons: {},
     journees: {},
-    fun: {},
     celebrations: {},
-    langues: {},
-    evenementsPrevus: [],
-    evenementsLive: []
-};;
+    langues: {}
+};
 
 
 /* ==================================================
@@ -63,47 +60,33 @@ async function chargerJSON(nomFichier) {
 
 async function chargerDonneesAccueil() {
 
-        const [
-            saints,
-            dictons,
-            journees,
-            fun,
-            celebrations,
-            langues,
-            evenementsPrevus,
-            evenementsLive
-        ] = await Promise.all([
+    const [
+        saints,
+        dictons,
+        journees,
+        celebrations,
+        langues
+    ] = await Promise.all([
 
-            chargerJSON("saints.json"),
+        chargerJSON("saints.json"),
 
-            chargerJSON(
-                "dictons-du-jour.json"
-            ),
+        chargerJSON(
+            "dictons-du-jour.json"
+        ),
 
-            chargerJSON(
-                "journees-mondiales.json"
-            ),
+        chargerJSON(
+            "journees-mondiales.json"
+        ),
 
-            chargerJSON(
-                "journees-insolites.json"
-            ),
+        chargerJSON(
+            "celebrations-mensuelles.json"
+        ),
 
-            chargerJSON(
-                "celebrations-mensuelles.json"
-            ),
+        chargerJSON(
+            "accueil-langue.json"
+        )
 
-            chargerJSON(
-                "accueil-langue.json"
-            ),
-
-            chargerJSON(
-                "evenements-prevus.json"
-            ),
-
-            chargerJSON(
-                "evenements-live.json"
-            )
-        ]);
+    ]);
 
     donneesAccueil.saints =
         saints;
@@ -114,24 +97,11 @@ async function chargerDonneesAccueil() {
     donneesAccueil.journees =
         journees;
 
-    donneesAccueil.fun =
-        fun;
-
     donneesAccueil.celebrations =
         celebrations;
 
     donneesAccueil.langues =
         langues;
-
-    donneesAccueil.evenementsPrevus =
-        Array.isArray(evenementsPrevus)
-        ? evenementsPrevus
-        : [];
-
-    donneesAccueil.evenementsLive =
-        Array.isArray(evenementsLive)
-        ? evenementsLive
-        : [];
 
     console.log(
         "🏠 Données accueil chargées",
@@ -276,76 +246,104 @@ function obtenirMessageHeure() {
    AFFICHAGE DE L'ACCUEIL
 ================================================== */
 function afficherBandeauActualites() {
-
-    const bandeau =
-        document.getElementById("bandeau-actualites");
-
-    const defilant =
-        document.getElementById("bandeau-defilant");
+    const bandeau = document.getElementById("bandeau-actualites");
+    const defilant = document.getElementById("bandeau-defilant");
 
     if (!bandeau || !defilant) {
         return;
     }
 
-
-    const aujourdHui =
-        new Date().toISOString().slice(0, 10);
-
-
-    const evenementsPrevus =
-        donneesAccueil.evenementsPrevus.filter(
-            evenement =>
-                aujourdHui >= evenement.afficherDu
-                &&
-                aujourdHui <= evenement.afficherJusquAu
-        );
-
-
-    const evenementsLive =
-        donneesAccueil.evenementsLive;
-
-
+    // Données provisoires uniquement pour tester le rendu.
     const evenements = [
-        ...evenementsLive,
-        ...evenementsPrevus
+        {
+            icone: "🌞",
+            texte: "12 août 2026 : éclipse solaire totale"
+        },
+        {
+            icone: "⚡",
+            texte: "Exemple d'une actualité importante de dernière minute"
+        },
+        {
+            icone: "🚀",
+            texte: "Exemple d'un autre événement majeur à suivre"
+        }
     ];
-
 
     if (evenements.length === 0) {
         bandeau.hidden = true;
         return;
     }
 
-
     const contenu = evenements
         .map((evenement) => `
             <span class="bandeau-evenement">
-                ${evenement.icone || "📢"} ${evenement.texte || ""}
+                ${evenement.icone} ${evenement.texte}
             </span>
-
-            <span class="bandeau-separateur">
-                •
-            </span>
+            <span class="bandeau-separateur">•</span>
         `)
         .join("");
 
-
+    // Deux séries identiques permettent le défilement circulaire.
     defilant.innerHTML = `
-        <div class="bandeau-serie">
-            ${contenu}
-        </div>
-
-        <div
-            class="bandeau-serie"
-            aria-hidden="true"
-        >
-            ${contenu}
-        </div>
+        <div class="bandeau-serie">${contenu}</div>
+        <div class="bandeau-serie" aria-hidden="true">${contenu}</div>
     `;
-
 
     bandeau.hidden = false;
 }
+
+
+/* ==================================================
+   SIGNE DU ZODIAQUE — VERSION FUN
+================================================== */
+
+const ZODIAQUE_FUN = {
+    "Bélier": "fonce d’abord, réfléchit parfois après 😄",
+    "Taureau": "épicurien, fidèle… et peu fan qu’on bouscule ses habitudes",
+    "Gémeaux": "curieux, bavard, déjà passé à trois autres idées",
+    "Cancer": "sensible, protecteur, avec radar émotionnel intégré",
+    "Lion": "solaire, généreux, un brin théâtral",
+    "Vierge": "organisée, attentive… même au détail que personne n’avait vu",
+    "Balance": "charme, diplomatie… et cinq minutes de plus pour choisir",
+    "Scorpion": "intense, mystérieux, rarement tiède",
+    "Sagittaire": "optimiste, voyageur, déjà prêt à repartir",
+    "Capricorne": "sérieux en façade, humour bien caché",
+    "Verseau": "original, indépendant, souvent une idée d’avance",
+    "Poissons": "rêveur, intuitif, parfois déjà ailleurs"
+};
+
+const ZODIAQUE_SYMBOLES = {
+    "Bélier": "♈", "Taureau": "♉", "Gémeaux": "♊", "Cancer": "♋",
+    "Lion": "♌", "Vierge": "♍", "Balance": "♎", "Scorpion": "♏",
+    "Sagittaire": "♐", "Capricorne": "♑", "Verseau": "♒", "Poissons": "♓"
+};
+
+function obtenirZodiaque(date = new Date()) {
+    const mois = date.getMonth() + 1;
+    const jour = date.getDate();
+    const md = mois * 100 + jour;
+
+    let nom;
+    if (md >= 321 && md <= 419) nom = "Bélier";
+    else if (md >= 420 && md <= 520) nom = "Taureau";
+    else if (md >= 521 && md <= 620) nom = "Gémeaux";
+    else if (md >= 621 && md <= 722) nom = "Cancer";
+    else if (md >= 723 && md <= 822) nom = "Lion";
+    else if (md >= 823 && md <= 922) nom = "Vierge";
+    else if (md >= 923 && md <= 1022) nom = "Balance";
+    else if (md >= 1023 && md <= 1121) nom = "Scorpion";
+    else if (md >= 1122 && md <= 1221) nom = "Sagittaire";
+    else if (md >= 1222 || md <= 119) nom = "Capricorne";
+    else if (md >= 120 && md <= 218) nom = "Verseau";
+    else nom = "Poissons";
+
+    return {
+        nom,
+        symbole: ZODIAQUE_SYMBOLES[nom],
+        fun: ZODIAQUE_FUN[nom]
+    };
+}
+
 
 async function afficherAccueil() {
 
@@ -381,6 +379,13 @@ async function afficherAccueil() {
     const saint =
         donneesAccueil.saints[cle];
 
+    const saintInfo =
+        saint?.info
+        || "";
+
+    const zodiaque =
+        obtenirZodiaque();
+
     const dictonBrut =
         donneesAccueil.dictons[cle];
 
@@ -397,9 +402,6 @@ async function afficherAccueil() {
 
     const journee =
         donneesAccueil.journees[cle];
-
-    const fun =
-        donneesAccueil.fun[cle];
 
     const celebration =
         donneesAccueil.celebrations[
@@ -426,31 +428,6 @@ async function afficherAccueil() {
                 )
                 .join("<br>")
             : "🌍 Aucune journée mondiale renseignée";
-
-    const funAffiche = fun
-    ? (
-        Array.isArray(fun)
-            ? fun
-            : [fun]
-      )
-        .map(element => {
-            const emoji =
-                element?.emoji || "🎉";
-
-            const label =
-                element?.label || "";
-
-            return `
-                <div class="journee-fun-ligne">
-                    <span class="badge-fun">🎉 FUN</span>
-                    <span>
-                        ${emoji} ${label}
-                    </span>
-                </div>
-            `;
-        })
-        .join("")
-    : "";
 
     const carteSoleilMeteo =
         await creerCarteSoleilMeteo();
@@ -523,7 +500,7 @@ async function afficherAccueil() {
             </article>
 
 
-            <article class="accueil-carte carte-pleine-largeur">
+            <article class="accueil-carte">
 
                 <div class="accueil-carte-titre">
                     🙏 Aujourd’hui, nous fêtons
@@ -536,10 +513,38 @@ async function afficherAccueil() {
 
                 </div>
 
+                ${saintInfo ? `
+                    <div
+                        class="saint-info"
+                        style="
+                            margin-top:8px;
+                            font-size:0.95em;
+                            line-height:1.35;
+                            opacity:0.82;
+                        "
+                    >
+                        ${saintInfo}
+                    </div>
+                ` : ""}
+
+                <div
+                    class="zodiaque-du-jour"
+                    style="
+                        margin-top:12px;
+                        font-size:0.95em;
+                        line-height:1.35;
+                    "
+                >
+                    <strong>
+                        ${zodiaque.symbole} ${zodiaque.nom}
+                    </strong>
+                    — ${zodiaque.fun}
+                </div>
+
             </article>
 
 
-            <article class="accueil-carte carte-pleine-largeur">
+            <article class="accueil-carte">
 
                 <div class="journee-du-jour">
                     ${journeeAffichee}
@@ -547,13 +552,6 @@ async function afficherAccueil() {
 
             </article>
 
-            ${funAffiche ? `
-                <article class="accueil-carte journee-fun carte-pleine-largeur">
-
-                    ${funAffiche}
-
-                </article>
-            ` : ""}
 
             ${celebration ? `
 
@@ -628,26 +626,7 @@ async function afficherAccueil() {
 
             </article>
 
-
-            <section id="bandeau-actualites" class="bandeau-actualites" hidden>
-
-                <div class="bandeau-label">
-                    🔴 À LA UNE
-                </div>
-
-                <div class="bandeau-fenetre">
-
-                    <div
-                        id="bandeau-defilant"
-                        class="bandeau-defilant"
-                    ></div>
-
-                </div>
-
-            </section>
-
-
-            <div class="widgets-principaux">
+           <div class="widgets-principaux">
 
                 ${creerCarteLune()}
 
