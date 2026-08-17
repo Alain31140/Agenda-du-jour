@@ -500,7 +500,7 @@ async function afficherAccueil() {
             </article>
 
 
-            <article class="accueil-carte">
+            <article class="accueil-carte carte-saint">
 
                 <div class="accueil-carte-titre">
                     🙏 Aujourd’hui, nous fêtons
@@ -544,7 +544,7 @@ async function afficherAccueil() {
             </article>
 
 
-            <article class="accueil-carte">
+            <article class="accueil-carte carte-journee">
 
                 <div class="journee-du-jour">
                     ${journeeAffichee}
