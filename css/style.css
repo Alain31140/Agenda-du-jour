@@ -1425,3 +1425,514 @@ body {
         text-align: left;
     }
 }
+/* ==================================================
+   MENU PRINCIPAL — EXPLORER L’AGENDA
+================================================== */
+
+.section-menu-principal {
+    width:
+        min(
+            calc(100% - 30px),
+            var(--largeur-page)
+        );
+
+    margin:
+        35px
+        auto
+        50px;
+}
+
+
+.titre-menu-principal {
+    margin:
+        0
+        0
+        20px;
+
+    text-align: center;
+
+    color:
+        var(--couleur-principale);
+
+    font-size:
+        clamp(
+            1.5rem,
+            5vw,
+            2rem
+        );
+
+    font-weight: 750;
+}
+
+
+/* ==================================================
+   CONTENEUR DES CARTES
+================================================== */
+
+.explorer-menu {
+    display: grid;
+
+    gap: 18px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* ==================================================
+   CARTE GÉNÉRALE
+================================================== */
+
+.explorer-carte {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        var(--couleur-carte);
+
+    border:
+        1px solid
+        rgba(
+            53,
+            107,
+            140,
+            0.10
+        );
+
+    border-radius:
+        var(--rayon-carte);
+
+    box-shadow:
+        var(--ombre-legere);
+
+    transition:
+        transform
+        0.22s
+        ease,
+        box-shadow
+        0.22s
+        ease;
+}
+
+
+.explorer-carte:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        var(--ombre-survol);
+}
+
+
+/* ==================================================
+   LIEN PRINCIPAL DE LA CARTE
+================================================== */
+
+.explorer-carte-lien {
+    display: grid;
+
+    grid-template-columns:
+        auto
+        minmax(0, 1fr)
+        auto;
+
+    gap: 18px;
+
+    align-items: center;
+
+    min-height: 115px;
+
+    padding:
+        22px
+        70px
+        22px
+        22px;
+
+    color:
+        inherit;
+
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   ICÔNE
+================================================== */
+
+.explorer-icone {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 62px;
+
+    height: 62px;
+
+    flex-shrink: 0;
+
+    font-size: 2rem;
+
+    background:
+        var(--couleur-secondaire);
+
+    border-radius: 18px;
+}
+
+
+/* ==================================================
+   TEXTE
+================================================== */
+
+.explorer-contenu {
+    min-width: 0;
+}
+
+
+.explorer-contenu h2 {
+    margin:
+        0
+        0
+        7px;
+
+    color:
+        var(--couleur-principale);
+
+    font-size:
+        clamp(
+            1.2rem,
+            4vw,
+            1.55rem
+        );
+
+    line-height: 1.25;
+}
+
+
+.explorer-contenu p {
+    margin: 0;
+
+    color:
+        var(--couleur-texte-clair);
+
+    font-size: 1rem;
+
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+   FLÈCHE
+================================================== */
+
+.explorer-fleche {
+    color:
+        var(--couleur-principale);
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+
+    transition:
+        transform
+        0.2s
+        ease;
+}
+
+
+.explorer-carte:hover
+.explorer-fleche {
+    transform:
+        translateX(5px);
+}
+
+
+/* ==================================================
+   BOUTON MESSAGE
+================================================== */
+
+.explorer-message {
+    position: absolute;
+
+    top: 50%;
+
+    right: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 38px;
+
+    height: 38px;
+
+    transform:
+        translateY(-50%);
+
+    color:
+        var(--couleur-principale);
+
+    font-size: 1.1rem;
+
+    text-decoration: none;
+
+    background:
+        rgba(
+            53,
+            107,
+            140,
+            0.10
+        );
+
+    border-radius: 50%;
+
+    transition:
+        background
+        0.2s
+        ease,
+        transform
+        0.2s
+        ease;
+}
+
+
+.explorer-message:hover {
+    background:
+        rgba(
+            53,
+            107,
+            140,
+            0.18
+        );
+
+    transform:
+        translateY(-50%)
+        scale(1.08);
+}
+
+
+/* ==================================================
+   PETITES VARIATIONS PAR RUBRIQUE
+================================================== */
+
+.explorer-personnalites
+.explorer-icone {
+    background:
+        rgba(
+            242,
+            184,
+            75,
+            0.18
+        );
+}
+
+
+.explorer-culture
+.explorer-icone {
+    background:
+        rgba(
+            85,
+            152,
+            184,
+            0.15
+        );
+}
+
+
+.explorer-evenements
+.explorer-icone {
+    background:
+        rgba(
+            96,
+            125,
+            139,
+            0.14
+        );
+}
+
+
+/* ==================================================
+   TABLETTE / GRAND ÉCRAN
+================================================== */
+
+@media (min-width: 760px) {
+
+    .explorer-menu {
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+    }
+
+
+    .explorer-carte-lien {
+        grid-template-columns: 1fr;
+
+        align-items: start;
+
+        min-height: 230px;
+
+        padding:
+            28px
+            24px
+            70px;
+
+        text-align: center;
+    }
+
+
+    .explorer-icone {
+        margin:
+            0
+            auto;
+    }
+
+
+    .explorer-fleche {
+        position: absolute;
+
+        bottom: 22px;
+
+        left: 50%;
+
+        transform:
+            translateX(-50%);
+    }
+
+
+    .explorer-carte:hover
+    .explorer-fleche {
+        transform:
+            translateX(
+                calc(-50% + 5px)
+            );
+    }
+
+
+    .explorer-message {
+        top: auto;
+
+        right: 18px;
+
+        bottom: 17px;
+
+        transform: none;
+    }
+
+
+    .explorer-message:hover {
+        transform:
+            scale(1.08);
+    }
+
+}
+
+
+/* ==================================================
+   TÉLÉPHONE
+================================================== */
+
+@media (max-width: 600px) {
+
+    .section-menu-principal {
+        width:
+            calc(
+                100% - 20px
+            );
+
+        margin:
+            28px
+            auto
+            38px;
+    }
+
+
+    .titre-menu-principal {
+        margin-bottom: 15px;
+    }
+
+
+    .explorer-menu {
+        gap: 14px;
+    }
+
+
+    .explorer-carte {
+        border-radius: 16px;
+    }
+
+
+    .explorer-carte:hover {
+        transform: none;
+    }
+
+
+    .explorer-carte-lien {
+        grid-template-columns:
+            48px
+            minmax(
+                0,
+                1fr
+            )
+            auto;
+
+        gap: 14px;
+
+        min-height: 95px;
+
+        padding:
+            18px
+            58px
+            18px
+            16px;
+    }
+
+
+    .explorer-icone {
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 1.55rem;
+
+        border-radius: 14px;
+    }
+
+
+    .explorer-contenu h2 {
+        margin-bottom: 4px;
+
+        font-size: 1.15rem;
+    }
+
+
+    .explorer-contenu p {
+        font-size: 0.9rem;
+
+        line-height: 1.35;
+    }
+
+
+    .explorer-fleche {
+        font-size: 1.45rem;
+    }
+
+
+    .explorer-message {
+        right: 12px;
+
+        width: 34px;
+
+        height: 34px;
+    }
+
+}
