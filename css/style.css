@@ -2246,3 +2246,98 @@ body.carte-ouverte {
         padding: 12px;
     }
 }
+/* ==================================================
+   BARRE DE NAVIGATION COMMUNE
+================================================== */
+
+#barre-navigation {
+    width: min(calc(100% - 30px), var(--largeur-page));
+    margin: 18px auto 26px;
+}
+
+#barre-navigation nav,
+#barre-navigation .barre-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+#barre-navigation a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 9px 15px;
+
+    color: var(--couleur-principale);
+
+    background: white;
+
+    border:
+        1px solid
+        rgba(53, 107, 140, 0.14);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.06);
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+#barre-navigation a:hover {
+    background:
+        var(--couleur-secondaire);
+
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 5px 14px
+        rgba(0, 0, 0, 0.09);
+}
+
+
+/* Téléphone */
+
+@media (max-width: 600px) {
+
+    #barre-navigation {
+        width:
+            calc(100% - 20px);
+
+        margin:
+            12px auto
+            20px;
+    }
+
+    #barre-navigation nav,
+    #barre-navigation .barre-navigation {
+        gap: 8px;
+    }
+
+    #barre-navigation a {
+        min-height: 38px;
+
+        padding:
+            8px
+            12px;
+
+        font-size:
+            0.9rem;
+    }
+
+}
