@@ -580,54 +580,6 @@ body {
     font-weight: 750;
 }
 
-.saint-info {
-    margin-top: 8px;
-    color: var(--couleur-texte-clair);
-    font-size: 0.98rem;
-    line-height: 1.5;
-    opacity: 0.88;
-}
-
-.zodiaque-bloc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    margin-top: 14px;
-    padding: 12px 14px;
-    background: rgba(85, 152, 184, 0.08);
-    border-radius: 18px;
-}
-
-.zodiaque-bloc.sans-icone {
-    padding-left: 18px;
-    padding-right: 18px;
-}
-
-.zodiaque-icone {
-    flex: 0 0 auto;
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-}
-
-.zodiaque-texte {
-    text-align: left;
-}
-
-.zodiaque-ligne-principale {
-    color: var(--couleur-principale);
-    font-size: 1.02rem;
-    line-height: 1.25;
-}
-
-.zodiaque-ligne-fun {
-    margin-top: 4px;
-    color: var(--couleur-texte-clair);
-    font-size: 0.95rem;
-    line-height: 1.45;
-}
-
 
 /* ==================================================
    JOURNÉE MONDIALE
@@ -673,6 +625,7 @@ body {
 }
 
 
+
 /* ==================================================
    TABLETTE ET GRAND ÉCRAN
 ================================================== */
@@ -685,9 +638,7 @@ body {
 
     .accueil-bienvenue,
     .accueil-carte:first-of-type,
-    .accueil-carte:last-of-type,
-    .carte-saint,
-    .carte-journee {
+    .accueil-carte:last-of-type {
         grid-column: 1 / -1;
     }
 }
@@ -900,20 +851,344 @@ body {
 }
 
 
-@media (max-width: 600px) {
-    .zodiaque-bloc {
-        gap: 10px;
-        padding: 10px 12px;
+
+
+.accueil-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.drapeau-accueil,
+.clin-oeil {
+    display: inline-block;
+}
+
+
+/* ==================================================
+   MESSAGE SELON L'HEURE
+================================================== */
+
+.message-heure {
+    margin-top: 18px;
+
+    color:
+        var(--couleur-texte);
+
+    font-size:
+        clamp(
+            1.1rem,
+            4vw,
+            1.45rem
+        );
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+/* ==================================================
+   CARTE LUNE
+================================================== */
+
+.info-carte {
+    padding: 26px 22px;
+    text-align: center;
+    background: var(--couleur-carte);
+    border: 1px solid rgba(53, 107, 140, 0.10);
+    border-radius: var(--rayon-carte);
+    box-shadow: var(--ombre-legere);
+}
+
+.info-carte-titre {
+    margin-bottom: 14px;
+    color: var(--couleur-principale);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.lune-image img{
+    width:190px;
+    height:190px;
+    object-fit:contain;
+    margin:10px auto 20px;
+    display:block;
+}
+
+.lune-phase {
+    font-size: 1.3rem;
+    font-weight: 750;
+}
+
+.lune-details {
+    margin-top: 10px;
+    color: var(--couleur-texte-clair);
+}
+
+.lune-age {
+    margin-top: 6px;
+    color: var(--couleur-texte-clair);
+    font-size: 0.95rem;
+}
+
+.lune-carte {
+    width: 100%;
+    grid-column: 1 / -1;
+}
+/* ==================================================
+   CARTE LUNE — THÈME NOCTURNE
+================================================== */
+
+.lune-carte {
+    width: 100%;
+    grid-column: 1 / -1;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #05070d,
+            #111827
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.15
+        );
+}
+
+
+/* Titre Lune */
+
+.lune-carte .info-carte-titre {
+    color: white;
+
+    font-size:
+        clamp(
+            1.5rem,
+            4vw,
+            2rem
+        );
+
+    font-weight: 800;
+}
+
+
+/* Nom de la phase */
+
+.lune-carte .lune-phase {
+    color: white;
+}
+
+
+/* Éclairage */
+
+.lune-carte .lune-details {
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.9
+        );
+}
+
+
+/* Jour du cycle lunaire */
+
+.lune-carte .lune-age {
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.75
+        );
+}
+
+
+/* Valeur de l’éclairage */
+
+.lune-carte strong {
+    color: white;
+}
+/* ==================================================
+   CARTE DICTON — PLEINE LARGEUR
+================================================== */
+
+.dicton-carte {
+    width: 100%;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.dicton-carte blockquote {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* ==================================================
+   SOLEIL ET MÉTÉO
+================================================== */
+
+.soleil-meteo-carte {
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+.soleil-meteo-grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.soleil-zone,
+.meteo-zone {
+    padding: 24px;
+    text-align: center;
+    background: var(--couleur-secondaire);
+    border-radius: 16px;
+}
+
+.soleil-zone h2,
+.meteo-zone h2 {
+    margin: 0 0 20px;
+    color: var(--couleur-principale);
+    font-size: clamp(1.4rem, 4vw, 1.9rem);
+}
+
+.soleil-ligne {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.compte-rebours-soleil {
+    margin-top: 20px;
+    padding: 14px;
+    line-height: 1.6;
+    background: white;
+    border-radius: 12px;
+}
+
+.compte-rebours-soleil strong {
+    display: block;
+    margin-top: 6px;
+    color: var(--couleur-principale);
+    font-size: 1.25rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.meteo-icone {
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.meteo-description {
+    margin-top: 14px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.meteo-temperature {
+    margin-top: 16px;
+    color: var(--couleur-principale);
+    font-size: clamp(1.5rem, 5vw, 2.1rem);
+    font-weight: 800;
+}
+
+.meteo-erreur {
+    padding: 25px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* Téléphone */
+
+@media (max-width: 700px) {
+
+    .soleil-meteo-grille {
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
 
-    .zodiaque-icone {
-        width: 52px;
-        height: 52px;
+    .soleil-zone,
+    .meteo-zone {
+        padding: 20px 16px;
+    }
+}
+
+.widgets-principaux {
+    display: grid;
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap: 18px;
+
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+
+    .widgets-principaux {
+        grid-template-columns: 1fr;
     }
 
-    .zodiaque-texte {
-        text-align: left;
+}
+
+/* ==================================================
+   WIDGETS PRINCIPAUX
+================================================== */
+
+.widgets-principaux {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 20px;
+
+    grid-column: 1 / -1;
+
+    align-items: stretch;
+
+}
+
+
+/* téléphone */
+
+@media (max-width:900px){
+
+    .widgets-principaux{
+
+        grid-template-columns:1fr;
+
     }
+
+}
+
+.widgets-principaux .info-carte{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
 }
 
 /* ==================================================
@@ -1139,3 +1414,176 @@ body {
     }
 }
 
+/* ==================================================
+   CORRECTIONS FINALES — WIDGETS ACCUEIL
+================================================== */
+
+/* Les trois widgets Lune / Soleil-Météo / Localisation
+   doivent rester dans la grille à 3 colonnes sur grand écran. */
+.widgets-principaux .lune-carte,
+.widgets-principaux .soleil-meteo-carte,
+.widgets-principaux .localisation-carte {
+    width: 100%;
+    height: 100%;
+    grid-column: auto;
+}
+
+/* Carte générique des widgets */
+.info-carte {
+    padding: 24px;
+    background: var(--couleur-carte);
+    border: 1px solid rgba(53, 107, 140, 0.10);
+    border-radius: var(--rayon-carte);
+    box-shadow: var(--ombre-legere);
+    overflow: hidden;
+}
+
+.info-carte-titre {
+    margin-bottom: 14px;
+    color: var(--couleur-principale);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Lune : empêche l’image d’occuper toute la largeur */
+.lune-image {
+    text-align: center;
+}
+
+.lune-image img {
+    display: block;
+    width: min(190px, 72%);
+    height: auto;
+    max-height: 190px;
+    object-fit: contain;
+    margin: 10px auto 20px;
+}
+
+.lune-phase {
+    font-size: 1.3rem;
+    font-weight: 750;
+}
+
+.lune-details {
+    margin-top: 10px;
+}
+
+.lune-age {
+    margin-top: 6px;
+    font-size: 0.95rem;
+}
+
+/* Soleil + météo : dans sa carte, les deux zones s’empilent
+   afin de rester lisibles dans une colonne de la grille. */
+.widgets-principaux .soleil-meteo-grille {
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.widgets-principaux .soleil-zone,
+.widgets-principaux .meteo-zone {
+    padding: 18px 14px;
+}
+
+/* Localisation */
+.localisation-carte {
+    color: white;
+    background:
+        linear-gradient(
+            145deg,
+            #2f7a68,
+            #64a997
+        );
+}
+
+.localisation-carte .info-carte-titre,
+.localisation-carte strong {
+    color: white;
+}
+
+.localisation-carte a {
+    color: white;
+}
+
+/* Téléphone / tablette */
+@media (max-width: 900px) {
+    .widgets-principaux {
+        grid-template-columns: 1fr;
+    }
+
+    .widgets-principaux .lune-carte,
+    .widgets-principaux .soleil-meteo-carte,
+    .widgets-principaux .localisation-carte {
+        grid-column: auto;
+    }
+
+    .lune-image img {
+        width: min(190px, 60vw);
+    }
+}
+
+
+/* ==================================================
+   PIED DE PAGE COMMUN
+================================================== */
+
+#pied-page {
+    width: min(calc(100% - 30px), var(--largeur-page));
+    margin: 22px auto 28px;
+}
+
+#pied-page .site-footer,
+#pied-page footer {
+    padding: 22px 18px;
+    text-align: center;
+    color: var(--couleur-texte-clair);
+    background: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(53, 107, 140, 0.10);
+    border-radius: 16px;
+    box-shadow: var(--ombre-legere);
+}
+
+#pied-page a {
+    color: var(--couleur-principale);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#pied-page a:hover {
+    text-decoration: underline;
+}
+
+#pied-page p,
+#pied-page div {
+    line-height: 1.55;
+}
+
+#pied-page .footer-liens,
+#pied-page .footer-links,
+#pied-page nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 14px;
+    margin-bottom: 8px;
+}
+
+#pied-page .footer-version,
+#pied-page .version {
+    margin-top: 8px;
+    font-size: 0.88rem;
+    opacity: 0.82;
+}
+
+@media (max-width: 600px) {
+    #pied-page {
+        width: calc(100% - 20px);
+        margin-top: 18px;
+    }
+
+    #pied-page .site-footer,
+    #pied-page footer {
+        padding: 18px 12px;
+        border-radius: 14px;
+    }
+}
