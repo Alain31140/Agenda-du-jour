@@ -1803,3 +1803,446 @@ body.carte-ouverte {
         border-radius: 12px;
     }
 }
+
+/* ==================================================
+   PAGES CULTURE / PERSONNALITÉS / ÉVÉNEMENTS
+================================================== */
+
+/* Conteneurs principaux */
+#personnalites-contenu,
+#evenements-contenu,
+#culture-app {
+    width: min(calc(100% - 30px), 900px);
+    margin: 24px auto 40px;
+}
+
+/* Dates / sous-titres */
+#personnalites-date,
+#evenements-date,
+#culture-date {
+    width: min(calc(100% - 30px), 900px);
+    margin: 0 auto 20px;
+    color: var(--couleur-texte-clair);
+    font-size: clamp(1rem, 3vw, 1.15rem);
+    line-height: 1.5;
+}
+
+/* Introduction */
+.personnalites-introduction,
+.evenements-introduction {
+    margin-bottom: 14px;
+    color: var(--couleur-principale);
+    font-size: 1.05rem;
+    font-weight: 650;
+}
+
+.personnalites-introduction strong,
+.evenements-introduction strong {
+    font-size: 1.3rem;
+}
+
+/* Listes */
+.personnalites-liste,
+.evenements-liste,
+.culture-liste {
+    display: grid;
+    gap: 12px;
+}
+
+/* --------------------------------------------------
+   LIGNES REPLIABLES — PERSONNALITÉS / ÉVÉNEMENTS
+-------------------------------------------------- */
+
+.personnalite-element,
+.evenement-element,
+.culture-element {
+    overflow: hidden;
+    background: var(--couleur-carte);
+    border: 1px solid rgba(53,107,140,0.12);
+    border-radius: 16px;
+    box-shadow: var(--ombre-legere);
+}
+
+.personnalite-element-bouton,
+.evenement-element-bouton,
+.culture-element-bouton {
+    appearance: none;
+    -webkit-appearance: none;
+    display: grid;
+    grid-template-columns: auto minmax(0,1fr) auto auto;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    min-height: 58px;
+    padding: 13px 16px;
+    border: 0;
+    background: transparent;
+    color: var(--couleur-texte);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.personnalite-element-bouton:hover,
+.evenement-element-bouton:hover,
+.culture-element-bouton:hover {
+    background: rgba(53,107,140,0.055);
+}
+
+.personnalite-element-fleche,
+.evenement-element-fleche,
+.culture-element-fleche {
+    color: var(--couleur-principale);
+    font-size: 0.95rem;
+    font-weight: 800;
+}
+
+.personnalite-element-identite,
+.evenement-element-identite {
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    align-items: baseline;
+}
+
+.personnalite-element-identite strong,
+.evenement-element-identite strong,
+.culture-element-titre {
+    color: var(--couleur-principale);
+    font-size: 1.05rem;
+    font-weight: 750;
+}
+
+.personnalite-element-identite small,
+.evenement-element-identite small {
+    color: var(--couleur-texte-clair);
+    font-size: 0.9rem;
+}
+
+.personnalite-element-evenement,
+.evenement-element-type,
+.personnalite-element-annees,
+.evenement-element-annee,
+.culture-element-annee {
+    color: var(--couleur-texte-clair);
+    font-size: 0.92rem;
+    white-space: nowrap;
+}
+
+/* --------------------------------------------------
+   DÉTAIL PERSONNALITÉ / ÉVÉNEMENT
+-------------------------------------------------- */
+
+.personnalite-detail,
+.evenement-detail,
+.culture-detail {
+    border-top: 1px solid rgba(53,107,140,0.10);
+    background: #fbfdfe;
+}
+
+.personnalite-barre-fermeture,
+.culture-barre-fermeture {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 12px 0;
+}
+
+.bouton-fermer-personnalite,
+.bouton-fermer-evenement,
+.bouton-fermer-culture {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--couleur-secondaire);
+    color: var(--couleur-principale);
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.personnalite-fiche,
+.evenement-fiche {
+    display: grid;
+    grid-template-columns: 190px minmax(0,1fr);
+    gap: 24px;
+    padding: 18px 22px 24px;
+}
+
+.personnalite-portrait,
+.evenement-illustration {
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--couleur-secondaire);
+    border-radius: 14px;
+}
+
+.personnalite-portrait img,
+.evenement-illustration img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.personnalite-placeholder,
+.evenement-placeholder {
+    display: grid;
+    gap: 8px;
+    place-items: center;
+    padding: 24px 12px;
+    color: var(--couleur-texte-clair);
+    text-align: center;
+}
+
+.personnalite-placeholder-icone,
+.evenement-placeholder-icone {
+    font-size: 2.5rem;
+}
+
+.personnalite-contenu h2,
+.evenement-contenu h2 {
+    margin: 8px 0 8px;
+    color: var(--couleur-principale);
+    font-size: clamp(1.35rem,4vw,1.8rem);
+}
+
+.personnalite-badge-evenement,
+.evenement-badge-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    background: var(--couleur-secondaire);
+    color: var(--couleur-principale);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.personnalite-activite,
+.personnalite-dates,
+.evenement-date {
+    margin-top: 6px;
+    color: var(--couleur-texte-clair);
+}
+
+.personnalite-informations,
+.evenement-informations {
+    display: grid;
+    gap: 6px;
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: var(--couleur-secondaire);
+    border-radius: 12px;
+}
+
+.personnalite-resume,
+.evenement-resume {
+    margin: 16px 0;
+    line-height: 1.65;
+}
+
+.personnalite-section-detail,
+.evenement-section-detail {
+    margin-top: 16px;
+}
+
+.personnalite-section-detail h4,
+.evenement-section-detail h4 {
+    margin: 0 0 8px;
+    color: var(--couleur-principale);
+}
+
+.personnalite-section-detail ul,
+.evenement-section-detail ul {
+    margin: 0;
+    padding-left: 22px;
+    line-height: 1.6;
+}
+
+.personnalite-lien-externe,
+.evenement-lien-externe,
+.culture-lien-externe {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--couleur-principale);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.personnalite-lien-externe:hover,
+.evenement-lien-externe:hover,
+.culture-lien-externe:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------
+   CULTURE
+-------------------------------------------------- */
+
+.culture-cahier {
+    display: grid;
+    gap: 22px;
+}
+
+.culture-categorie {
+    padding: 18px;
+    background: rgba(255,255,255,0.60);
+    border-radius: 18px;
+}
+
+.culture-categorie-titre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 14px;
+    color: var(--couleur-principale);
+    font-size: 1.25rem;
+}
+
+.culture-categorie-compteur {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    margin-left: auto;
+    padding: 0 8px;
+    border-radius: 999px;
+    background: var(--couleur-secondaire);
+    font-size: 0.85rem;
+}
+
+.culture-element-bouton {
+    grid-template-columns: auto minmax(0,1fr) auto;
+}
+
+.culture-detail-contenu {
+    display: grid;
+    grid-template-columns: 190px minmax(0,1fr);
+    gap: 24px;
+    padding: 18px 22px 24px;
+}
+
+.culture-visuel {
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--couleur-secondaire);
+    border-radius: 14px;
+}
+
+.culture-visuel img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.culture-placeholder {
+    display: grid;
+    gap: 8px;
+    place-items: center;
+    padding: 24px 12px;
+    color: var(--couleur-texte-clair);
+    text-align: center;
+}
+
+.culture-placeholder-icone {
+    font-size: 2.5rem;
+}
+
+.culture-detail-texte h3 {
+    margin: 6px 0 10px;
+    color: var(--couleur-principale);
+    font-size: clamp(1.35rem,4vw,1.8rem);
+}
+
+.culture-createur,
+.culture-annee {
+    margin: 6px 0;
+    color: var(--couleur-texte-clair);
+}
+
+.culture-resume {
+    margin: 16px 0;
+    line-height: 1.65;
+}
+
+/* États vides */
+.personnalites-vide,
+.evenements-vide,
+.culture-vide {
+    padding: 32px 22px;
+    text-align: center;
+    background: white;
+    border-radius: 18px;
+    box-shadow: var(--ombre-legere);
+}
+
+/* --------------------------------------------------
+   MOBILE
+-------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    #personnalites-contenu,
+    #evenements-contenu,
+    #culture-app,
+    #personnalites-date,
+    #evenements-date,
+    #culture-date {
+        width: calc(100% - 20px);
+    }
+
+    .personnalite-element-bouton,
+    .evenement-element-bouton {
+        grid-template-columns: auto minmax(0,1fr);
+    }
+
+    .personnalite-element-evenement,
+    .evenement-element-type,
+    .personnalite-element-annees,
+    .evenement-element-annee {
+        grid-column: 2;
+        white-space: normal;
+    }
+
+    .personnalite-fiche,
+    .evenement-fiche,
+    .culture-detail-contenu {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 14px 16px 20px;
+    }
+
+    .personnalite-portrait,
+    .evenement-illustration,
+    .culture-visuel {
+        min-height: 0;
+        max-width: 260px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .personnalite-portrait img,
+    .evenement-illustration img,
+    .culture-visuel img {
+        height: auto;
+        max-height: 280px;
+        object-fit: contain;
+    }
+
+    .culture-categorie {
+        padding: 12px;
+    }
+}
